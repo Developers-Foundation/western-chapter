@@ -1,6 +1,6 @@
 {
-  "name": "Developers' Foundation Western Chapter Website",
-  "description": "This is the western chapter website :)",
+  "name": "Developers Foundation Western Chapter Website",
+  "description": "This is the western chapter website",
   "repository": "https://github.com/Developers-Foundation/western-chapter.git",
   "logo": "https://developersfoundation.ca/assets/img/logo.png",
   "keywords": ["php", "heroku", "blank", "template", "nob", "western"]
