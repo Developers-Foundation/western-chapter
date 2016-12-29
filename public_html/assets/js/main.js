@@ -9,8 +9,8 @@ var point1;
 
 function resizeEvent(){
     var width = $(this).width();
-    point1 = Math.floor(width/4);
-    var point2 = Math.floor(width/8);
+    point1 = Math.floor(width/3);
+    var point2 = Math.floor(width/6);
     var space = Math.floor(width * 0.01);
     var mid = Math.floor(width/2) - point2;
 
@@ -60,6 +60,10 @@ function resizeEvent(){
         height: point1,
         transform: "translate(" + (mid + 2*(point2 + space)) + ", 0)"
     });
+
+    // Whenever the screen is resized, we must also treat this event as if there was a scroll to reinitialize the nav bar.
+    prevScroll = 0;
+    scrollEvent();
 
 }
 
@@ -115,6 +119,12 @@ var prevScroll = 0;
 
 function scrollEvent() {
 
+    // The nav bar will be 1/7th the size of the current screen height, therefore adjust this value.
+    var height = $(this).height();
+    var minHeight = Math.floor(height*0.14);
+
+    console.log(minHeight);
+
     var scroll = $(window).scrollTop();
     var curScroll = scroll - prevScroll;
     prevScroll = scroll;
@@ -123,14 +133,14 @@ function scrollEvent() {
 
     // TODO deal with responsiveness, we can't have a fixed nav bar size since the entire thing shrinks.
     // If we scroll up, then we only begin extending the triangles at 50px (the size of the nav bar) at the point where the bar begins
-    if(curScroll < 0 && prevScroll <= point1 - 50){
+    if(curScroll < 0 && prevScroll <= point1 - minHeight){
         toChange = Math.min(point1, curHeight - curScroll);
         $('#svg1').attr('height', toChange);
     }
 
     // Begin shrinking until we reach a certain point
-    else if(curScroll > 0 && curHeight > 50){
-        toChange = Math.max(50, curHeight - curScroll);
+    else if(curScroll > 0 && curHeight > minHeight){
+        toChange = Math.max(minHeight, curHeight - curScroll);
         $('#svg1').attr('height', toChange);
     }
 
