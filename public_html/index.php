@@ -48,6 +48,12 @@
         include_once "html_elements/googleMaps.php";
         include_once "html_elements/events.php";
         include_once "html_elements/footerTicker.php"; */
+    ?>
+
+    <!-- Begin of Content-->
+
+    <!--  -->
+    <?php
         include_once "html_elements/footer.php";
         //include_once "html_elements/footer2.php";
         include_once "html_elements/contactUsModal.php";
