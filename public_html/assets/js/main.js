@@ -19,6 +19,8 @@ function resizeEvent(){
         height: point1
     });
 
+    $('#spacer').css('margin-top', point1 + 15);
+
     // Resize the shape of the polygon (the triangles)
 
     // Equilateral triangles
@@ -74,27 +76,6 @@ $(function jQueryResize (){
     })
 });
 
-// These selectors allow us to create links associated with the polygonal images.
-$(function imageSelectors () {
-
-    $('#im1').on('click', function(){
-        window.location.href = "//developersfoundation.ca";
-    });
-
-    $('#im2').on('click', function(){
-        window.location.href = "#";
-    });
-    $('#im3').on('click', function(){
-        window.location.href = "#";
-    });
-    $('#im4').on('click', function(){
-        window.location.href = "#";
-    });
-    $('#im5').on('click', function(){
-        window.location.href = "#";
-    });
-
-});
 
 // Since we use absolute positioning, we need to resize when the website is loaded in order to fit to the current screen size.
 $(function (){
@@ -105,6 +86,10 @@ $(function (){
 /* ----------------------------------------------------------- */
 /* End of resizing of triangle gallery.
 /* ----------------------------------------------------------- */
+
+
+
+
 
 
 
@@ -121,9 +106,7 @@ function scrollEvent() {
 
     // The nav bar will be 1/7th the size of the current screen height, therefore adjust this value.
     var height = $(this).height();
-    var minHeight = Math.floor(height*0.14);
-
-    console.log(minHeight);
+    var minHeight = Math.floor(height*0.07);
 
     var scroll = $(window).scrollTop();
     var curScroll = scroll - prevScroll;
@@ -142,7 +125,6 @@ function scrollEvent() {
         toChange = Math.max(minHeight, curHeight - curScroll);
         $('#svg1').attr('height', toChange);
     }
-
 }
 
 // Whenever the window is scrolled we need to update the size of the nav
@@ -156,3 +138,61 @@ $(function jQueryScroll (){
 $(function (){
     scrollEvent();
 });
+
+/* ----------------------------------------------------------- */
+/* End of scroll effect triangle gallery.
+/* ----------------------------------------------------------- */
+
+
+
+
+
+
+
+/* ----------------------------------------------------------- */
+/* jQuery events.
+/* ----------------------------------------------------------- */
+
+// These selectors allow us to create links associated with the polygonal images.
+$(function imageSelectors () {
+
+    $('#im1').on({
+        'click': function() {
+            window.location.href = "//developersfoundation.ca";
+        },
+        'mouseover': null
+    });
+
+    $('#im2').on({
+        'click': function() {
+            window.location.href = "#";
+        },
+        'mouseover': null
+    });
+
+    $('#im3').on({
+        'click': function() {
+            window.location.href = "#";
+        },
+        'mouseover': null
+    });
+
+    $('#im4').on({
+        'click': function() {
+            window.location.href = "#";
+        },
+        'mouseover': null
+    });
+
+    $('#im5').on({
+        'click': function() {
+            window.location.href = "#";
+        },
+        'mouseover': null
+    });
+
+});
+
+/* ----------------------------------------------------------- */
+/* End of jQuery events.
+/* ----------------------------------------------------------- */
