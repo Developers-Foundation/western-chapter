@@ -50,21 +50,40 @@
         include_once "html_elements/footerTicker.php"; */
     ?>
 
-    <!-- Begin of Content-->
+    <!-- Begin of Contents -->
+    <!-- Begin of About Us -->
+    <div>
 
-    <!--  -->
+    </div>
+    <!-- End of About Us -->
+    <!-- Begin of Mission Statement -->
+    <div>
+
+    </div>
+    <!-- Begin of Mission Statement -->
+    <!-- Begin of Portfolio -->
+    <div>
+
+    </div>
+    <!-- Begin of Portfolio -->
+    <!-- Begin of Student Application -->
+    <div>
+
+    </div>
+    <!-- End of  Student Application -->
+    <!-- Begin of Client Application -->
+    <div>
+
+    </div>
+    <!-- End of Client Application -->
+    <!-- Begin of Exec -->
+    <!-- End of Exec -->
+    <!-- End of Contents -->
     <?php
         include_once "html_elements/footer.php";
         //include_once "html_elements/footer2.php";
         include_once "html_elements/contactUsModal.php";
     ?>
-
-
-
-
-
-
-
 
 
     <!--=========================================== JS SCRIPTS ==========================================-->
