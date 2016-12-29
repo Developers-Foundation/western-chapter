@@ -131,7 +131,6 @@ function scrollEvent() {
     var curHeight = parseInt($('#svg1').attr('height'));
     var toChange = 0;
 
-    // TODO deal with responsiveness, we can't have a fixed nav bar size since the entire thing shrinks.
     // If we scroll up, then we only begin extending the triangles at 50px (the size of the nav bar) at the point where the bar begins
     if(curScroll < 0 && prevScroll <= point1 - minHeight){
         toChange = Math.min(point1, curHeight - curScroll);
