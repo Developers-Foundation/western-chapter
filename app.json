@@ -1,7 +1,7 @@
 {
-  "name": "Blank PHP Heroku Project",
-  "description": "Blank PHP Project for Quick deploy to Heroku with partial NOB API implemented",
-  "repository": "https://github.com/nobodyrandom/blank-bootstrap.git",
+  "name": "Developers' Foundation Western Chapter Website",
+  "description": "This is the western chapter website :)",
+  "repository": "https://github.com/Developers-Foundation/western-chapter.git",
   "logo": "https://developersfoundation.ca/assets/img/logo.png",
-  "keywords": ["php", "heroku", "blank", "template", "nob"]
+  "keywords": ["php", "heroku", "blank", "template", "nob", "western"]
 }
