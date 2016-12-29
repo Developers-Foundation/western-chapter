@@ -66,20 +66,39 @@
 
     </div>
     <!-- Begin of Portfolio -->
-    <!-- Begin of Student Application -->
-    <div>
 
+
+    <!-- Beginning of Student Application -->
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>Developers Application
+                <br><small>Looking to make a difference? Join the Developer's Foundation team!</small>
+                </h2>
+                <a target="_blank" href="//docs.google.com/forms/d/e/1FAIpQLScbcCa9UQ3Sd0YluXTNGqyWOSPFtxeB8fcHGflkYnSSPUXSwg/viewform">
+                    <button type="button" class="btn btn-primary">APPLY</button>
+                </a>
+            </div>
+        </div>
     </div>
-    <!-- End of  Student Application -->
-    <!-- Begin of Client Application -->
-    <div>
+    <!-- End of Student Application -->
 
+    <!-- Beginning of Client Application -->
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>Non-Profits Application
+                <br><small>Help us help you! Let a proven team of developers create a beautiful website for your NPO!</small>
+                </h2>
+                <a target="_blank" href="https://docs.google.com/forms/d/12kYXI8S7CoeBhEuf7ekzvFj3IuNinnBRhOVS9m4BKjg/viewform">
+                    <button type="button" class="btn btn-primary">APPLY</button>
+                </a>
+            </div>
+        </div>
     </div>
     <!-- End of Client Application -->
-    <div>
 
-    </div>
-    <!-- Begin of Exec -->
+    <!-- Beginning of Exec -->
     <div>
 
     </div>
