@@ -21,12 +21,12 @@ This module relies on code in main.js in order to properly function with resizin
                 <polygon points="0,0 100,0 50,100" id="poly2">
             </clipPath>
 
-            <!-- Right Angle Triangle (Right) -->
+
+            <!-- Right Angle Triangle (Right) (unused) -->
             <clipPath id="clip3">
                 <polygon points="50,0 50,100 0,100" id="poly3">
             </clipPath>
-
-            <!-- Right Angle Triangle (Left) -->
+            <!-- Right Angle Triangle (Left) (unused) -->
             <clipPath id="clip4">
                 <polygon points="50,0 50,100 100,100" id="poly4">
             </clipPath>
