@@ -153,43 +153,58 @@ $(function (){
 /* jQuery events.
 /* ----------------------------------------------------------- */
 
-// These selectors allow us to create links associated with the polygonal images.
+// These selectors allow us to create links associated with the polygonal images and deal with the hover effect.
 $(function imageSelectors () {
 
-    $('#im1').on({
-        'click': function() {
+    $('#im1').on('click', function() {
             window.location.href = "//developersfoundation.ca";
+    }).hover(function() {
+            $(this).css('opacity', 0.5)
         },
-        'mouseover': null
-    });
+        function(){
+            $(this).css('opacity', 1.0)
+        }
+    );
 
-    $('#im2').on({
-        'click': function() {
+    $('#im2').on('click', function() {
             window.location.href = "#";
+    }).hover(function() {
+            $(this).css('opacity', 0.5)
         },
-        'mouseover': null
-    });
+        function(){
+            $(this).css('opacity', 1.0)
+        }
+    );
 
-    $('#im3').on({
-        'click': function() {
+    $('#im3').on('click', function() {
             window.location.href = "#";
+    }).hover(function() {
+            $(this).css('opacity', 0.5)
         },
-        'mouseover': null
-    });
+        function(){
+            $(this).css('opacity', 1.0)
+        }
+    );
 
-    $('#im4').on({
-        'click': function() {
+    $('#im4').on('click', function() {
             window.location.href = "#";
+    }).hover(function() {
+            $(this).css('opacity', 0.5)
         },
-        'mouseover': null
-    });
+        function(){
+            $(this).css('opacity', 1.0)
+        }
+    );
 
-    $('#im5').on({
-        'click': function() {
+    $('#im5').on('click', function() {
             window.location.href = "#";
+    }).hover(function() {
+            $(this).css('opacity', 0.5)
         },
-        'mouseover': null
-    });
+        function(){
+            $(this).css('opacity', 1.0)
+        }
+    );
 
 });
 
