@@ -6,6 +6,14 @@ This module relies on code in main.js in order to properly function with resizin
 -->
 
 <nav class="navbar navbar-default navbar-fixed-top" id="triangleNav">
+
+    <row id="triLabels" style="position: fixed; width: 100%">
+        <div class="col-xs-2 triLbl" id="triLbl1">Developers' Foundation</div>
+        <div class="col-xs-4 triLbl text-center" id="triLbl2">Our Work</div>
+        <div class="col-xs-4 triLbl text-center" id="triLbl3">Join Us</div>
+        <div class="col-xs-2 triLbl text-right" id="triLbl4">Misc Title</div>
+    </row>
+
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="200" id="svg1">
         <defs>
 
@@ -45,11 +53,11 @@ This module relies on code in main.js in order to properly function with resizin
 
         <!-- We create each image and assign the required variables.
         Important variable to note are the clip-path (to create the triangle) and translate (so they aren't all overlapping) -->
-        <image xlink:href="//placehold.it/500x500/5bc0de" clip-path="url(#clip5)" id="im1"></image>
-        <image xlink:href="//placehold.it/501x501/5bc0de" clip-path="url(#clip2)" id="im2"></image>
-        <image xlink:href="//placehold.it/502x502/5bc0de" clip-path="url(#clip1)" id="im3"></image>
-        <image xlink:href="//placehold.it/503x503/5bc0de" clip-path="url(#clip2)" id="im4"></image>
-        <image xlink:href="//placehold.it/504x504/5bc0de" clip-path="url(#clip6)" id="im5"></image>
+        <image xlink:href="//placehold.it/500x500/800080" clip-path="url(#clip5)" id="im1"></image>
+        <image xlink:href="//placehold.it/501x501/800080" clip-path="url(#clip2)" id="im2"></image>
+        <image xlink:href="//placehold.it/502x502/800080" clip-path="url(#clip1)" id="im3"></image>
+        <image xlink:href="//placehold.it/503x503/800080" clip-path="url(#clip2)" id="im4"></image>
+        <image xlink:href="//placehold.it/504x504/800080" clip-path="url(#clip6)" id="im5"></image>
 
     </svg>
 </nav>

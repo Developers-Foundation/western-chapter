@@ -453,4 +453,19 @@ header .intro-text .skills {
 }
 
 
+/*============================================ TRIANGLEGALLERY.PHP (incomplete) =====================================*/
+
+/*TODO alter the padding with media queries based on the screen height*/
+/*TODO alter the font size, OPTIONS: media queries for either height and width, or js directly linking it (dynamically changing with resize)*/
+.triLbl {
+    padding-top: 15px;
+    font-size: 20px;
+    pointer-events: none;
+    color: ghostwhite;
+}
+
+#triLabels{
+    pointer-events: none;
+}
+
 /*============================================  =====================================*/

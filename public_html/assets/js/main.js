@@ -14,6 +14,8 @@ function resizeEvent(){
     var space = Math.floor(width * 0.01);
     var mid = Math.floor(width/2) - point2;
 
+    console.log(point1);
+
     $('#svg1').attr({
         width: width,
         height: point1
@@ -159,7 +161,7 @@ $(function imageSelectors () {
     $('#im1').on('click', function() {
             window.location.href = "//developersfoundation.ca";
     }).hover(function() {
-            $(this).css('opacity', 0.5)
+            $(this).css('opacity', 0.7)
         },
         function(){
             $(this).css('opacity', 1.0)
@@ -169,7 +171,7 @@ $(function imageSelectors () {
     $('#im2').on('click', function() {
             window.location.href = "#";
     }).hover(function() {
-            $(this).css('opacity', 0.5)
+            $(this).css('opacity', 0.7)
         },
         function(){
             $(this).css('opacity', 1.0)
@@ -179,7 +181,7 @@ $(function imageSelectors () {
     $('#im3').on('click', function() {
             window.location.href = "#";
     }).hover(function() {
-            $(this).css('opacity', 0.5)
+            $(this).css('opacity', 0.7)
         },
         function(){
             $(this).css('opacity', 1.0)
@@ -189,7 +191,7 @@ $(function imageSelectors () {
     $('#im4').on('click', function() {
             window.location.href = "#";
     }).hover(function() {
-            $(this).css('opacity', 0.5)
+            $(this).css('opacity', 0.7)
         },
         function(){
             $(this).css('opacity', 1.0)
@@ -199,7 +201,7 @@ $(function imageSelectors () {
     $('#im5').on('click', function() {
             window.location.href = "#";
     }).hover(function() {
-            $(this).css('opacity', 0.5)
+            $(this).css('opacity', 0.7)
         },
         function(){
             $(this).css('opacity', 1.0)
