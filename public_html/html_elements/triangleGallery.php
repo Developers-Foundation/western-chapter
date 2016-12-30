@@ -5,7 +5,7 @@ This module relies on code in main.js in order to properly function with resizin
 
 -->
 
-<nav class="navbar navbar-fixed-top">
+<nav class="navbar navbar-default navbar-fixed-top" id="triangleNav">
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="200" id="svg1">
         <defs>
 
