@@ -20,8 +20,6 @@
 
 /*============================================ TRIANGLEGALLERY.PHP (incomplete) =====================================*/
 
-/*TODO alter the padding with media queries based on the screen height*/
-/*TODO alter the font size, OPTIONS: media queries for either height and width, or js directly linking it (dynamically changing with resize)*/
 .triLbl {
   padding-top: 15px;
   font-size: 20px;
@@ -31,8 +29,12 @@
 
 #triLabels{
   pointer-events: none;
+  position: fixed;
+  width: 100%;
 }
 
+.scrolledNav{
+  pointer-events: none;
+}
 /*============================================  =====================================*/
 
-.scrolledNav{}

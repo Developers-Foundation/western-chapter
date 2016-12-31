@@ -126,7 +126,15 @@ function scrollEvent() {
         $('#svg1').attr('height', curHeight);
     }
 
-    $('.scrolledNav').attr('opacity', minHeight/curHeight);
+    var opacity = minHeight/curHeight;
+    $('.scrolledNav').attr('opacity', opacity);
+
+    if(opacity == 1){
+        $('#triLabels').removeClass("hidden")
+    }
+    else{
+        $('#triLabels').addClass("hidden")
+    }
 
 }
 
