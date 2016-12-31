@@ -6,3 +6,20 @@
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
+/*============================================ TRIANGLEGALLERY.PHP (incomplete) =====================================*/
+/*TODO alter the padding with media queries based on the screen height*/
+/*TODO alter the font size, OPTIONS: media queries for either height and width, or js directly linking it (dynamically changing with resize)*/
+.triLbl {
+  padding-top: 15px;
+  font-size: 20px;
+  pointer-events: none;
+  color: ghostwhite;
+}
+#triLabels {
+  pointer-events: none;
+}
+/*============================================  =====================================*/
+
+.scrolledNav{
+  pointer-events: none;
+}
