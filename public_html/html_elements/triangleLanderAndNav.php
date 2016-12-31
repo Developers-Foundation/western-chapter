@@ -7,14 +7,14 @@ This module relies on code in main.js in order to properly function with resizin
 
 <nav class="navbar navbar-default navbar-fixed-top" id="triangleNav">
 
-    <!--
-    <row id="triLabels" style="position: fixed; width: 100%">
+
+    <div class="row" id="triLabels">
         <div class="col-xs-2 triLbl" id="triLbl1">Developers' Foundation</div>
         <div class="col-xs-4 triLbl text-center" id="triLbl2">Our Work</div>
         <div class="col-xs-4 triLbl text-center" id="triLbl3">Join Us</div>
         <div class="col-xs-2 triLbl text-right" id="triLbl4">Misc Title</div>
-    </row>
-    -->
+    </div>
+
 
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="200" id="svg1">
         <defs>
