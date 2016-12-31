@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Blank Bootstrap</title>
+    <title>Developers' Foundation</title>
 
     <!--=========================================== CSS FILES ===========================================-->
     <!-- Bootstrap Core CSS -->
@@ -51,21 +51,76 @@
     ?>
 
     <!-- Begin of Contents -->
-    <!-- Begin of About Us -->
-    <div>
-
+    <!-- Beginning of Mission Statement -->
+    <div id="mission-statement">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>MISSION Statement: Build Something MEANINGFUL</h1>
+                </div>
+                <div class="col-md-6 col-md-offset-3">
+                    <p>
+                        We want to help underserved communities to become sustainably independent, through the leverage of technology.
+                        <br>
+                        We are group of students and aspiring designers/developers from The University of Western Ontario
+                        which serve as a subteam for Developers' Foundation.
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
-    <!-- End of About Us -->
-    <!-- Begin of Mission Statement -->
-    <div>
-
+    <!-- End of Mission Statement -->
+    <!-- Beginning of What We Do -->
+    <div id="what-we-do">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>What We Do</h1>
+                </div>
+                <div class="col-md-4">
+                    <h2>UX/UI Design</h2>
+                </div>
+                <div class="col-md-4">
+                    <h2>Web Design</h2>
+                </div>
+                <div class="col-md-4">
+                    <h2>Marketing</h2>
+                </div>
+                <hr>
+            </div>
+        </div>
     </div>
-    <!-- Begin of Mission Statement -->
-    <!-- Begin of Portfolio -->
-    <div>
-
+    <!-- End of of What We Do -->
+    <!-- Beginning of Portfolio -->
+    <div id="portfolio">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Portfolio</h1>
+                </div>
+                <div class="col-md-4">
+                    <img class="img-responsive" src="assets/img/portfolio/preview.png">
+                </div>
+                <div class="col-md-4">
+                    <img class="img-responsive"src="assets/img/portfolio/preview.png">
+                </div>
+                <div class="col-md-4">
+                    <img class="img-responsive"src="assets/img/portfolio/preview.png">
+                </div>
+                <div class="col-md-4">
+                    <img class="img-responsive"src="assets/img/portfolio/preview.png">
+                </div>
+                <div class="col-md-4">
+                    <img class="img-responsive"src="assets/img/portfolio/preview.png">
+                </div>
+                <div class="col-md-4">
+                    <img class="img-responsive"src="assets/img/portfolio/preview.png">
+                </div>
+                <hr>
+            </div>
+        </div>
     </div>
-    <!-- Begin of Portfolio -->
+    <!-- End of Portfolio -->
 
 
     <!-- Beginning of Student Application -->
