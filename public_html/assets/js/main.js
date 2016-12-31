@@ -1,7 +1,7 @@
 
 /* ----------------------------------------------------------- */
 /* Resizing of triangle gallery.
-/* ----------------------------------------------------------- */
+ /* ----------------------------------------------------------- */
 
 // This point represents the width and height of each equilateral triangle.
 // This point will be used late to represent the maximal size of the nav bar.
@@ -11,10 +11,8 @@ function resizeEvent(){
     var width = $(this).width();
     point1 = Math.floor(width/3);
     var point2 = Math.floor(width/6);
-    var space = Math.floor(width * 0.01);
+    var space = Math.floor(width * 0.005);
     var mid = Math.floor(width/2) - point2;
-
-    console.log(point1);
 
     $('#svg1').attr({
         width: width,
@@ -26,40 +24,41 @@ function resizeEvent(){
     // Resize the shape of the polygon (the triangles)
 
     // Equilateral triangles
-    $('#poly1').attr('points', point2 + ",0 0," + point1 + " " + point1 + "," + point1);
-    $('#poly2').attr('points', "0,0 " + point1 + ",0 " + point2 + "," + point1);
+    // $('#poly1').attr('points', point2 + ",0 0," + point1 + " " + point1 + "," + point1);
+    $('.poly1').attr('points', point2 + ",0 0," + point1 + " " + point1 + "," + point1);
+    $('.poly2').attr('points', "0,0 " + point1 + ",0 " + point2 + "," + point1);
 
     // Square end triangles
-    $('#poly5').attr('points', "0,0 " + point2 +",0 " + point1 +"," + point1 + " 0," + point1);
-    $('#poly6').attr('points', point1 + ",0 " + point1 + "," + point1 + " 0," + point1 + " " + point2 + ",0");
+    $('.poly5').attr('points', "0,0 " + point2 +",0 " + point1 +"," + point1 + " 0," + point1);
+    $('.poly6').attr('points', point1 + ",0 " + point1 + "," + point1 + " 0," + point1 + " " + point2 + ",0");
 
 
     // Retranslate and resize based on the window size.
-    $('#im1').attr({
+    $('.im1').attr({
         width: point1,
         height: point1,
         transform: "translate(" + (mid - 2*(point2 + space)) + ", 0)"
     });
 
-    $('#im2').attr({
+    $('.im2').attr({
         width: point1,
         height: point1,
         transform: "translate(" + (mid - 1*(point2 + space)) + ", 0)"
     });
 
-    $('#im3').attr({
+    $('.im3').attr({
         width: point1,
         height: point1,
         transform: "translate(" + (mid) + ", 0)"
     });
 
-    $('#im4').attr({
+    $('.im4').attr({
         width: point1,
         height: point1,
         transform: "translate(" + (mid + 1*(point2 + space)) + ", 0)"
     });
 
-    $('#im5').attr({
+    $('.im5').attr({
         width: point1,
         height: point1,
         transform: "translate(" + (mid + 2*(point2 + space)) + ", 0)"
@@ -87,7 +86,7 @@ $(function (){
 
 /* ----------------------------------------------------------- */
 /* End of resizing of triangle gallery.
-/* ----------------------------------------------------------- */
+ /* ----------------------------------------------------------- */
 
 
 
@@ -99,7 +98,7 @@ $(function (){
 
 /* ----------------------------------------------------------- */
 /* Scroll effect triangle gallery.
-/* ----------------------------------------------------------- */
+ /* ----------------------------------------------------------- */
 
 // This value stores the position of the previous scroll event such that we can know by how much we have scrolled.
 var prevScroll = 0;
@@ -127,6 +126,9 @@ function scrollEvent() {
         toChange = Math.max(minHeight, curHeight - curScroll);
         $('#svg1').attr('height', toChange);
     }
+
+    $('.scrolledNav').attr('opacity', minHeight/curHeight);
+
 }
 
 // Whenever the window is scrolled we need to update the size of the nav
@@ -143,7 +145,7 @@ $(function (){
 
 /* ----------------------------------------------------------- */
 /* End of scroll effect triangle gallery.
-/* ----------------------------------------------------------- */
+ /* ----------------------------------------------------------- */
 
 
 
@@ -153,13 +155,13 @@ $(function (){
 
 /* ----------------------------------------------------------- */
 /* jQuery events.
-/* ----------------------------------------------------------- */
+ /* ----------------------------------------------------------- */
 
 // These selectors allow us to create links associated with the polygonal images and deal with the hover effect.
 $(function imageSelectors () {
 
-    $('#im1').on('click', function() {
-            window.location.href = "//developersfoundation.ca";
+    $('.im1').on('click', function() {
+        window.location.href = "//developersfoundation.ca";
     }).hover(function() {
             $(this).css('opacity', 0.7)
         },
@@ -168,8 +170,8 @@ $(function imageSelectors () {
         }
     );
 
-    $('#im2').on('click', function() {
-            window.location.href = "#";
+    $('.im2').on('click', function() {
+        window.location.href = "#";
     }).hover(function() {
             $(this).css('opacity', 0.7)
         },
@@ -178,8 +180,8 @@ $(function imageSelectors () {
         }
     );
 
-    $('#im3').on('click', function() {
-            window.location.href = "#";
+    $('.im3').on('click', function() {
+        window.location.href = "#";
     }).hover(function() {
             $(this).css('opacity', 0.7)
         },
@@ -188,8 +190,8 @@ $(function imageSelectors () {
         }
     );
 
-    $('#im4').on('click', function() {
-            window.location.href = "#";
+    $('.im4').on('click', function() {
+        window.location.href = "#";
     }).hover(function() {
             $(this).css('opacity', 0.7)
         },
@@ -198,8 +200,8 @@ $(function imageSelectors () {
         }
     );
 
-    $('#im5').on('click', function() {
-            window.location.href = "#";
+    $('.im5').on('click', function() {
+        window.location.href = "#";
     }).hover(function() {
             $(this).css('opacity', 0.7)
         },
@@ -212,4 +214,4 @@ $(function imageSelectors () {
 
 /* ----------------------------------------------------------- */
 /* End of jQuery events.
-/* ----------------------------------------------------------- */
+ /* ----------------------------------------------------------- */

@@ -17,6 +17,7 @@
 
     <!-- Theme CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="assets/less/main.css">
 
     <!-- Custom Fonts -->
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
@@ -42,8 +43,8 @@
     <?php
         $page = "index-page";
         $hasGmap = true;
-        include_once "html_elements/navBar.php";
-        include_once "html_elements/header.php";
+        include_once "html_elements/triangleGallery.php";
+//        include_once "html_elements/header.php";
        /*include_once "html_elements/gallery.php";
         include_once "html_elements/carouselThree.php";
         include_once "html_elements/faq.php";
