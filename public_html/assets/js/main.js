@@ -113,18 +113,17 @@ function scrollEvent() {
     var curScroll = scroll - prevScroll;
     prevScroll = scroll;
     var curHeight = parseInt($('#svg1').attr('height'));
-    var toChange = 0;
 
     // If we scroll up, then we only begin extending the triangles at 50px (the size of the nav bar) at the point where the bar begins
     if(curScroll < 0 && prevScroll <= point1 - minHeight){
-        toChange = Math.min(point1, curHeight - curScroll);
-        $('#svg1').attr('height', toChange);
+        curHeight = Math.min(point1, curHeight - curScroll);
+        $('#svg1').attr('height', curHeight);
     }
 
     // Begin shrinking until we reach a certain point
     else if(curScroll > 0 && curHeight > minHeight){
-        toChange = Math.max(minHeight, curHeight - curScroll);
-        $('#svg1').attr('height', toChange);
+        curHeight = Math.max(minHeight, curHeight - curScroll);
+        $('#svg1').attr('height', curHeight);
     }
 
     $('.scrolledNav').attr('opacity', minHeight/curHeight);

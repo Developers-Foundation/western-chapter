@@ -43,17 +43,7 @@
     <?php
         $page = "index-page";
         $hasGmap = true;
-        include_once "html_elements/triangleGallery.php";
-//        include_once "html_elements/header.php";
-       /*include_once "html_elements/gallery.php";
-        include_once "html_elements/carouselThree.php";
-        include_once "html_elements/faq.php";
-        include_once "html_elements/triangleGallery.php";
-        include_once "html_elements/carouselTitle.php";
-        include_once "html_elements/contactUs1.php";
-        include_once "html_elements/googleMaps.php";
-        include_once "html_elements/events.php";
-        include_once "html_elements/footerTicker.php"; */
+        include_once "html_elements/triangleLanderAndNav.php";
     ?>
 
     <!-- Begin of Contents -->
@@ -224,7 +214,6 @@
 
     <?php
         include_once "html_elements/footer.php";
-        //include_once "html_elements/footer2.php";
         include_once "html_elements/contactUsModal.php";
     ?>
 
