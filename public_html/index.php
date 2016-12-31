@@ -122,94 +122,100 @@
     </div>
     <!-- End of Portfolio -->
 
-
     <!-- Beginning of Student Application -->
-    <div class="container text-center">
-        <div class="row">
-            <div class="col-lg-12">
-                <h2>Developers Application
-                <br><small>Looking to make a difference? Join the Developer's Foundation team!</small>
-                </h2>
-                <a target="_blank" href="//docs.google.com/forms/d/e/1FAIpQLScbcCa9UQ3Sd0YluXTNGqyWOSPFtxeB8fcHGflkYnSSPUXSwg/viewform">
-                    <button type="button" class="btn btn-primary">APPLY</button>
-                </a>
+    <div id="student-application">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Developers Application
+                    <br><small>Looking to make a difference? Join the Developer's Foundation team!</small>
+                    </h2>
+                    <a target="_blank" href="//docs.google.com/forms/d/e/1FAIpQLScbcCa9UQ3Sd0YluXTNGqyWOSPFtxeB8fcHGflkYnSSPUXSwg/viewform">
+                        <button type="button" class="btn btn-primary">APPLY</button>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
     <!-- End of Student Application -->
 
     <!-- Beginning of Client Application -->
-    <div class="container text-center">
-        <div class="row">
-            <div class="col-lg-12">
-                <h2>Non-Profits Application
-                <br><small>Help us help you! Let a proven team of developers create a beautiful website for your NPO!</small>
-                </h2>
-                <a target="_blank" href="https://docs.google.com/forms/d/12kYXI8S7CoeBhEuf7ekzvFj3IuNinnBRhOVS9m4BKjg/viewform">
-                    <button type="button" class="btn btn-primary">APPLY</button>
-                </a>
+    <div id="client-application">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Non-Profits Application
+                    <br><small>Help us help you! Let a team of proven developers create a beautiful website for your NPO!</small>
+                    </h2>
+                    <a target="_blank" href="https://docs.google.com/forms/d/12kYXI8S7CoeBhEuf7ekzvFj3IuNinnBRhOVS9m4BKjg/viewform">
+                        <button type="button" class="btn btn-primary">APPLY</button>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
     <!-- End of Client Application -->
 
     <!-- Beginning of Exec -->
-    <div class="container">
-        <!-- Introduction Row -->
-        <div class="row">
-            <div class="col-lg-12">
-                <h1>Our Team</h1>
+    <div id="exec-team">
+        <div class="container">
+            <!-- Introduction Row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Our Team</h1>
+                </div>
             </div>
-        </div>
-        <hr>
-        <!-- Team Members Row -->
-        <div class="row">
-            <div class="col-lg-4 col-sm-6 text-center">
-                <img class="img-responsive" src="./assets/img/team/HarrisonC.jpg" alt="">
-                <h3>Harrison Chow
-                    <br><small>President</small>
-                </h3>
-            </div>
-            <div class="col-lg-4 col-sm-6 text-center">
-                <img class="img-responsive" src="./assets/img/team/MichaelP.jpg" alt="">
-                <h3>Michael Park
-                    <br><small>VP Tech</small>
-                </h3>
-            </div>
-            <div class="col-lg-4 col-sm-6 text-center">
-                <img class="img-responsive" src="./assets/img/team/ChristinaC.jpg" alt="">
-                <h3>Christina Chan
-                    <br><small>VP Design</small>
-                </h3>
-            </div>
-            <div class="col-lg-4 col-sm-6 text-center">
-                <img class="img-responsive" src="./assets/img/team/AnwarJ.jpg" alt="">
-                <h3>Anwar Jeffrey
-                    <br><small>VP Finance & Legal</small>
-                </h3>
-            </div>
-            <div class="col-lg-4 col-sm-6 text-center">
-                <img class="img-responsive" src="./assets/img/team/Placeholder.jpg" alt="">
-                <h3>Eun Su Shum
-                    <br><small>Techincal Product Manager</small>
-                </h3>
-            </div>
-            <div class="col-lg-4 col-sm-6 text-center">
-                <img class="img-responsive" src="./assets/img/team/Placeholder.jpg" alt="">
-                <h3>Paul Salvatore
-                    <br><small>Developer</small>
-                </h3>
-            </div>
-            <div class="col-lg-4 col-sm-6 text-center">
-                <img class="img-responsive" src="./assets/img/team/Placeholder.jpg" alt="">
-                <h3>Alex Madrzyk
-                    <br><small>Developer</small>
-                </h3>
+            <hr>
+            <!-- Team Members Row -->
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 text-center">
+                    <img class="img-responsive" src="./assets/img/team/HarrisonC.jpg" alt="">
+                    <h3>Harrison Chow
+                        <br><small>President</small>
+                    </h3>
+                </div>
+                <div class="col-lg-4 col-sm-6 text-center">
+                    <img class="img-responsive" src="./assets/img/team/MichaelP.jpg" alt="">
+                    <h3>Michael Park
+                        <br><small>VP Tech</small>
+                    </h3>
+                </div>
+                <div class="col-lg-4 col-sm-6 text-center">
+                    <img class="img-responsive" src="./assets/img/team/ChristinaC.jpg" alt="">
+                    <h3>Christina Chan
+                        <br><small>VP Design</small>
+                    </h3>
+                </div>
+                <div class="col-lg-4 col-sm-6 text-center">
+                    <img class="img-responsive" src="./assets/img/team/AnwarJ.jpg" alt="">
+                    <h3>Anwar Jeffrey
+                        <br><small>VP Finance & Legal</small>
+                    </h3>
+                </div>
+                <div class="col-lg-4 col-sm-6 text-center">
+                    <img class="img-responsive" src="./assets/img/team/Placeholder.jpg" alt="">
+                    <h3>Eun Su Shum
+                        <br><small>Techincal Product Manager</small>
+                    </h3>
+                </div>
+                <div class="col-lg-4 col-sm-6 text-center">
+                    <img class="img-responsive" src="./assets/img/team/Placeholder.jpg" alt="">
+                    <h3>Paul Salvatore
+                        <br><small>Developer</small>
+                    </h3>
+                </div>
+                <div class="col-lg-4 col-sm-6 text-center">
+                    <img class="img-responsive" src="./assets/img/team/Placeholder.jpg" alt="">
+                    <h3>Alex Madrzyk
+                        <br><small>Developer</small>
+                    </h3>
+                </div>
             </div>
         </div>
     </div>
     <!-- End of Exec -->
     <!-- End of Contents -->
+
     <?php
         include_once "html_elements/footer.php";
         //include_once "html_elements/footer2.php";
