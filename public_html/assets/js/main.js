@@ -24,7 +24,6 @@ function resizeEvent(){
     // Resize the shape of the polygon (the triangles)
 
     // Equilateral triangles
-    // $('#poly1').attr('points', point2 + ",0 0," + point1 + " " + point1 + "," + point1);
     $('.poly1').attr('points', point2 + ",0 0," + point1 + " " + point1 + "," + point1);
     $('.poly2').attr('points', "0,0 " + point1 + ",0 " + point2 + "," + point1);
 
@@ -63,6 +62,37 @@ function resizeEvent(){
         height: point1,
         transform: "translate(" + (mid + 2*(point2 + space)) + ", 0)"
     });
+
+
+
+    // Positioning of the labels in the center of the nav
+    // var navHeight = Math.floor($(this).height() * 0.07);
+    var navHeight = $(this).height() * 0.07;
+    var offset = (navHeight / Math.sqrt(3));           // adj=(height/tan(60)) since we are dealing with right angles
+
+    $('.triLbl').css('height', navHeight + "px");
+
+    $('#triLbl1').css({
+        left: 0 + "px",
+        width: point2 + "px"
+    });
+
+    $('#triLbl2').css({
+        left: (1*(space + point2) + offset) + "px",
+        width: (point1 - 2*offset) + "px"
+    });
+
+    $('#triLbl3').css({
+        left: (3*(space + point2) + offset) + "px",
+        width: (point1 - 2*offset) + "px"
+    });
+
+    $('#triLbl4').css({
+        left: (5*(space + point2)) + "px",
+        width: point2 + "px"
+    });
+
+
 
     // Whenever the screen is resized, we must also treat this event as if there was a scroll to reinitialize the nav bar.
     prevScroll = 0;
@@ -106,15 +136,14 @@ var prevScroll = 0;
 function scrollEvent() {
 
     // The nav bar will be 1/7th the size of the current screen height, therefore adjust this value.
-    var height = $(this).height();
-    var minHeight = Math.floor(height*0.07);
+    var minHeight = Math.floor($(this).height() * 0.07);
 
     var scroll = $(window).scrollTop();
     var curScroll = scroll - prevScroll;
     prevScroll = scroll;
     var curHeight = parseInt($('#svg1').attr('height'));
 
-    // If we scroll up, then we only begin extending the triangles at 50px (the size of the nav bar) at the point where the bar begins
+    // If we scroll up, then we only begin extending the triangles at the point where the bar begins
     if(curScroll < 0 && prevScroll <= point1 - minHeight){
         curHeight = Math.min(point1, curHeight - curScroll);
         $('#svg1').attr('height', curHeight);
@@ -129,12 +158,31 @@ function scrollEvent() {
     var opacity = minHeight/curHeight;
     $('.scrolledNav').attr('opacity', opacity);
 
+
+
+
+    // We only want the labels to appear when the navbar cover is completely opaque
     if(opacity == 1){
-        $('#triLabels').removeClass("hidden")
+        $('#triLabels').removeClass("hidden");
+
+
+
+        var padding = Math.floor(minHeight/3.5);
+
+        $('.triLbl').css({
+            "padding-top": padding + "px",
+            "padding-bottom": padding + "px",
+            "font-size": padding + 2 + "px"
+        });
+
+
+
     }
     else{
         $('#triLabels').addClass("hidden")
     }
+
+
 
 }
 
