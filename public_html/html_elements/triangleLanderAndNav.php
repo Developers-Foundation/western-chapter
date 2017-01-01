@@ -5,16 +5,15 @@ This module relies on code in main.js in order to properly function with resizin
 
 -->
 
+
 <nav class="navbar navbar-default navbar-fixed-top" id="triangleNav">
 
-
     <div class="row" id="triLabels">
-        <div class="col-xs-2 triLbl" id="triLbl1">Developers' Foundation</div>
-        <div class="col-xs-4 triLbl text-center" id="triLbl2">Our Work</div>
-        <div class="col-xs-4 triLbl text-center" id="triLbl3">Join Us</div>
-        <div class="col-xs-2 triLbl text-right" id="triLbl4">Misc Title</div>
+        <div class="triLbl text-center" id="triLbl1">1XXXXXXXXXXXX</div>
+        <div class="triLbl text-center" id="triLbl2">2XXXXXXXXXXXX</div>
+        <div class="triLbl text-center" id="triLbl3">3XXXXXXXXXXXX</div>
+        <div class="triLbl text-center" id="triLbl4">4XXXXXXXXXXXX</div>
     </div>
-
 
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="200" id="svg1">
         <defs>
@@ -55,19 +54,19 @@ This module relies on code in main.js in order to properly function with resizin
         <!-- We create each image and assign the required variables.
         Important variable to note are the clip-path (to create the triangle) and translate (so they aren't all overlapping) -->
         <image xlink:href="//placehold.it/500x500/800080" clip-path="url(#clip5)" class="im1 "></image>
-        <polygon class="poly5 im1 scrolledNav" fill="#EE82EE"></polygon>
+        <polygon class="poly5 im1 scrolledNav" fill="#4F2683"></polygon>
 
         <image xlink:href="//placehold.it/501x501/800080" clip-path="url(#clip2)" class="im2"></image>
-        <polygon class="poly2 im2 scrolledNav" fill="#EE82EE"></polygon>
+        <polygon class="poly2 im2 scrolledNav" fill="#4F2683"></polygon>
 
         <image xlink:href="//placehold.it/502x502/800080" clip-path="url(#clip1)" class="im3"></image>
-        <polygon class="poly1 im3 scrolledNav" fill="#EE82EE"></polygon>
+        <polygon class="poly1 im3 scrolledNav" fill="#4F2683"></polygon>
 
         <image xlink:href="//placehold.it/503x503/800080" clip-path="url(#clip2)" class="im4"></image>
-        <polygon class="poly2 im4 scrolledNav" fill="#EE82EE"></polygon>
+        <polygon class="poly2 im4 scrolledNav" fill="#4F2683"></polygon>
 
         <image xlink:href="//placehold.it/504x504/800080" clip-path="url(#clip6)" class="im5"></image>
-        <polygon class="poly6 im5 scrolledNav" fill="#EE82EE"></polygon>
+        <polygon class="poly6 im5 scrolledNav" fill="#4F2683"></polygon>
 
     </svg>
 </nav>

@@ -8,10 +8,10 @@
 }
 /*============================================ TRIANGLEGALLERY.PHP (incomplete) =====================================*/
 .triLbl {
-  padding-top: 15px;
-  font-size: 20px;
   pointer-events: none;
   color: ghostwhite;
+  position: absolute;
+  top: 0;
 }
 #triLabels {
   pointer-events: none;
@@ -20,5 +20,8 @@
 }
 .scrolledNav {
   pointer-events: none;
+}
+* {
+  border: solid 1px red;
 }
 /*============================================  =====================================*/
