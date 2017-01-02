@@ -19,13 +19,19 @@
 
 /*============================================ TRIANGLEGALLERY.PHP (incomplete) =====================================*/
 
-//@height: 20;
+@NAVHEIGHT: 40px;
+
+#triangleNav{
+  min-height: @NAVHEIGHT + 3px;
+  height: @NAVHEIGHT + 3px;
+}
 
 .triLbl {
   pointer-events: none;
   color: ghostwhite;
   position: absolute;
   top: 0;
+  height: @NAVHEIGHT;
 }
 
 #triLabels{
@@ -47,7 +53,7 @@
 }
 
 *{
-  border: solid 1px red;
+  //border: solid 1px red;
 }
 /*============================================  =====================================*/
 

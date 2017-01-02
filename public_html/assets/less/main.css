@@ -7,11 +7,16 @@
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 /*============================================ TRIANGLEGALLERY.PHP (incomplete) =====================================*/
+#triangleNav {
+  min-height: 43px;
+  height: 43px;
+}
 .triLbl {
   pointer-events: none;
   color: ghostwhite;
   position: absolute;
   top: 0;
+  height: 40px;
 }
 #triLabels {
   pointer-events: none;
@@ -26,8 +31,5 @@
 }
 .scrolledNav {
   pointer-events: none;
-}
-* {
-  border: solid 1px red;
 }
 /*============================================  =====================================*/

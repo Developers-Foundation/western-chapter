@@ -5,62 +5,64 @@
 
 // This point represents the width and height of each equilateral triangle.
 // This point will be used late to represent the maximal size of the nav bar.
-var point1;
+var TRIANGLE_BASE;
+var NAVHEIGHT = 40;
 
 function resizeEvent(){
-    var width = $(this).width();
-    point1 = Math.floor(width/3);
-    var point2 = Math.floor(width/6);
-    var space = Math.floor(width * 0.005);
-    var mid = Math.floor(width/2) - point2;
+    var windowWidth = $(this).width();
+    TRIANGLE_BASE = Math.floor(windowWidth/3);
+    var halfTriangleBase = Math.floor(windowWidth/6);
+    var space = Math.floor(windowWidth * 0.005);
+    var windowMid = Math.floor(windowWidth/2) - halfTriangleBase;
 
     $('#svg1').attr({
-        width: width,
-        height: point1
+        width: windowWidth,
+        height: TRIANGLE_BASE
     });
 
-    $('#spacer').css('margin-top', point1 + 15);
+    // We choose 15px as the space between each triangle.
+    $('#spacer').css('margin-top', TRIANGLE_BASE + 15);
 
     // Resize the shape of the polygon (the triangles)
 
     // Equilateral triangles
-    $('.poly1').attr('points', point2 + ",0 0," + point1 + " " + point1 + "," + point1);
-    $('.poly2').attr('points', "0,0 " + point1 + ",0 " + point2 + "," + point1);
+    $('.poly1').attr('points', halfTriangleBase + ",0 0," + TRIANGLE_BASE + " " + TRIANGLE_BASE + "," + TRIANGLE_BASE);
+    $('.poly2').attr('points', "0,0 " + TRIANGLE_BASE + ",0 " + halfTriangleBase + "," + TRIANGLE_BASE);
 
     // Square end triangles
-    $('.poly5').attr('points', "0,0 " + point2 +",0 " + point1 +"," + point1 + " 0," + point1);
-    $('.poly6').attr('points', point1 + ",0 " + point1 + "," + point1 + " 0," + point1 + " " + point2 + ",0");
+    $('.poly5').attr('points', "0,0 " + halfTriangleBase +",0 " + TRIANGLE_BASE +"," + TRIANGLE_BASE + " 0," + TRIANGLE_BASE);
+    $('.poly6').attr('points', TRIANGLE_BASE + ",0 " + TRIANGLE_BASE + "," + TRIANGLE_BASE + " 0," + TRIANGLE_BASE + " " + halfTriangleBase + ",0");
 
 
     // Retranslate and resize based on the window size.
     $('.im1').attr({
-        width: point1,
-        height: point1,
-        transform: "translate(" + (mid - 2*(point2 + space)) + ", 0)"
+        width: TRIANGLE_BASE,
+        height: TRIANGLE_BASE,
+        transform: "translate(" + (windowMid - 2*(halfTriangleBase + space)) + ", 0)"
     });
 
     $('.im2').attr({
-        width: point1,
-        height: point1,
-        transform: "translate(" + (mid - 1*(point2 + space)) + ", 0)"
+        width: TRIANGLE_BASE,
+        height: TRIANGLE_BASE,
+        transform: "translate(" + (windowMid - 1*(halfTriangleBase + space)) + ", 0)"
     });
 
     $('.im3').attr({
-        width: point1,
-        height: point1,
-        transform: "translate(" + (mid) + ", 0)"
+        width: TRIANGLE_BASE,
+        height: TRIANGLE_BASE,
+        transform: "translate(" + (windowMid) + ", 0)"
     });
 
     $('.im4').attr({
-        width: point1,
-        height: point1,
-        transform: "translate(" + (mid + 1*(point2 + space)) + ", 0)"
+        width: TRIANGLE_BASE,
+        height: TRIANGLE_BASE,
+        transform: "translate(" + (windowMid + 1*(halfTriangleBase + space)) + ", 0)"
     });
 
     $('.im5').attr({
-        width: point1,
-        height: point1,
-        transform: "translate(" + (mid + 2*(point2 + space)) + ", 0)"
+        width: TRIANGLE_BASE,
+        height: TRIANGLE_BASE,
+        transform: "translate(" + (windowMid + 2*(halfTriangleBase + space)) + ", 0)"
     });
 
 
@@ -70,29 +72,26 @@ function resizeEvent(){
 
 
     // Positioning of the labels in the center of the nav
-    var navHeight = Math.max(Math.floor($(this).height() * 0.07), 40);
-    var offset = (navHeight / Math.sqrt(3));           // adj=(height/tan(60)) since we are dealing with right angles
-
-    $('.triLbl').css('height', navHeight + "px");
+    var offset = (NAVHEIGHT / Math.sqrt(3));           // adj=(height/tan(60)) since we are dealing with right angles
 
     $('#triLbl1').css({
         left: 0 + "px",
-        width: point2 + "px"
+        width: halfTriangleBase + "px"
     });
 
     $('#triLbl2').css({
-        left: (1*(space + point2) + offset) + "px",
-        width: (point1 - 2*offset) + "px"
+        left: (1*(space + halfTriangleBase) + offset) + "px",
+        width: (TRIANGLE_BASE - 2*offset) + "px"
     });
 
     $('#triLbl3').css({
-        left: (3*(space + point2) + offset) + "px",
-        width: (point1 - 2*offset) + "px"
+        left: (3*(space + halfTriangleBase) + offset) + "px",
+        width: (TRIANGLE_BASE - 2*offset) + "px"
     });
 
     $('#triLbl4').css({
-        left: (5*(space + point2)) + "px",
-        width: point2 + "px"
+        left: (5*(space + halfTriangleBase)) + "px",
+        width: halfTriangleBase + "px"
     });
 
 
@@ -140,27 +139,24 @@ var prevScroll = 0;
 
 function scrollEvent() {
 
-    // The nav bar will be 1/7th the size of the current screen height, therefore adjust this value.
-    var minHeight = Math.max(Math.floor($(this).height() * 0.07), 40);
-
     var scroll = $(window).scrollTop();
     var curScroll = scroll - prevScroll;
     prevScroll = scroll;
     var curHeight = parseInt($('#svg1').attr('height'));
 
     // If we scroll up, then we only begin extending the triangles at the point where the bar begins
-    if(curScroll < 0 && prevScroll <= point1 - minHeight){
-        curHeight = Math.min(point1, curHeight - curScroll);
+    if(curScroll < 0 && prevScroll <= TRIANGLE_BASE - NAVHEIGHT){
+        curHeight = Math.min(TRIANGLE_BASE, curHeight - curScroll);
         $('#svg1').attr('height', curHeight);
     }
 
     // Begin shrinking until we reach a certain point
-    else if(curScroll > 0 && curHeight > minHeight){
-        curHeight = Math.max(minHeight, curHeight - curScroll);
+    else if(curScroll > 0 && curHeight > NAVHEIGHT){
+        curHeight = Math.max(NAVHEIGHT, curHeight - curScroll);
         $('#svg1').attr('height', curHeight);
     }
 
-    var opacity = minHeight/curHeight;
+    var opacity = NAVHEIGHT/curHeight;
     $('.scrolledNav').attr('opacity', opacity);
 
 
@@ -168,14 +164,13 @@ function scrollEvent() {
 
     // We only want the labels to appear when the navbar cover is completely opaque
     if(opacity == 1){
-        SHOWING = 1;
         $('#triLabels').removeClass("hidden");
 
-        var padding = Math.floor(minHeight/6) + "px";
+        var padding = Math.floor(NAVHEIGHT/6) + "px";
 
         $('.triLbl').css({
             "padding-top": padding,
-            "font-size": 0.50 * minHeight
+            "font-size": 0.50 * NAVHEIGHT
         });
 
     }
@@ -194,10 +189,6 @@ $(function jQueryScroll (){
     });
 });
 
-// Use this to adjust the page when it is loaded for the first time (may not necessarily be loaded at the top of the page).
-$(function (){
-    scrollEvent();
-});
 
 /* ----------------------------------------------------------- */
 /* End of scroll effect triangle gallery.
