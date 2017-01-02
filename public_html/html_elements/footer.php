@@ -33,7 +33,7 @@ A simple footer module providing social media links as well as links to other pa
             </div>
 
             <div class="col-sm-12 text-center" id="footerText">
-                <p>Copyright &copy; 2016. Developers' Foundation. All rights reserved.</a></p>
+                <p>Copyright &copy; 2017. Developers' Foundation. All rights reserved.</a></p>
             </div>
         </div>
     </div>
