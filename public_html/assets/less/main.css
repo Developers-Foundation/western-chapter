@@ -6,7 +6,7 @@
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
-/*============================================ TRIANGLEGALLERY.PHP (incomplete) =====================================*/
+/*============================================ TRIANGLEGALLERY.PHP =====================================*/
 #triangleNav {
   min-height: 43px;
   height: 43px;
@@ -17,6 +17,10 @@
   position: absolute;
   top: 0;
   height: 40px;
+  text-transform: uppercase;
+  font-weight: 900;
+  padding-top: 10px;
+  font-size: 16px;
 }
 #triLabels {
   pointer-events: none;
@@ -32,4 +36,42 @@
 .scrolledNav {
   pointer-events: none;
 }
-/*============================================  =====================================*/
+/*============================================ NAVBAR.PHP =====================================*/
+.navbar-custom {
+  background: #4F2683;
+  font-weight: 700;
+  border: none;
+}
+.navbar-custom .navbar-nav li a:hover {
+  color: #807F83;
+  outline: 0;
+}
+.navbar-custom .navbar-toggle {
+  color: white;
+  border-color: white;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+.navbar-custom .navbar-toggle:hover,
+.navbar-custom .navbar-toggle:focus {
+  background-color: #807F83;
+}
+#mobileNavLbl {
+  font-size: 7px;
+}
+@media (min-width: 490px) {
+  #mobileNavLbl {
+    font-size: 18px;
+  }
+}
+@media (min-width: 390px) and (max-width: 489px) {
+  #mobileNavLbl {
+    font-size: 13px;
+  }
+}
+@media (min-width: 310px) and (max-width: 389px) {
+  #mobileNavLbl {
+    font-size: 9px;
+  }
+}
+/*============================================   =====================================*/
