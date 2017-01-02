@@ -1,28 +1,27 @@
-<!-- Navigation -->
-<nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+<nav id="mobileNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header page-scroll">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navTarget">
                 <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
             </button>
-            <a class="navbar-brand" href="#page-top">Blank Bootstrap</a>
+            <a class="navbar-brand" href="#mission-statement" id="mobileNavLbl">Western Developers' Foundation</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <div class="collapse navbar-collapse" id="navTarget">
             <ul class="nav navbar-nav navbar-right">
-                <li class="hidden">
-                    <a href="#page-top"></a>
+                <li class="page-scroll">
+                    <a href="#">Sponsors</a>
                 </li>
                 <li class="page-scroll">
-                    <a href="#teamCarousel">Portfolio</a>
+                    <a href="#mission-statement">Our Story</a>
                 </li>
                 <li class="page-scroll">
-                    <a href="#faq">FAQ</a>
+                    <a href="#portfolio">Our Team and Work</a>
                 </li>
                 <li class="page-scroll">
-                    <a href="#mailerForm">Contact</a>
+                    <a href="#student-application">Application</a>
                 </li>
             </ul>
         </div>
