@@ -65,9 +65,12 @@ function resizeEvent(){
 
 
 
+
+
+
+
     // Positioning of the labels in the center of the nav
-    // var navHeight = Math.floor($(this).height() * 0.07);
-    var navHeight = $(this).height() * 0.07;
+    var navHeight = Math.max(Math.floor($(this).height() * 0.07), 40);
     var offset = (navHeight / Math.sqrt(3));           // adj=(height/tan(60)) since we are dealing with right angles
 
     $('.triLbl').css('height', navHeight + "px");
@@ -100,6 +103,7 @@ function resizeEvent(){
 
 }
 
+
 // Whenever a window is resized we need to update the sizes of the triangles (for responsiveness)
 $(function jQueryResize (){
     $(window).resize(function(){
@@ -126,6 +130,7 @@ $(function (){
 
 
 
+
 /* ----------------------------------------------------------- */
 /* Scroll effect triangle gallery.
  /* ----------------------------------------------------------- */
@@ -136,7 +141,7 @@ var prevScroll = 0;
 function scrollEvent() {
 
     // The nav bar will be 1/7th the size of the current screen height, therefore adjust this value.
-    var minHeight = Math.floor($(this).height() * 0.07);
+    var minHeight = Math.max(Math.floor($(this).height() * 0.07), 40);
 
     var scroll = $(window).scrollTop();
     var curScroll = scroll - prevScroll;
@@ -163,19 +168,15 @@ function scrollEvent() {
 
     // We only want the labels to appear when the navbar cover is completely opaque
     if(opacity == 1){
+        SHOWING = 1;
         $('#triLabels').removeClass("hidden");
 
-
-
-        var padding = Math.floor(minHeight/3.5);
+        var padding = Math.floor(minHeight/6) + "px";
 
         $('.triLbl').css({
-            "padding-top": padding + "px",
-            "padding-bottom": padding + "px",
-            "font-size": padding + 2 + "px"
+            "padding-top": padding,
+            "font-size": 0.50 * minHeight
         });
-
-
 
     }
     else{

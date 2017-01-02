@@ -9,11 +9,12 @@ This module relies on code in main.js in order to properly function with resizin
 <nav class="navbar navbar-default navbar-fixed-top" id="triangleNav">
 
     <div class="row" id="triLabels">
-        <div class="triLbl text-center" id="triLbl1">1XXXXXXXXXXXX</div>
+        <div class="triLbl text-center" id="triLbl1">1XXXXXXX</div>
         <div class="triLbl text-center" id="triLbl2">2XXXXXXXXXXXX</div>
         <div class="triLbl text-center" id="triLbl3">3XXXXXXXXXXXX</div>
-        <div class="triLbl text-center" id="triLbl4">4XXXXXXXXXXXX</div>
+        <div class="triLbl text-center" id="triLbl4">4XXXXXXX</div>
     </div>
+
 
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="200" id="svg1">
         <defs>
