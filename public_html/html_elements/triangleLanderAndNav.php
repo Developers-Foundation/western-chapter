@@ -54,19 +54,19 @@ This module relies on code in main.js in order to properly function with resizin
 
         <!-- We create each image and assign the required variables.
         Important variable to note are the clip-path (to create the triangle) and translate (so they aren't all overlapping) -->
-        <image xlink:href="//placehold.it/500x500/800080" clip-path="url(#clip5)" class="im1"></image>
+        <image xlink:href="//placehold.it/500x500/800080" clip-path="url(#clip5)" class="im1" id="landerImage1"></image>
         <polygon class="poly5 im1 scrolledNav" fill="#4F2683"></polygon>
 
-        <image xlink:href="//placehold.it/501x501/800080" clip-path="url(#clip2)" class="im2"></image>
+        <image xlink:href="//placehold.it/501x501/800080" clip-path="url(#clip2)" class="im2" id="landerImage2"></image>
         <polygon class="poly2 im2 scrolledNav" fill="#4F2683"></polygon>
 
-        <image xlink:href="//placehold.it/502x502/800080" clip-path="url(#clip1)" class="im3"></image>
+        <image xlink:href="//placehold.it/502x502/800080" clip-path="url(#clip1)" class="im3" id="landerImage3"></image>
         <polygon class="poly1 im3 scrolledNav" fill="#4F2683"></polygon>
 
-        <image xlink:href="//placehold.it/503x503/800080" clip-path="url(#clip2)" class="im4"></image>
+        <image xlink:href="//placehold.it/503x503/800080" clip-path="url(#clip2)" class="im4" id="landerImage4"></image>
         <polygon class="poly2 im4 scrolledNav" fill="#4F2683"></polygon>
 
-        <image xlink:href="//placehold.it/504x504/800080" clip-path="url(#clip6)" class="im5"></image>
+        <image xlink:href="//placehold.it/504x504/800080" clip-path="url(#clip6)" class="im5" id="landerImage5"></image>
         <polygon class="poly6 im5 scrolledNav" fill="#4F2683"></polygon>
 
     </svg>
@@ -78,6 +78,4 @@ This module relies on code in main.js in order to properly function with resizin
 <?php
 include_once "navBar.php";
 ?>
-
-<!--change for a push-->
 
