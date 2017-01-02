@@ -84,3 +84,36 @@
   }
 }
 /*============================================  =====================================*/
+/* Beginning of mission statement */
+/* End of mission statement */
+/* Beginning of What We Do */
+/* End of What We Do */
+/* Beginning of Portfolio */
+#portfolio .col-md-4 {
+  margin-bottom: -50px;
+}
+#portfolio .project > h4 {
+  position: relative;
+  bottom: 150px;
+  color: #4F2683;
+  visibility: hidden;
+}
+#portfolio .project:hover > h4 {
+  visibility: visible;
+}
+#portfolio .project > small {
+  position: relative;
+  bottom: 150px;
+  color: #4F2683;
+  visibility: hidden;
+}
+#portfolio .project:hover > small {
+  visibility: visible;
+}
+#portfolio .project:hover > img {
+  opacity: 0.3;
+}
+a:hover {
+  color: #4F2683;
+}
+/* End of Portfolio */
