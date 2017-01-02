@@ -114,3 +114,46 @@
 }
 
 /*============================================  =====================================*/
+/* Beginning of mission statement */
+
+/* End of mission statement */
+/* Beginning of What We Do */
+
+/* End of What We Do */
+/* Beginning of Portfolio */
+@OPACITY: 0.3;
+@PURPLE: #4F2683;
+#portfolio  .col-md-4{
+  margin-bottom: -50px;
+}
+
+#portfolio  .project >  h4{
+  position: relative;
+  bottom: 150px;
+  color: @PURPLE;
+  visibility: hidden;
+ }
+
+#portfolio  .project:hover  > h4{
+  visibility: visible;
+}
+
+#portfolio  .project >  small{
+  position: relative;
+  bottom: 150px;
+  color: @PURPLE;
+  visibility: hidden;
+}
+
+#portfolio  .project:hover  > small{
+  visibility: visible;
+}
+
+#portfolio  .project:hover  > img{
+  opacity: @OPACITY;
+}
+
+a:hover{
+  color: @PURPLE;
+}
+/* End of Portfolio */
