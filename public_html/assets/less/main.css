@@ -6,7 +6,7 @@
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
-/*============================================ TRIANGLEGALLERY.PHP =====================================*/
+/*============================================ TRIANGLELANDERANDNAV.PHP =====================================*/
 #triangleNav {
   min-height: 43px;
   height: 43px;
@@ -22,6 +22,15 @@
   padding-top: 10px;
   font-size: 16px;
 }
+@media (min-width: 1024px) {
+  .triLbl {
+    font-size: 18px;
+  }
+}
+.triLbl:hover {
+  cursor: pointer;
+  color: yellow;
+}
 #triLabels {
   pointer-events: none;
   position: fixed;
@@ -31,10 +40,10 @@
   padding-left: 2%;
 }
 #triLbl4 {
-  padding-right: 2%;
+  padding-right: 1%;
 }
-.scrolledNav {
-  pointer-events: none;
+.scrolledNav:hover {
+  cursor: pointer;
 }
 /*============================================ NAVBAR.PHP =====================================*/
 .navbar-custom {
@@ -54,7 +63,7 @@
 }
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
-  background-color: #807F83;
+  background-color: #6731ab;
 }
 #mobileNavLbl {
   font-size: 7px;
@@ -74,4 +83,4 @@
     font-size: 9px;
   }
 }
-/*============================================   =====================================*/
+/*============================================  =====================================*/

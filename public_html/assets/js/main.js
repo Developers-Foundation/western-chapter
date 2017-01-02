@@ -16,7 +16,7 @@ function resizeEvent(){
     var space = Math.floor(windowWidth * 0.005);
     var windowMid = Math.floor(windowWidth/2) - halfTriangleBase;
 
-    if(windowWidth <= 820){
+    if(windowWidth <= 750){
 
         // If we are just changing screens to mobile sized we need to switch the navbar.
         if(MOBILE == 0 || MOBILE == -1) {
@@ -96,12 +96,12 @@ function resizeEvent(){
         });
 
         $('#triLbl2').css({
-            left: (1 * (space + halfTriangleBase) + offset) + "px",
+            left: (1 * (space + halfTriangleBase) + offset + 10) + "px",
             width: (TRIANGLE_BASE - 2 * offset) + "px"
         });
 
         $('#triLbl3').css({
-            left: (3 * (space + halfTriangleBase) + offset) + "px",
+            left: (3 * (space + halfTriangleBase) + offset + 10) + "px",
             width: (TRIANGLE_BASE - 2 * offset) + "px"
         });
 
@@ -175,13 +175,12 @@ function scrollEvent() {
     $('.scrolledNav').attr('opacity', opacity);
 
 
-
     // We only want the labels to appear when the navbar cover is completely opaque.
     if(opacity == 1){
         $('#triLabels').removeClass("hidden");
     }
     else{
-        $('#triLabels').addClass("hidden")
+        $('#triLabels').addClass("hidden");
     }
 
 
@@ -198,7 +197,7 @@ $(function jQueryScroll (){
 
 /* ----------------------------------------------------------- */
 /* End of scroll effect triangle gallery.
- /* ----------------------------------------------------------- */
+/* ----------------------------------------------------------- */
 
 
 
@@ -208,11 +207,11 @@ $(function jQueryScroll (){
 
 /* ----------------------------------------------------------- */
 /* jQuery events.
- /* ----------------------------------------------------------- */
+/* ----------------------------------------------------------- */
 
 function smoothScroll(id){
     $('html').animate({
-        scrollTop: $(id).offset().top - 50
+        scrollTop: $(id).offset().top - 40
     }, 1000);
 }
 
@@ -222,24 +221,24 @@ $(function imageSelectors () {
 
     // Sponsors
     $('.im1').on('click', function() {
-        smoothScroll('#');
+        smoothScroll('#svg1');
     }).hover(function() {
-            $(this).css('opacity', 0.7)
+            $('#landerImage1').css('opacity', 0.7)
         },
         function(){
-            $(this).css('opacity', 1.0)
+            $('#landerImage1').css('opacity', 1.0)
         }
     );
 
     // Our Story
     $('.im2').on('click', function() {
-        smoothScroll('#');
+        smoothScroll('#mission-statement');
 
     }).hover(function() {
-            $(this).css('opacity', 0.7)
+            $('#landerImage2').css('opacity', 0.7)
         },
         function(){
-            $(this).css('opacity', 1.0)
+            $('#landerImage2').css('opacity', 1.0)
         }
     );
 
@@ -247,33 +246,41 @@ $(function imageSelectors () {
     $('.im3').on('click', function() {
         window.location.href = "//developersfoundation.ca";
     }).hover(function() {
-            $(this).css('opacity', 0.7)
+            $('#landerImage3').css('opacity', 0.7)
         },
         function(){
-            $(this).css('opacity', 1.0)
+            $('#landerImage3').css('opacity', 1.0)
         }
     );
 
     // Our Team and Work
     $('.im4').on('click', function() {
-        smoothScroll('#');
+        smoothScroll('#portfolio');
 
     }).hover(function() {
-            $(this).css('opacity', 0.7)
+            $('#landerImage4').css('opacity', 0.7)
         },
         function(){
-            $(this).css('opacity', 1.0)
+            $('#landerImage4').css('opacity', 1.0)
         }
     );
 
     // Application
     $('.im5').on('click', function() {
-        smoothScroll('#');
+        smoothScroll('#student-application');
     }).hover(function() {
-            $(this).css('opacity', 0.7)
+            $('#landerImage5').css('opacity', 0.7)
         },
         function(){
-            $(this).css('opacity', 1.0)
+            $('#landerImage5').css('opacity', 1.0)
+        }
+    );
+
+    $('.scrolledNav').hover(function () {
+        $(this).attr('fill', '#6731ab')
+    },
+        function () {
+            $(this).attr('fill', '#4F2683')
         }
     );
 

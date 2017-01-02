@@ -17,7 +17,7 @@
 
 
 
-/*============================================ TRIANGLEGALLERY.PHP =====================================*/
+/*============================================ TRIANGLELANDERANDNAV.PHP =====================================*/
 
 @NAVHEIGHT: 40px;
 
@@ -34,9 +34,17 @@
   height: @NAVHEIGHT;
   text-transform: uppercase;
   font-weight: 900;
-
   padding-top: 10px;
-  font-size: 0.40 * @NAVHEIGHT;
+
+  @media(min-width: 1024px){
+    font-size: 0.45 * @NAVHEIGHT;
+  }
+  font-size: 0.4 * @NAVHEIGHT;
+
+  &:hover{
+    cursor: pointer;
+    color: yellow;
+  }
 }
 
 #triLabels{
@@ -50,19 +58,19 @@
 }
 
 #triLbl4{
-  padding-right: 2%;
+  padding-right: 1%;
 }
 
 .scrolledNav{
-  pointer-events: none;
+  &:hover{
+    cursor: pointer;
+  }
 }
 
-*{
-  //border: solid 1px red;
-}
 /*============================================ NAVBAR.PHP =====================================*/
 
 @WESTERN_PURPLE: #4F2683;
+@LIGHTER_PURPLE: lighten(@WESTERN_PURPLE, 10%);
 @WESTERN_GRAY: #807F83;
 
 .navbar-custom {
@@ -86,7 +94,7 @@
     text-transform: uppercase;
 
     &:hover, &:focus{
-      background-color: @WESTERN_GRAY;
+      background-color: @LIGHTER_PURPLE;
     }
   }
 
@@ -105,4 +113,4 @@
   font-size: 7px;
 }
 
-/*============================================   =====================================*/
+/*============================================  =====================================*/
