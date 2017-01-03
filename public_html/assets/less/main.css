@@ -136,7 +136,7 @@
   background-repeat: no-repeat;
   color: white;
 }
--.apply-developer {
+.apply-developer {
   height: 30vh;
   min-height: 200px;
   padding: none;
@@ -145,7 +145,7 @@
   background-repeat: no-repeat;
   color: white;
 }
-- .parent-zoom {
+.parent-zoom {
   overflow: hidden;
   padding: 0;
 }
