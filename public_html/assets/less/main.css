@@ -126,3 +126,53 @@
   color: #4F2683;
 }
 /* End of Portfolio */
+/* Applications */
+.apply-npo {
+  height: 30vh;
+  min-height: 200px;
+  padding: none;
+  background: url("../img/join/join1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+-.apply-developer {
+  height: 30vh;
+  min-height: 200px;
+  padding: none;
+  background: url("../img/join/join2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+- .parent-zoom {
+  overflow: hidden;
+  padding: 0;
+}
+.parent-zoom a {
+  display: block;
+  cursor: pointer;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+  text-decoration: none;
+}
+.parent-zoom a:hover {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+#application > div > div > div.col-md-6.apply-developer > h1,
+h2 {
+  margin-top: 0px;
+}
+#application > div > div > div.col-md-6.apply-npo > h1,
+h2 > small {
+  color: white;
+}
+/* Executives */
+.col-lg-4.col-sm-6.text-center {
+  padding-bottom: 20px;
+}
