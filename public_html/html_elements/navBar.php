@@ -21,7 +21,7 @@
                     <a href="#portfolio">Our Team and Work</a>
                 </li>
                 <li class="page-scroll">
-                    <a href="#student-application">Application</a>
+                    <a href="#application">Application</a>
                 </li>
             </ul>
         </div>
