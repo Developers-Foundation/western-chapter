@@ -149,20 +149,19 @@
             <div class="col-lg-12">
                 <h1>APPLY NOW</h1>
             </div>
-            <div class="col-md-6 apply-npo">
-                <h2>Non-Profits Application
-                <br><br><small>Help us help you! Let a team of proven developers create a beautiful website for your NPO!</small>
-                </h2>
-                <a target="_blank" href="https://docs.google.com/forms/d/12kYXI8S7CoeBhEuf7ekzvFj3IuNinnBRhOVS9m4BKjg/viewform">
-                    <button type="button" class="btn btn-primary">APPLY</button>
+            <div class="col-md-6 parent-zoom">
+                <a href="google.ca" class="apply-npo">
+                    <h2>Non-Profits Application
+                    <br><br><small>Help us help you! Let a team of proven developers create a beautiful website for your NPO!</small>
+                    </h2>
                 </a>
             </div>
-            <div class="col-md-6 apply-developer">
-                <h2>Developers Application
-                <br><br><small>Looking to make a difference? Join the Developer's Foundation team!</small>
-                </h2>
-                <a target="_blank" href="//docs.google.com/forms/d/e/1FAIpQLScbcCa9UQ3Sd0YluXTNGqyWOSPFtxeB8fcHGflkYnSSPUXSwg/viewform">
-                    <button type="button" class="btn btn-primary">APPLY</button>
+
+            <div class="col-md-6 parent-zoom">
+                <a href="google.ca" class="apply-developer">
+                    <h2>Students Application
+                    <br><br><small>Looking to make a difference? Join the Developer's Foundation team!</small>
+                    </h2>
                 </a>
             </div>
         </div>
