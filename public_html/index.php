@@ -47,12 +47,12 @@
 <!-- Begin of Contents -->
 <!-- Beginning of Mission Statement -->
 <div id="mission-statement" class="section">
-    <div class="container text-center">
+    <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <h1>MISSION Statement: Build Something MEANINGFUL</h1>
             </div>
-            <div class="col-md-6 col-md-offset-3">
+            <div class="col-md-6 col-md-offset-3 text-center">
                 <p>
                     We want to help underserved communities to become sustainably independent, through the leverage of
                     technology.
@@ -67,18 +67,18 @@
 <!-- End of Mission Statement -->
 <!-- Beginning of What We Do -->
 <div id="what-we-do" class="section">
-    <div class="container text-center">
+    <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <h1>What We Do</h1>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 text-center">
                 <h2>UX/UI Design</h2>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 text-center">
                 <h2>Web Design</h2>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 text-center">
                 <h2>Marketing</h2>
             </div>
             <hr>
@@ -88,47 +88,47 @@
 <!-- End of of What We Do -->
 <!-- Beginning of Portfolio -->
 <div id="portfolio" class="section">
-    <div class="container text-center">
+    <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <h1>Portfolio</h1>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 text-center">
                 <a class="project" target="_blank" href="#">
                     <img class="img-responsive" src="assets/img/portfolio/preview.png">
                     <h4>Preview 1</h4>
                     <small>Description</small>
                 </a>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 text-center">
                 <a class="project" target="_blank" href="#">
                     <img class="img-responsive" src="assets/img/portfolio/preview.png">
                     <h4>Preview 2</h4>
                     <small>Description</small>
                 </a>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 text-center">
                 <a class="project" target="_blank" href="#">
                     <img class="img-responsive" src="assets/img/portfolio/preview.png">
                     <h4>Preview 3</h4>
                     <small>Description</small>
                 </a>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 text-center">
                 <a class="project" target="_blank" href="#">
                     <img class="img-responsive" src="assets/img/portfolio/preview.png">
                     <h4>Preview 4</h4>
                     <small>Description</small>
                 </a>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 text-center">
                 <a class="project" target="_blank" href="#">
                     <img class="img-responsive" src="assets/img/portfolio/preview.png">
                     <h4>Preview 5</h4>
                     <small>Description</small>
                 </a>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 text-center">
                 <a class="project" target="_blank" href="#">
                     <img class="img-responsive" src="assets/img/portfolio/preview.png">
                     <h4>Preview 6</h4>

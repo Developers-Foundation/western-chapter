@@ -87,7 +87,6 @@
 /* Beginning of mission statement */
 /* End of mission statement */
 /* Beginning of What We Do */
-/* End of What We Do */
 #what-we-do {
   background-color: rebeccapurple;
 }
@@ -97,6 +96,7 @@
 #what-we-do h2 {
   color: white;
 }
+/* End of What We Do */
 /* Beginning of Portfolio */
 #portfolio .col-md-4 {
   margin-bottom: -50px;
