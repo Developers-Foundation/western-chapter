@@ -142,6 +142,27 @@ a:hover {
     color: white;
 }
 
+.parent-zoom {
+    overflow: hidden;
+    padding: 0;
+}
+.parent-zoom a {
+    display: block;
+    cursor: pointer;
+    text-decoration: none;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    text-decoration: none;
+}
+.parent-zoom a:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
 #application > div > div > div.col-md-6.apply-developer > h1, h2 {
     margin-top: 0px;
 }
