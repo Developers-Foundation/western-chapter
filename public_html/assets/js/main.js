@@ -210,7 +210,7 @@ $(function jQueryScroll (){
 /* ----------------------------------------------------------- */
 
 function smoothScroll(id){
-    $('html').animate({
+    $('html, body').animate({
         scrollTop: $(id).offset().top - 40
     }, 1000);
 }
@@ -232,6 +232,7 @@ $(function imageSelectors () {
 
     // Our Story
     $('.im2').on('click', function() {
+        console.log('clicked');
         smoothScroll('#mission-statement');
 
     }).hover(function() {
@@ -267,7 +268,7 @@ $(function imageSelectors () {
 
     // Application
     $('.im5').on('click', function() {
-        smoothScroll('#student-application');
+        smoothScroll('#application');
     }).hover(function() {
             $('#landerImage5').css('opacity', 0.7)
         },
