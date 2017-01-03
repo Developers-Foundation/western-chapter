@@ -2,7 +2,7 @@
 
 .box-shadow(@style, @c) when (iscolor(@c)) {
   -webkit-box-shadow: @style @c;
-  box-shadow:         @style @c;
+  box-shadow: @style @c;
 }
 
 .box-shadow(@style, @alpha: 50%) when (isnumber(@alpha)) {
@@ -12,16 +12,16 @@
 .box {
   color: saturate(@base, 5%);
   border-color: lighten(@base, 30%);
-  div { .box-shadow(0 0 5px, 30%) }
+  div {
+    .box-shadow(0 0 5px, 30%)
+  }
 }
-
-
 
 /*============================================ TRIANGLELANDERANDNAV.PHP =====================================*/
 
 @NAVHEIGHT: 40px;
 
-#triangleNav{
+#triangleNav {
   min-height: @NAVHEIGHT + 3px;
   height: @NAVHEIGHT + 3px;
 }
@@ -36,33 +36,33 @@
   font-weight: 900;
   padding-top: 10px;
 
-  @media(min-width: 1024px){
+  @media (min-width: 1024px) {
     font-size: 0.45 * @NAVHEIGHT;
   }
   font-size: 0.4 * @NAVHEIGHT;
 
-  &:hover{
+  &:hover {
     cursor: pointer;
     color: yellow;
   }
 }
 
-#triLabels{
+#triLabels {
   pointer-events: none;
   position: fixed;
   width: 100%;
 }
 
-#triLbl1{
+#triLbl1 {
   padding-left: 2%;
 }
 
-#triLbl4{
+#triLbl4 {
   padding-right: 1%;
 }
 
-.scrolledNav{
-  &:hover{
+.scrolledNav {
+  &:hover {
     cursor: pointer;
   }
 }
@@ -87,27 +87,27 @@
       }
     }
   }
-  .navbar-toggle{
+  .navbar-toggle {
     color: white;
     border-color: white;
     font-size: 10px;
     text-transform: uppercase;
 
-    &:hover, &:focus{
+    &:hover, &:focus {
       background-color: @LIGHTER_PURPLE;
     }
   }
 
 }
 
-#mobileNavLbl{
-  @media(min-width: 490px){
+#mobileNavLbl {
+  @media (min-width: 490px) {
     font-size: 18px;
   }
-  @media(min-width: 390px) and (max-width: 489px){
+  @media (min-width: 390px) and (max-width: 489px) {
     font-size: 13px;
   }
-  @media(min-width: 310px) and (max-width: 389px){
+  @media (min-width: 310px) and (max-width: 389px) {
     font-size: 9px;
   }
   font-size: 7px;
@@ -120,51 +120,111 @@
 /* Beginning of What We Do */
 
 /* End of What We Do */
-@WWDCOLOR:rebeccapurple;
-#what-we-do{
+@WWDCOLOR: rebeccapurple;
+#what-we-do {
   background-color: @WWDCOLOR;
 }
 
-#what-we-do  h1{
+#what-we-do h1 {
   color: white;
 }
-#what-we-do  h2{
+
+#what-we-do h2 {
   color: white;
 }
+
 /* Beginning of Portfolio */
 @OPACITY: 0.3;
 @PURPLE: #4F2683;
-#portfolio  .col-md-4{
+#portfolio .col-md-4 {
   margin-bottom: -50px;
 }
 
-#portfolio  .project >  h4{
-  position: relative;
-  bottom: 150px;
-  color: @PURPLE;
-  visibility: hidden;
- }
-
-#portfolio  .project:hover  > h4{
-  visibility: visible;
-}
-
-#portfolio  .project >  small{
+#portfolio .project > h4 {
   position: relative;
   bottom: 150px;
   color: @PURPLE;
   visibility: hidden;
 }
 
-#portfolio  .project:hover  > small{
+#portfolio .project:hover > h4 {
   visibility: visible;
 }
 
-#portfolio  .project:hover  > img{
+#portfolio .project > small {
+  position: relative;
+  bottom: 150px;
+  color: @PURPLE;
+  visibility: hidden;
+}
+
+#portfolio .project:hover > small {
+  visibility: visible;
+}
+
+#portfolio .project:hover > img {
   opacity: @OPACITY;
 }
 
-#portfolio a:hover{
+#portfolio a:hover {
   color: @PURPLE;
 }
+
 /* End of Portfolio */
+/* Applications */
+.apply-npo {
+  height: 30vh;
+  min-height: 200px;
+  padding: none;
+  background: url("../img/join/join1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+-.apply-developer {
+  height: 30vh;
+  min-height: 200px;
+  padding: none;
+  background: url("../img/join/join2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+-
+.parent-zoom {
+  overflow: hidden;
+  padding: 0;
+}
+
+.parent-zoom a {
+  display: block;
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+  text-decoration: none;
+}
+
+.parent-zoom a:hover {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+#application > div > div > div.col-md-6.apply-developer > h1, h2 {
+  margin-top: 0px;
+}
+
+#application > div > div > div.col-md-6.apply-npo > h1, h2 > small {
+  color: white;
+}
+
+/* Executives */
+.col-lg-4.col-sm-6.text-center {
+  padding-bottom: 20px;
+}
