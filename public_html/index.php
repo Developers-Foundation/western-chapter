@@ -141,25 +141,24 @@
 <!-- End of Portfolio -->
 
 <!-- Applications -->
-<div id="application" class="section">
-    <div class="container text-center">
+<div id="application" class="full-section">
+    <div class="container-fluid text-center">
         <div class="row">
             <div class="col-lg-12">
                 <h1>APPLY NOW</h1>
             </div>
             <div class="col-md-6 parent-zoom">
-                <a href="google.ca" class="apply-npo">
-                    <h2>Non-Profits Application
-                    <br><br><small>Help us help you! Let a team of proven developers create a beautiful website for your NPO!</small>
-                    </h2>
+                <a href="https://www.google.ca/" target="_blank" class="hover-zoom" style="background-image: url(./assets/img/join/join1.jpg)">
+                  <h2>
+                    Non-Profit Organizations Application
+                  </h2>
                 </a>
             </div>
-
             <div class="col-md-6 parent-zoom">
-                <a href="google.ca" class="apply-developer">
-                    <h2>Students Application
-                    <br><br><small>Looking to make a difference? Join the Developer's Foundation team!</small>
-                    </h2>
+                <a href="https://www.google.ca/" target="_blank" class="hover-zoom" style="background-image: url(./assets/img/join/join2.jpg)">
+                  <h2>
+                    Developers Application
+                  </h2>
                 </a>
             </div>
         </div>
