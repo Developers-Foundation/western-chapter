@@ -1,5 +1,8 @@
 .section {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
+}
+.full-section {
+  height: 100%;
 }
 .box {
   color: #fe33ac;
@@ -130,50 +133,33 @@
 }
 /* End of Portfolio */
 /* Applications */
-.apply-npo {
-  height: 30vh;
-  min-height: 200px;
-  padding: none;
-  background: url("../img/join/join1.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: white;
-}
-.apply-developer {
-  height: 30vh;
-  min-height: 200px;
-  padding: none;
-  background: url("../img/join/join2.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: white;
-}
 .parent-zoom {
-  overflow: hidden;
   padding: 0;
 }
-.parent-zoom a {
-  display: block;
-  cursor: pointer;
-  -webkit-transition: all .3s;
-  -moz-transition: all .3s;
-  -ms-transition: all .3s;
-  -o-transition: all .3s;
-  transition: all .3s;
-  text-decoration: none;
+.hover-zoom {
+  float: left;
+  margin: 0;
+  height: 95vh;
+  width: 100%;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-size: 250%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: gray;
+  position: relative;
 }
-.parent-zoom a:hover {
-  -moz-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+.hover-zoom:hover {
+  background-size: 260%;
 }
-#application > div > div > div.col-md-6.apply-developer > h1,
-h2 {
-  margin-top: 0px;
-}
-#application > div > div > div.col-md-6.apply-npo > h1,
-h2 > small {
+.hover-zoom h2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   color: white;
+  padding: 0.5em;
+  margin: 0;
 }
 /* Executives */
 .col-lg-4.col-sm-6.text-center {
