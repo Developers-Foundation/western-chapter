@@ -233,7 +233,7 @@ $(function imageSelectors () {
     // Our Story
     $('.im2').on('click', function() {
         console.log('clicked');
-        smoothScroll('#mission-statement');
+        smoothScroll('#our-story');
 
     }).hover(function() {
             $('#landerImage2').css('opacity', 0.7)
