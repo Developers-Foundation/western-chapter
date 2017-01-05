@@ -139,24 +139,27 @@
 }
 /* End of Portfolio */
 /* Applications */
+.full-height {
+  overflow: hidden;
+}
 .parent-zoom {
   padding: 0;
 }
 .hover-zoom {
   float: left;
   margin: 0;
-  height: 95vh;
+  height: 50vh;
   width: 100%;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-size: 250%;
+  background-size: 300%;
   background-position: center;
   background-repeat: no-repeat;
   background-color: gray;
   position: relative;
 }
 .hover-zoom:hover {
-  background-size: 260%;
+  background-size: 330%;
 }
 .hover-zoom h2 {
   position: absolute;
