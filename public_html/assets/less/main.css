@@ -105,6 +105,9 @@
 }
 /* End of Our Story */
 /* Beginning of Portfolio */
+#portfolio .col-md-4 {
+  height: 250px;
+}
 #portfolio img {
   height: 250px;
   margin-left: auto;
