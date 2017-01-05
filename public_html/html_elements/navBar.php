@@ -5,7 +5,7 @@
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navTarget">
                 <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
             </button>
-            <a class="navbar-brand" href="#mission-statement" id="mobileNavLbl">Western Developers' Foundation</a>
+            <a class="navbar-brand" href="#our-story" id="mobileNavLbl">Western Developers' Foundation</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -15,7 +15,7 @@
                     <a href="#">Sponsors</a>
                 </li>
                 <li class="page-scroll">
-                    <a href="#mission-statement">Our Story</a>
+                    <a href="#our-story">Our Story</a>
                 </li>
                 <li class="page-scroll">
                     <a href="#portfolio">Our Team and Work</a>

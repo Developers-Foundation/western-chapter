@@ -117,25 +117,36 @@
 /* Beginning of mission statement */
 
 /* End of mission statement */
-/* Beginning of What We Do */
-@WWDCOLOR: rebeccapurple;
-#what-we-do {
-  background-color: @WWDCOLOR;
+/* Beginning of Our Story */
+@OSBG: #f7f7f7;
+@PFONT: Gotham SSm,sans-serif;
+@DESCRIPTIONFONT: #999;
+@SIZED: 13px;
+@SIZEH: 14px;
+#our-story {
+  background-color: @OSBG;
 }
-
-#what-we-do h1 {
-  color: white;
+#our-story .description-header{
+  font-family: @PFONT;
+  font-size: @SIZEH;
+  font-weight: 500;
+  letter-spacing: .2em;
+  text-transform: uppercase;
 }
-
-#what-we-do h2 {
-  color: white;
+#our-story .description{
+  font-family: @PFONT;
+  color: @DESCRIPTIONFONT;
+  font-size: @SIZED;
+  line-height: 1.75;
 }
-/* End of What We Do */
+/* End of Our Story */
 /* Beginning of Portfolio */
 @OPACITY: 0.3;
 @PURPLE: #4F2683;
-#portfolio .col-md-4 {
-  margin-bottom: -50px;
+#portfolio img {
+  height: 250px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #portfolio .project > h4 {
