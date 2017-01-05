@@ -203,7 +203,7 @@
             </div>
             <div class="col-lg-4 col-sm-6 text-center">
                 <img class="img-responsive" src="./assets/img/team/Placeholder.jpg" alt="">
-                <h3>Eun Su Shum
+                <h3>Eun Su Shim
                     <br><small>Techincal Product Manager</small>
                 </h3>
             </div>
