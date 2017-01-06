@@ -1,3 +1,14 @@
+/*============================================ COLOURS =====================================*/
+
+@WESTERN_PURPLE: #4F2683;
+@LIGHTER_PURPLE: lighten(@WESTERN_PURPLE, 10%);
+@WESTERN_GRAY: #807F83;
+
+
+
+/*============================================ =====================================*/
+
+
 @base: #f938ab;
 
 .box-shadow(@style, @c) when (iscolor(@c)) {
@@ -70,10 +81,6 @@
 
 /*============================================ NAVBAR.PHP =====================================*/
 
-@WESTERN_PURPLE: #4F2683;
-@LIGHTER_PURPLE: lighten(@WESTERN_PURPLE, 10%);
-@WESTERN_GRAY: #807F83;
-
 .navbar-custom {
   background: @WESTERN_PURPLE;
   font-weight: 700;
@@ -113,6 +120,89 @@
   }
   font-size: 7px;
 }
+
+/*============================================ FOOTER.PHP ========================================================*/
+
+#footer {
+  i.fa{
+    font-size: 20px;
+    padding: 4px 5px;
+    border-radius: 50%;
+    color: white;
+    transition: all 0.5s;
+
+    &:hover{
+      background: @LIGHTER_PURPLE;
+      border-color: @WESTERN_GRAY;
+      color: white;
+    }
+  }
+
+  background-color: @WESTERN_PURPLE;
+  color: white;
+
+  margin-top: 40px;
+}
+
+#footerModals{
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 2em;
+  margin-top: 2%;
+}
+
+.fModal{
+  background-color: white;
+}
+
+.footerLink{
+  #noDecoration;
+  color: @LIGHTER_PURPLE;
+}
+
+#return{
+  #noDecoration;
+  color: white;
+}
+
+#copywrite{
+  padding-top: 15px;
+  padding-right: 30px;
+  pointer-events: none;
+}
+
+#cp{
+  @media (min-width: 553px) and (max-width: 720px){
+    font-size: 15px;
+  }
+
+  @media (max-width: 552px){
+    font-size: 20px;
+  }
+}
+
+#noDecoration{
+  &:hover{
+    text-decoration: none;
+    color: lighten(@WESTERN_PURPLE, 40%);
+  }
+}
+
+.socialButtons{
+  padding-top: 5px;
+}
+
+
+
+
+
+*{
+  //border: 1px solid red !important;
+}
+
+
+
+
 
 /*============================================  =====================================*/
 /* Beginning of mission statement */

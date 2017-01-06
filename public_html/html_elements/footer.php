@@ -6,41 +6,66 @@ A simple footer module providing social media links as well as links to other pa
 -->
 
 <nav id="footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <ul class="list-inline text-center h4">
 
-                    <!-- Links to other pages -->
-                    <li><a href="#">Careers</a></li>
-                    <li><a href="#">FAQ</a></li>
+    <div class="row" id="footerSocial">
+    </div>
 
-                    <!-- Links to modals (which can be included as their own modules, or at the bottom of this page) -->
-                    <li><a href="#" data-toggle="modal" data-target="#ContactUs">Contact Us</a></li>
-                    <li><a href="#" data-toggle="modal" data-target="#testModal">Terms of Service</a></li>
-                    <li><a href="#" data-toggle="modal" data-target="#">Privacy Policy</a></li>
 
-                </ul>
-            </div>
-            <hr style="width: 60%;clear: both;">
+    <div class="row" id="footerModals">
+        <div class="col-sm-3 text-center">
+            <a href="#" id="return">TOP</a>
+        </div>
 
-            <!-- Social media icons -->
-            <div class="col-sm-12">
-                <ul class="footer-social list-inline text-center">
-                    <li><a href="http://facebook.com" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                </ul>
-            </div>
+        <div class="col-sm-3 text-center fModal">
+            <a href="#" data-toggle="modal" data-target="#ContactUs" class="footerLink">CONTACT US</a>
+        </div>
 
-            <div class="col-sm-12 text-center" id="footerText">
-                <p>Copyright &copy; 2017. Developers' Foundation. All rights reserved.</a></p>
-            </div>
+        <div class="col-sm-3 text-center fModal">
+            <a href="#" data-toggle="modal" data-target="#" class="footerLink">TERMS</a>
+        </div>
+
+        <div class="col-sm-3 text-center fModal">
+            <a href="#" data-toggle="modal" data-target="#" class="footerLink">PRIVACY</a>
         </div>
     </div>
+
+
+    <div class="row" id="footerLower">
+
+        <div class="col-xs-3 socialButtons">
+            <a href="html_elements/link.php?link=facebook" class="btn btn-social btn-simple">
+                <i class="fa fa-facebook-square"></i>
+            </a>
+
+            <a href="html_elements/link.php?link=medium" class="btn btn-social btn-simple">
+                <i class="fa fa-user"></i>
+            </a>
+        </div>
+
+
+        <div class="col-sm-9 text-right" id="copywrite">
+            <p id="cp">Copyright &copy; 2017. Developers' Foundation. All rights reserved.</a></p>
+        </div>
+
+    </div>
+
 </nav>
 
 
-<!-- Example modal -->
+
+
+
+
+
+
+
+<!--
+
+ TODO:
+
+ ALTER THIS MODAL TO CONTAIN CONTENTS FOR PRIVACY AND TERMS
+
+ -->
 
 <div class="modal fade" id="testModal" tabindex="-1" role="dialog" aria-labelledby="testModal" aria-hidden="true">
     <div class="modal-dialog">
