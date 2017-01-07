@@ -190,47 +190,6 @@
     color: #3E3E3B;
 }
 
-/*============================================ FOOTER.PHP ========================================================*/
-
-#footer i.fa {
-    height: 30px;
-    width: 30px;
-    border: 2px solid #8c8c8c;
-    font-size: 20px;
-    padding: 4px 5px;
-    border-radius: 50%;
-    color: #8c8c8c;
-    transition: all 0.5s;
-}
-
-
-#footer i.fa:hover {
-    background: #FCAC45;
-    border-color: #FCAC45;
-    color: #ffffff;
-}
-
-#footerTicker {
-    background-color: ghostwhite;
-    color: #3E3E3B;
-}
-
-
-#footer {
-    background-color: #2C3E50;
-}
-
-#footerText{
-    color: #18BC9C;
-}
-
-.copyright {
-    padding-top: 16px;
-}
-
-.social-area{
-    margin-top: 10px;
-}
 
 /*============================================ GALLERY.PHP ========================================================*/
 
@@ -262,13 +221,7 @@
     background-color: ghostwhite;
 }
 
-/*============================================ NAV BAR ========================================================*/
 
-.navbar-custom {
-    background: #4F2683;
-    font-weight: 700;
-    border: none
-}
 
 /*============================================ GENERAL THEME-SPECIFIC ATTRIBUTES =====================================*/
 
@@ -289,11 +242,6 @@ p {
 
 p.small {
     font-size: 16px
-}
-
-a, a.active, a:active, a:focus, a:hover {
-    color: #18BC9C;
-    outline: 0
 }
 
 h1, h2, h3, h4, h5, h6 {

@@ -211,7 +211,7 @@ $(function jQueryScroll (){
 
 function smoothScroll(id){
     $('html, body').animate({
-        scrollTop: $(id).offset().top - 40
+        scrollTop: $(id).offset().top - NAVHEIGHT
     }, 1000);
 }
 
@@ -221,7 +221,7 @@ $(function imageSelectors () {
 
     // Sponsors
     $('.im1').on('click', function() {
-        smoothScroll('#svg1');
+        smoothScroll('#our-story');
     }).hover(function() {
             $('#landerImage1').css('opacity', 0.7)
         },
@@ -233,7 +233,7 @@ $(function imageSelectors () {
     // Our Story
     $('.im2').on('click', function() {
         console.log('clicked');
-        smoothScroll('#our-story');
+        smoothScroll('#portfolio');
 
     }).hover(function() {
             $('#landerImage2').css('opacity', 0.7)
@@ -256,7 +256,7 @@ $(function imageSelectors () {
 
     // Our Team and Work
     $('.im4').on('click', function() {
-        smoothScroll('#portfolio');
+        smoothScroll('#application');
 
     }).hover(function() {
             $('#landerImage4').css('opacity', 0.7)
@@ -268,7 +268,7 @@ $(function imageSelectors () {
 
     // Application
     $('.im5').on('click', function() {
-        smoothScroll('#application');
+        smoothScroll('#exec-team');
     }).hover(function() {
             $('#landerImage5').css('opacity', 0.7)
         },

@@ -43,7 +43,7 @@ TODO: go into public_html/assets/js/nob.js and modify who the message is being s
 
                     <!-- Submit button -->
                     <div class="col-md-12 text-center">
-                        <button class="button button--nuka button--round-s button--text-thick button--size-l" style="color: #FFFFFF">Send</button>
+                        <button class="button button--nuka button--round-s button--text-thick button--size-l">Send</button>
                     </div>
 
                 </form>

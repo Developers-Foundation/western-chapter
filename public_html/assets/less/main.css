@@ -1,3 +1,5 @@
+/*============================================ COLOURS =====================================*/
+/*============================================ =====================================*/
 .box {
   color: #fe33ac;
   border-color: #fdcdea;
@@ -37,7 +39,7 @@
   width: 100%;
 }
 #triLbl1 {
-  padding-left: 2%;
+  padding-left: 3%;
 }
 #triLbl4 {
   padding-right: 1%;
@@ -82,6 +84,69 @@
   #mobileNavLbl {
     font-size: 9px;
   }
+}
+/*============================================ FOOTER.PHP ========================================================*/
+#footer {
+  background-color: #4F2683;
+  color: white;
+  margin-top: 40px;
+}
+#footer i.fa {
+  font-size: 20px;
+  padding: 4px 5px;
+  border-radius: 50%;
+  color: white;
+  transition: all 0.5s;
+}
+#footer i.fa:hover {
+  background: #6731ab;
+  border-color: #807F83;
+  color: white;
+}
+#footerModals {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 2em;
+  margin-top: 2%;
+}
+.fModal {
+  background-color: white;
+}
+.footerLink {
+  color: #6731ab;
+}
+.footerLink:hover {
+  text-decoration: none;
+  color: #b695e0;
+}
+#return {
+  color: white;
+}
+#return:hover {
+  text-decoration: none;
+  color: #b695e0;
+}
+#copywrite {
+  padding-top: 15px;
+  padding-right: 30px;
+  pointer-events: none;
+}
+@media (min-width: 553px) and (max-width: 720px) {
+  #cp {
+    font-size: 15px;
+  }
+}
+@media (max-width: 552px) {
+  #cp {
+    font-size: 20px;
+  }
+}
+#noDecoration:hover {
+  text-decoration: none;
+  color: #b695e0;
+}
+.socialButtons {
+  padding-top: 5px;
 }
 /*============================================  =====================================*/
 /* Beginning of mission statement */

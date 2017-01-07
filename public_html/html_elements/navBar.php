@@ -12,16 +12,16 @@
         <div class="collapse navbar-collapse" id="navTarget">
             <ul class="nav navbar-nav navbar-right">
                 <li class="page-scroll">
-                    <a href="#">Sponsors</a>
-                </li>
-                <li class="page-scroll">
                     <a href="#our-story">Our Story</a>
                 </li>
                 <li class="page-scroll">
-                    <a href="#portfolio">Our Team and Work</a>
+                    <a href="#portfolio">Portfolio</a>
                 </li>
                 <li class="page-scroll">
                     <a href="#application">Application</a>
+                </li>
+                <li class="page-scroll">
+                    <a href="#exec-team">Our Team</a>
                 </li>
             </ul>
         </div>
