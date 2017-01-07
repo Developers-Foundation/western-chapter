@@ -194,10 +194,10 @@
 <!-- End of Portfolio -->
 
 <!-- Applications -->
-<div id="application" class="full-section">
-    <div class="container-fluid text-center">
+<div id="application" class="full-height">
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-12">
+            <div class="col-lg-12 apply-text-height">
                 <h1>APPLY NOW</h1>
             </div>
             <div class="col-md-6 parent-zoom">
@@ -255,7 +255,7 @@
             </div>
             <div class="col-lg-4 col-sm-6 text-center">
                 <img class="img-responsive" src="./assets/img/team/Placeholder.jpg" alt="">
-                <h3>Eun Su Shum
+                <h3>Eun Su Shim
                     <br><small>Techincal Product Manager</small>
                 </h3>
             </div>
@@ -310,6 +310,30 @@ include_once "html_elements/contactUsModal.php";
 <script src="//maps.google.com/maps/api/js?key=AIzaSyBjGkX6gbOjiM6Ewg3cTeqGyK25z6YFdqQ&callback=loadedGmap" async defer>
     loadedGmap();
 </script>
-</body>
 
+<!-- Resizes Application section to be fullscreen-->
+<script>
+$(document).ready(function() {
+    function setHeight() {
+        windowHeight = $(window).innerHeight();
+        var clientHeight = $(".apply-text-height").height();
+        var navHeight = $(".navbar").height();
+
+        if (window.matchMedia('(max-width: 992px)').matches) {
+            $('.full-height').css('max-height', windowHeight - navHeight);
+            $('.hover-zoom').css('height', (windowHeight - clientHeight - navHeight)/2);
+        } else {
+            $('.full-height').css('max-height', windowHeight - navHeight);
+            $('.hover-zoom').css('height', windowHeight - clientHeight - navHeight);
+        }
+    };
+    setHeight();
+
+    $(window).resize(function() {
+        setHeight();
+    });
+});
+</script>
+
+</body>
 </html>

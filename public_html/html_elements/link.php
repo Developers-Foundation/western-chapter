@@ -9,22 +9,22 @@
 $linkTo = $_GET['link'];
 switch ($linkTo) {
     case "dev":
-        $url = "https://developersfoundation.ca/";
+        $url = "//developersfoundation.ca/";
         break;
     case "facebook":
-        $url = "https://www.facebook.com/";
+        $url = "//www.facebook.com/developersfoundation/?fref=ts";
         break;
     case "blog":
     case "rss":
     case "medium":
-        $url = "https://medium.com/";
+        $url = "//medium.com/@DevFound/welcome-to-the-developers-foundation-blog-c8ca340b658#.g08o74wl6";
         break;
     case "github":
-        $url = "https://github.com/";
+        $url = "//github.com/";
         break;
     case "home":
     default:
-        $url = "https://developersfoundation.ca/";
+        $url = "//developersfoundation.ca/";
 }
 
 header("Location: " . $url);
