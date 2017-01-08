@@ -46,8 +46,8 @@
 
 <!-- Begin of Contents -->
 <!-- Beginning of Mission Statement -->
-<div id="mission-statement" class="section">
-    <div class="container">
+<div id="mission-statement" class="section full-height-first">
+    <div class="container full-height-container-first">
         <div class="row">
             <div class="col-md-12">
                 <h1>MISSION Statement: Build Something MEANINGFUL</h1>
@@ -66,8 +66,8 @@
 </div>
 <!-- End of Mission Statement -->
 <!-- Beginning of What We Do -->
-<div id="our-story" class="section">
-    <div class="container">
+<div id="our-story" class="section full-height-second">
+    <div class="container full-height-container-second">
         <div class="row">
             <div class="col-md-12">
                 <h1>Our Story</h1>
@@ -99,8 +99,8 @@
 </div>
 <!-- End of of What We Do -->
 <!-- Beginning of Portfolio -->
-<div id="portfolio" class="section">
-    <div class="container">
+<div id="portfolio" class="section full-height-third">
+    <div class="container full-height-container-third">
         <div class="row">
             <div class="col-md-12">
                 <h1>Portfolio</h1>
@@ -174,11 +174,11 @@
 <!-- End of Portfolio -->
 
 <!-- Applications -->
-<div id="application" class="full-height">
+<div id="application" class="full-height-fourth">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-12 apply-text-height">
-                <h1>APPLY NOW</h1>
+            <div class="col-lg-12">
+                <h1 class="apply-text-height">APPLY NOW</h1>
             </div>
             <div class="col-md-6 parent-zoom">
                 <a href="https://www.google.ca/" target="_blank" class="hover-zoom" style="background-image: url(./assets/img/join/join1.jpg)">
@@ -199,8 +199,8 @@
 </div>
 <!-- End of Applications -->
 <!-- Beginning of Exec -->
-<div id="exec-team" class="section">
-    <div class="container">
+<div id="exec-team" class="section full-height-fifth">
+    <div class="container full-height-container-fifth">
         <!-- Introduction Row -->
         <div class="row">
             <div class="col-lg-12">
@@ -209,43 +209,45 @@
         </div>
         <!-- Team Members Row -->
         <div class="row">
-            <div class="col-lg-4 col-sm-6 text-center">
+            <div class="col-sm-3 text-center">
                 <img class="img-responsive" src="./assets/img/team/HarrisonC.jpg" alt="">
                 <h3>Harrison Chow
                     <br><small>President</small>
                 </h3>
             </div>
-            <div class="col-lg-4 col-sm-6 text-center">
+            <div class="col-sm-3 text-center">
                 <img class="img-responsive" src="./assets/img/team/MichaelP.jpg" alt="">
                 <h3>Michael Park
                     <br><small>VP Tech</small>
                 </h3>
             </div>
-            <div class="col-lg-4 col-sm-6 text-center">
+            <div class="col-sm-3 text-center">
                 <img class="img-responsive" src="./assets/img/team/ChristinaC.jpg" alt="">
                 <h3>Christina Chan
                     <br><small>VP Design</small>
                 </h3>
             </div>
-            <div class="col-lg-4 col-sm-6 text-center">
+            <div class="col-sm-3 text-center">
                 <img class="img-responsive" src="./assets/img/team/AnwarJ.jpg" alt="">
                 <h3>Anwar Jeffrey
                     <br><small>VP Finance & Legal</small>
                 </h3>
             </div>
-            <div class="col-lg-4 col-sm-6 text-center">
+        </div>
+        <div class="row">
+            <div class="col-sm-3 text-center">
                 <img class="img-responsive" src="./assets/img/team/Placeholder.jpg" alt="">
                 <h3>Eun Su Shim
                     <br><small>Techincal Product Manager</small>
                 </h3>
             </div>
-            <div class="col-lg-4 col-sm-6 text-center">
+            <div class="col-sm-3 text-center">
                 <img class="img-responsive" src="./assets/img/team/Placeholder.jpg" alt="">
                 <h3>Paul Salvatore
                     <br><small>Developer</small>
                 </h3>
             </div>
-            <div class="col-lg-4 col-sm-6 text-center">
+            <div class="col-sm-3 text-center">
                 <img class="img-responsive" src="./assets/img/team/Placeholder.jpg" alt="">
                 <h3>Alex Madrzyk
                     <br><small>Developer</small>
@@ -296,16 +298,39 @@ include_once "html_elements/contactUsModal.php";
 $(document).ready(function() {
     function setHeight() {
         windowHeight = $(window).innerHeight();
-        var clientHeight = $(".apply-text-height").height();
-        var navHeight = $(".navbar").height();
+        // .outerHeight does not seem to pick up the 30 margin, adding it manually
+        var clientHeight = $(".apply-text-height").outerHeight() + 30;
+        // If the height of the navbar is changed, update value here
+        // This is a static value to prevent divs from resizing when scrolling down
+        var navHeight = 40;
 
         if (window.matchMedia('(max-width: 992px)').matches) {
-            $('.full-height').css('max-height', windowHeight - navHeight);
             $('.hover-zoom').css('height', (windowHeight - clientHeight - navHeight)/2);
         } else {
-            $('.full-height').css('max-height', windowHeight - navHeight);
+            $('.full-height-fourth').css('max-height', windowHeight - navHeight);
             $('.hover-zoom').css('height', windowHeight - clientHeight - navHeight);
         }
+
+        var containerHeight1 = $(".full-height-container-first").height();
+        $('.full-height-first').css({
+            'margin-top': (windowHeight - navHeight - containerHeight1) / 2,
+            'margin-bottom': (windowHeight - navHeight - containerHeight1) / 2
+        });
+        var containerHeight2 = $(".full-height-container-second").height();
+        $('.full-height-second').css({
+            'margin-top': (windowHeight - navHeight - containerHeight2) / 2,
+            'margin-bottom': (windowHeight - navHeight - containerHeight2) / 2
+        });
+        var containerHeight3 = $(".full-height-container-third").height();
+        $('.full-height-third').css({
+            'margin-top': (windowHeight - navHeight - containerHeight3) / 2,
+            'margin-bottom': (windowHeight - navHeight - containerHeight3) / 2
+        });
+        var containerHeight4 = $(".full-height-container-fifth").height();
+        $('.full-height-fifth').css({
+            'margin-top': (windowHeight - navHeight - containerHeight4) / 2,
+            'margin-bottom': (windowHeight - navHeight - containerHeight4) / 2
+        });
     };
     setHeight();
 

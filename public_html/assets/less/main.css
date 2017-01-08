@@ -171,6 +171,9 @@
   margin: 0;
 }
 /* Executives */
+.col-sm-3.text-center img {
+  margin: auto;
+}
 .col-lg-4.col-sm-6.text-center {
   padding-bottom: 20px;
 }
