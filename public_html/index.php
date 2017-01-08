@@ -326,9 +326,26 @@ $(document).ready(function() {
 
         if (window.matchMedia('(max-width: 992px)').matches) {
             $('.hover-zoom').css('height', (windowHeight - clientHeight - navHeight)/2);
+
+            $('.full-height-third').css({
+                'margin-top': 70,
+                'margin-bottom': 70
+            });
         } else {
             $('.full-height-fourth').css('max-height', windowHeight - navHeight);
             $('.hover-zoom').css('height', windowHeight - clientHeight - navHeight);
+
+            var containerHeight3 = $(".full-height-container-third").height();
+            $('.full-height-third').css({
+                'margin-top': (windowHeight - navHeight - containerHeight3) / 2,
+                'margin-bottom': (windowHeight - navHeight - containerHeight3) / 2
+            });
+        }
+
+        if (window.matchMedia('(max-width: 992px)').matches) {
+            console.log("asdf");
+        } else {
+            console.log("fdsa");
         }
 
         var containerHeight1 = $(".full-height-container-first").height();
@@ -340,11 +357,6 @@ $(document).ready(function() {
         $('.full-height-second').css({
             'margin-top': (windowHeight - navHeight - containerHeight2) / 2,
             'margin-bottom': (windowHeight - navHeight - containerHeight2) / 2
-        });
-        var containerHeight3 = $(".full-height-container-third").height();
-        $('.full-height-third').css({
-            'margin-top': (windowHeight - navHeight - containerHeight3) / 2,
-            'margin-bottom': (windowHeight - navHeight - containerHeight3) / 2
         });
         var containerHeight4 = $(".full-height-container-fifth").height();
         $('.full-height-fifth').css({
