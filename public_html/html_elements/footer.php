@@ -1,48 +1,38 @@
 
+
+
 <!--
 
-A simple footer module providing social media links as well as links to other pages and modals.
+TODO: add devfound logo in the center of the socials
 
 -->
 
 <nav id="footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <ul class="list-inline text-center h4 footer-hover">
-                    <!-- Links to other pages -->
-                   <!--  <li><a href="#">Careers</a></li> -->
-                   <!--  <li><a href="#">FAQ</a></li> -->
+    <div class="row">
+        <div class="col-sm-12">
+            <ul class="list-inline text-center h4 footer-hover">
+                <li><a href="#" data-toggle="modal" data-target="#ContactUs">Contact Us</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#TermsOfService">Terms of Service</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#PrivacyPolicy">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <hr style="width: 60%;clear: both;">
 
-                    <!-- Links to modals (which can be included as their own modules, or at the bottom of this page) -->
-                    <li><a href="#" data-toggle="modal" data-target="#ContactUs">Contact Us</a></li>
-                    <li><a href="#" data-toggle="modal" data-target="#TermsOfService">Terms of Service</a></li>
-                    <li><a href="#" data-toggle="modal" data-target="#PrivacyPolicy">Privacy Policy</a></li>
+        <div class="col-sm-12">
+            <ul class="footer-social list-inline text-center">
+                <li><a href="//www.facebook.com/developersfoundation/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="//medium.com/@DevFound" target="_blank"><i class="fa fa-user"></i></a></li>
+            </ul>
+        </div>
 
-                </ul>
-            </div>
-            <hr style="width: 60%;clear: both;">
-
-            <!-- Social media icons -->
-            <div class="col-sm-12">
-                <ul class="footer-social list-inline text-center">
-                    <li><a href="http://facebook.com" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                </ul>
-            </div>
-
-            <div class="col-sm-12 text-center" id="footerText">
-                <p>Copyright &copy; 2016. Developers' Foundation. All rights reserved.</a></p>
-            </div>
+        <div class="col-sm-12 text-center">
+            <p id="copyright">Copyright &copy; 2016. Developers' Foundation. All rights reserved.</a></p>
         </div>
     </div>
 </nav>
 
 
-<!--
- TODO:
 
- ALTER THIS MODAL TO CONTAIN CONTENTS FOR PRIVACY AND TERMS
- -->
 <!-- Beginning of Terms of Service -->
 <div class="modal fade" id="TermsOfService" tabindex="-1" role="dialog" aria-labelledby="Terms Of Service" aria-hidden="true">
     <div class="modal-dialog">

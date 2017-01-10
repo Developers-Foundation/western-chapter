@@ -2,7 +2,7 @@
 <div class="row" id="mission-statement">
 
     <div class="col-sm-6 text-center">
-        <h1>Mission Statement: <br>Build Something <span class="purple">meaningful</span></h1>
+        <h1 id="missionTitle">Mission Statement: <br>Build Something <span class="purple">meaningful</span></h1>
     </div>
 
     <div class="col-sm-6">
