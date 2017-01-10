@@ -62,138 +62,15 @@
         $page = "index-page";
         $hasGmap = true;
         include_once "html_elements/triangleLanderAndNav.php";
+
+        include_once "html_elements/missionStatement.php";
+        include_once "html_elements/ourStory.php";
+        include_once "html_elements/portfolio.php";
     ?>
 
-<!-- Begin of Contents -->
-<!-- Beginning of Mission Statement -->
-<div id="mission-statement" class="section full-height-first">
-    <div class="container full-height-container-first">
-        <div class="row">
-            <div class="col-md-12">
-                <h1>MISSION Statement: Build Something MEANINGFUL</h1>
-            </div>
-            <div class="col-md-8 col-md-offset-2">
-                <p>
-                    We want to help underserved communities to become sustainably independent, through the leverage of
-                    technology.
-                    <br>
-                    We are group of students and aspiring designers/developers from The University of Western Ontario
-                    which serves as a subteam for Developers' Foundation.
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- End of Mission Statement -->
-<!-- Beginning of What We Do -->
-<div id="our-story" class="section full-height-second">
-    <div class="container full-height-container-second">
-        <div class="row">
-            <div class="col-md-12">
-                <h1>Our Story</h1>
-            </div>
-            <div class="col-md-4">
-                <p class="description-header"><i class="fa fa-user" aria-hidden="true"></i>Current Efforts</p>
-                <p class="description">As of January 2017, Developers' Foundation has successfully expanded into three
-                    campuses, at Western University, Queen's and UNICAMP (Brazil). Having successfully
-                    chartered Western's chapter, Developers' Foundation has developed over a dozen
-                    functional websites for Student and Community organizations.</p>
-            </div>
-            <div class="col-md-4">
-                <p class="description-header"> <i class="fa fa-code" aria-hidden="true"></i> Future Efforts</p>
-                <p class="description">Throughout the first semester your clients will concentrate solely on catering to Student
-                    organizations and charities/NPO. During the second semester of this school year, HQ will
-                    recommend to include one small business client per month. This will be DF’s main source
-                    of financial support. On average, we expected each chapter to work on at least 3 clients per
-                    month. Another HQ initiative that we super excited about, is to increase the current number
-                    of chapters, from 3 to 6 by the end of the second semester.</p>
-            </div>
-            <div class="col-md-4">
-                <p class="description-header"> <i class="fa fa-archive" aria-hidden="true"></i> Content Management System (CMS)</p>
-                <p class="description">We have also built our very own CMS (think wordpress), to make it easier for both our clients
-                    and us when it comes to content maintenance. We believe this has a huge value in also
-                    building an ecosystem where NPO and charities can rely on.</p>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- End of of What We Do -->
-<!-- Beginning of Portfolio -->
-<div id="portfolio" class="section full-height-third">
-    <div class="container full-height-container-third">
-        <div class="row">
-            <div class="col-md-12">
-                <h1>Portfolio</h1>
-            </div>
-            <div class="col-md-4 col-sm-12 text-center">
-                <a class="project" target="_blank" href="http://westerncyber.club">
-                    <img class="img-responsive" src="assets/img/portfolio/westerncyber.jpg">
-                    <h4>Western Cyber Security</h4>
-                    <small>Description</small>
-                </a>
-            </div>
-            <div class="col-md-4 col-sm-12 text-center">
-                <a class="project" target="_blank" href="https://african-students-association.herokuapp.com">
-                    <img class="img-responsive" src="assets/img/portfolio/asa.jpg">
-                    <h4>African Students Association</h4>
-                    <small>Description</small>
-                </a>
-            </div>
-            <div class="col-md-4 col-sm-12 text-center">
-                <a class="project" target="_blank" href="http://www.kemsclub.com/">
-                    <img class="img-responsive" src="assets/img/portfolio/kems.jpg">
-                    <h4>Kings EconoMath Society</h4>
-                    <small>Description</small>
-                </a>
-            </div>
-            <div class="col-md-4 col-sm-12 text-center">
-                <a class="project" target="_blank" href="https://amnesty.herokuapp.com">
-                    <img class="img-responsive" src="assets/img/portfolio/amnesty.png">
-                    <h4>Amnesty at Western</h4>
-                    <small>Description</small>
-                </a>
-            </div>
-            <div class="col-md-4 col-sm-12 text-center">
-                <a class="project" target="_blank" href="https://csayork.herokuapp.com/">
-                    <img class="img-responsive" src="assets/img/portfolio/yorkcsa.jpg">
-                    <h4>Caribbean Students' Association</h4>
-                    <small>Description</small>
-                </a>
-            </div>
-            <div class="col-md-4 col-sm-12 text-center">
-                <a class="project" target="_blank" href="https://nigerian.herokuapp.com/">
-                    <img class="img-responsive" src="assets/img/portfolio/nigerian.png">
-                    <h4>Nigerian Association of London and Area</h4>
-                    <small>Description</small>
-                </a>
-            </div>
-            <div class="col-md-4 col-sm-12 text-center">
-                <a class="project" target="_blank" href="https://borderless-devfoundation.herokuapp.com">
-                    <img class="img-responsive" src="assets/img/portfolio/borderless.png">
-                    <h4>Borderless</h4>
-                    <small>Description</small>
-                </a>
-            </div>
-            <div class="col-md-4 col-sm-12 text-center">
-                <a class="project" target="_blank" href="#">
-                    <img class="img-responsive" src="assets/img/portfolio/preview.png">
-                    <h4>Coming Soon</h4>
-                    <small>Description</small>
-                </a>
-            </div>
-            <div class="col-md-4 col-sm-12 text-center">
-                <a class="project" target="_blank" href="#">
-                    <img class="img-responsive" src="assets/img/portfolio/preview.png">
-                    <h4>Coming Soon</h4>
-                    <small>Description</small>
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- End of Portfolio -->
 
 <!-- Applications -->
+    <!--
 <div id="application" class="full-height-fourth">
     <div class="container-fluid">
         <div class="row">

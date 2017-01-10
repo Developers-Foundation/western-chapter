@@ -29,7 +29,7 @@ Note: if you wish to create more columns change the col-md-4 class of each colum
                             <div class="gallery-item">
                                 <div class="hover-bg">
                                     <a href="#nob-lb-gallery" data-slide-to="0" data-toggle="modal">
-                                        <img src="//placehold.it/800x500" class="img-responsive img-rounded img-centered">
+                                        <img src="//placehold.it/500x500" class="img-responsive img-rounded img-centered">
                                     </a>
                                 </div>
                             </div>
@@ -37,7 +37,7 @@ Note: if you wish to create more columns change the col-md-4 class of each colum
                             <div class="gallery-item">
                                 <div class="hover-bg">
                                     <a href="#nob-lb-gallery" data-slide-to="3" data-toggle="modal">
-                                        <img src="//placehold.it/700x103" class="img-responsive img-rounded img-centered">
+                                        <img src="//placehold.it/500x500" class="img-responsive img-rounded img-centered">
                                     </a>
                                 </div>
                             </div>
@@ -49,7 +49,7 @@ Note: if you wish to create more columns change the col-md-4 class of each colum
                             <div class="gallery-item">
                                 <div class="hover-bg">
                                     <a href="#nob-lb-gallery" data-slide-to="1" data-toggle="modal">
-                                        <img src="//placehold.it/800x501" class="img-responsive img-rounded img-centered">
+                                        <img src="//placehold.it/500x500" class="img-responsive img-rounded img-centered">
                                     </a>
                                 </div>
                             </div>
@@ -57,7 +57,7 @@ Note: if you wish to create more columns change the col-md-4 class of each colum
                             <div class="gallery-item">
                                 <div class="hover-bg">
                                     <a href="#nob-lb-gallery" data-slide-to="4" data-toggle="modal">
-                                        <img src="//placehold.it/700x104" class="img-responsive img-rounded img-centered">
+                                        <img src="//placehold.it/500x500" class="img-responsive img-rounded img-centered">
                                     </a>
                                 </div>
                             </div>
@@ -69,7 +69,7 @@ Note: if you wish to create more columns change the col-md-4 class of each colum
                             <div class="gallery-item">
                                 <div class="hover-bg">
                                     <a href="#nob-lb-gallery" data-slide-to="2" data-toggle="modal">
-                                        <img src="//placehold.it/800x502" class="img-responsive img-rounded img-centered">
+                                        <img src="//placehold.it/500x500" class="img-responsive img-rounded img-centered">
                                     </a>
                                 </div>
                             </div>
@@ -77,7 +77,7 @@ Note: if you wish to create more columns change the col-md-4 class of each colum
                             <div class="gallery-item">
                                 <div class="hover-bg">
                                     <a href="#nob-lb-gallery" data-slide-to="5" data-toggle="modal">
-                                        <img src="//placehold.it/700x105" class="img-responsive img-rounded img-centered">
+                                        <img src="//placehold.it/500x500" class="img-responsive img-rounded img-centered">
                                     </a>
                                 </div>
                             </div>
