@@ -1,7 +1,7 @@
 
 
 <div class="row" id="portfolio">
-    <div class="col-lg-12 text-center">
+    <div class="col-lg-12">
         <h1>PORTFOLIO</h1>
             <div class="row">
 
