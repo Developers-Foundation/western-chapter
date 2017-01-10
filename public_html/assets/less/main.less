@@ -120,158 +120,128 @@
   }
   font-size: 7px;
 }
+/*============================================  MISSIONSTATEMENT.PHP =====================================*/
 
-/*============================================ FOOTER.PHP ========================================================*/
+#mission-statement{
+  padding: 8%;
+  padding-top: 4% !important;
+}
 
-#footer {
-  i.fa{
-    font-size: 20px;
-    padding: 4px 5px;
-    border-radius: 50%;
-    color: white;
-    transition: all 0.5s;
+.purple{
+  color: @WESTERN_PURPLE;
+}
+/*============================================  OURSTORY.PHP =====================================*/
 
-    &:hover{
-      background: @LIGHTER_PURPLE;
-      border-color: @WESTERN_GRAY;
-      color: white;
-    }
+#our-story{
+  margin-left: 8%;
+  margin-right: 8%;
+  margin-top: 8%;
+  margin-bottom: 12%;
+  padding: 5%;
+  background-color: lighten(@WESTERN_GRAY, 40%);
+}
+
+.description{
+  @media (max-width: 1440px){
+    font-size: 16px;
   }
-
-  background-color: @WESTERN_PURPLE;
-  color: white;
-
-  margin-top: 40px;
-}
-
-#footerModals{
-  text-transform: uppercase;
-  font-weight: 800;
-  font-size: 2em;
-  margin-top: 2%;
-}
-
-.fModal{
-  background-color: white;
-}
-
-.footerLink{
-  #noDecoration;
-  color: @LIGHTER_PURPLE;
-}
-
-#return{
-  #noDecoration;
-  color: white;
-}
-
-#copywrite{
-  padding-top: 15px;
-  padding-right: 30px;
-  pointer-events: none;
-}
-
-#cp{
-  @media (min-width: 553px) and (max-width: 720px){
-    font-size: 15px;
+  @media (max-width: 1024px){
+    font-size: 12px;
   }
-
-  @media (max-width: 552px){
-    font-size: 20px;
-  }
+  //font-size: 20px;
 }
 
-#noDecoration{
+/*============================================ PORTFOLIO.PHP =====================================*/
+
+#portfolio{
+  padding: 12%;
+}
+
+
+//.portImg{
+//  height: 40vh;
+  //width: 30vh;
+  //margin: 20px;
+//}
+
+.portImg{
+  //height: 35vh;
+  margin-bottom: 5vh;
   &:hover{
-    text-decoration: none;
-    color: lighten(@WESTERN_PURPLE, 40%);
+    opacity: 0.7;
   }
 }
-
-.socialButtons{
-  padding-top: 5px;
-}
-
-
-
-
 
 *{
-  //border: 1px solid red !important;
+  //border: red solid 1px !important;
 }
-
-
-
-
 
 /*============================================  =====================================*/
-/* Beginning of mission statement */
 
-/* End of mission statement */
 /* Beginning of Our Story */
-@OSBG: #f7f7f7;
-@PFONT: Gotham SSm,sans-serif;
-@DESCRIPTIONFONT: #999;
-@SIZED: 13px;
-@SIZEH: 14px;
-#our-story {
-  background-color: @OSBG;
-}
-#our-story .description-header{
-  font-family: @PFONT;
-  font-size: @SIZEH;
-  font-weight: 500;
-  letter-spacing: .2em;
-  text-transform: uppercase;
-}
-#our-story .description{
-  font-family: @PFONT;
-  color: @DESCRIPTIONFONT;
-  font-size: @SIZED;
-  line-height: 1.75;
-}
+//@OSBG: #f7f7f7;
+//@PFONT: Gotham SSm,sans-serif;
+//@DESCRIPTIONFONT: #999;
+//@SIZED: 13px;
+//@SIZEH: 14px;
+//#our-story {
+//  background-color: lighten(@WESTERN_GRAY, 40%);
+//}
+//#our-story .description-header{
+//  font-family: @PFONT;
+//  font-size: @SIZEH;
+//  font-weight: 500;
+//  letter-spacing: .2em;
+//  text-transform: uppercase;
+//}
+//#our-story .description{
+//  font-family: @PFONT;
+//  color: @DESCRIPTIONFONT;
+//  font-size: @SIZED;
+//  line-height: 1.75;
+//}
 /* End of Our Story */
-/* Beginning of Portfolio */
-@OPACITY: 0.3;
-@PURPLE: #4F2683;
-#portfolio .col-md-4{
-  height: 250px;
-}
-#portfolio img {
-  height: 250px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#portfolio .project > h4 {
-  position: relative;
-  bottom: 150px;
-  color: @PURPLE;
-  visibility: hidden;
-}
-
-#portfolio .project:hover > h4 {
-  visibility: visible;
-}
-
-#portfolio .project > small {
-  position: relative;
-  bottom: 150px;
-  color: @PURPLE;
-  visibility: hidden;
-}
-
-#portfolio .project:hover > small {
-  visibility: visible;
-}
-
-#portfolio .project:hover > img {
-  opacity: @OPACITY;
-}
-
-#portfolio a:hover {
-  color: @PURPLE;
-}
+///* Beginning of Portfolio */
+//@OPACITY: 0.3;
+//@PURPLE: #4F2683;
+//#portfolio .col-md-4{
+//  height: 250px;
+//}
+//#portfolio img {
+//  height: 250px;
+//  margin-left: auto;
+//  margin-right: auto;
+//}
+//
+//#portfolio .project > h4 {
+//  position: relative;
+//  bottom: 150px;
+//  color: @PURPLE;
+//  visibility: hidden;
+//}
+//
+//#portfolio .project:hover > h4 {
+//  visibility: visible;
+//}
+//
+//#portfolio .project > small {
+//  position: relative;
+//  bottom: 150px;
+//  color: @PURPLE;
+//  visibility: hidden;
+//}
+//
+//#portfolio .project:hover > small {
+//  visibility: visible;
+//}
+//
+//#portfolio .project:hover > img {
+//  opacity: @OPACITY;
+//}
+//
+//#portfolio a:hover {
+//  color: @PURPLE;
+//}
 /* End of Portfolio */
 /* Applications */
 .apply-npo {

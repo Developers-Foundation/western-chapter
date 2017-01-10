@@ -85,123 +85,46 @@
     font-size: 9px;
   }
 }
-/*============================================ FOOTER.PHP ========================================================*/
-#footer {
-  background-color: #4F2683;
-  color: white;
-  margin-top: 40px;
+/*============================================  MISSIONSTATEMENT.PHP =====================================*/
+#mission-statement {
+  padding: 8%;
+  padding-top: 4% !important;
 }
-#footer i.fa {
-  font-size: 20px;
-  padding: 4px 5px;
-  border-radius: 50%;
-  color: white;
-  transition: all 0.5s;
+.purple {
+  color: #4F2683;
 }
-#footer i.fa:hover {
-  background: #6731ab;
-  border-color: #807F83;
-  color: white;
+/*============================================  OURSTORY.PHP =====================================*/
+#our-story {
+  margin-left: 8%;
+  margin-right: 8%;
+  margin-top: 8%;
+  margin-bottom: 12%;
+  padding: 5%;
+  background-color: #e7e7e7;
 }
-#footerModals {
-  text-transform: uppercase;
-  font-weight: 800;
-  font-size: 2em;
-  margin-top: 2%;
-}
-.fModal {
-  background-color: white;
-}
-.footerLink {
-  color: #6731ab;
-}
-.footerLink:hover {
-  text-decoration: none;
-  color: #b695e0;
-}
-#return {
-  color: white;
-}
-#return:hover {
-  text-decoration: none;
-  color: #b695e0;
-}
-#copywrite {
-  padding-top: 15px;
-  padding-right: 30px;
-  pointer-events: none;
-}
-@media (min-width: 553px) and (max-width: 720px) {
-  #cp {
-    font-size: 15px;
+@media (max-width: 1440px) {
+  .description {
+    font-size: 16px;
   }
 }
-@media (max-width: 552px) {
-  #cp {
-    font-size: 20px;
+@media (max-width: 1024px) {
+  .description {
+    font-size: 12px;
   }
 }
-#noDecoration:hover {
-  text-decoration: none;
-  color: #b695e0;
+/*============================================ PORTFOLIO.PHP =====================================*/
+#portfolio {
+  padding: 12%;
 }
-.socialButtons {
-  padding-top: 5px;
+.portImg {
+  margin-bottom: 5vh;
+}
+.portImg:hover {
+  opacity: 0.7;
 }
 /*============================================  =====================================*/
-/* Beginning of mission statement */
-/* End of mission statement */
 /* Beginning of Our Story */
-#our-story {
-  background-color: #f7f7f7;
-}
-#our-story .description-header {
-  font-family: Gotham SSm, sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: .2em;
-  text-transform: uppercase;
-}
-#our-story .description {
-  font-family: Gotham SSm, sans-serif;
-  color: #999;
-  font-size: 13px;
-  line-height: 1.75;
-}
 /* End of Our Story */
-/* Beginning of Portfolio */
-#portfolio .col-md-4 {
-  height: 250px;
-}
-#portfolio img {
-  height: 250px;
-  margin-left: auto;
-  margin-right: auto;
-}
-#portfolio .project > h4 {
-  position: relative;
-  bottom: 150px;
-  color: #4F2683;
-  visibility: hidden;
-}
-#portfolio .project:hover > h4 {
-  visibility: visible;
-}
-#portfolio .project > small {
-  position: relative;
-  bottom: 150px;
-  color: #4F2683;
-  visibility: hidden;
-}
-#portfolio .project:hover > small {
-  visibility: visible;
-}
-#portfolio .project:hover > img {
-  opacity: 0.3;
-}
-#portfolio a:hover {
-  color: #4F2683;
-}
 /* End of Portfolio */
 /* Applications */
 .apply-npo {
@@ -250,9 +173,6 @@ h2 > small {
   color: white;
 }
 /* Executives */
-.col-sm-3.text-center img {
-  margin: auto;
-}
 .col-lg-4.col-sm-6.text-center {
   padding-bottom: 20px;
 }
