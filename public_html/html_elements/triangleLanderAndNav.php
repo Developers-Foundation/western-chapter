@@ -57,7 +57,7 @@ This module relies on code in main.js in order to properly function with resizin
         <image xlink:href="//placekitten.com/g/400/400" clip-path="url(#clip5)" class="im1" id="landerImage1"></image>
         <polygon class="poly5 im1 scrolledNav" fill="#4F2683"></polygon>
 
-        <image xlink:href="//placekitten.com/g/500/500" clip-path="url(#clip2)" class="im2" id="landerImage2"></image>
+        <image xlink:href="assets/img/stock/" clip-path="url(#clip2)" class="im2" id="landerImage2"></image>
         <polygon class="poly2 im2 scrolledNav" fill="#4F2683"></polygon>
 
         <image xlink:href="//placekitten.com/g/650/650" clip-path="url(#clip1)" class="im3" id="landerImage3"></image>
