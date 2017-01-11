@@ -9,10 +9,10 @@ This module relies on code in main.js in order to properly function with resizin
 <nav class="hidden navbar navbar-default navbar-fixed-top" id="triangleNav">
 
     <div class="row" id="triLabels">
-        <div class="triLbl text-center" id="triLbl1">Our Story</div>
-        <div class="triLbl text-center" id="triLbl2">Portfolio</div>
-        <div class="triLbl text-center" id="triLbl3">Application</div>
-        <div class="triLbl text-center" id="triLbl4">Our Team</div>
+        <div class="triLbl text-center hidden" id="triLbl1">Our Story</div>
+        <div class="triLbl text-center hidden" id="triLbl2">Portfolio</div>
+        <div class="triLbl text-center hidden" id="triLbl3">Application</div>
+        <div class="triLbl text-center hidden" id="triLbl4">Our Team</div>
     </div>
 
 
