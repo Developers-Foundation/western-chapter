@@ -37,7 +37,7 @@
 
     <!-- Custom Fonts -->
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Palanquin:400,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Palanquin:400,600,700" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="assets/less/main.css">

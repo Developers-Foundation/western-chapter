@@ -153,6 +153,7 @@ $(function (){
 
 // This value stores the position of the previous scroll event such that we can know by how much we have scrolled.
 var prevScroll = 0;
+var OPACITY;
 
 function scrollEvent() {
 
@@ -178,16 +179,17 @@ function scrollEvent() {
      $('#downButton').css('top', Math.max(windowHeight * 0.5, windowHeight * 0.8 - scroll) + "px");
      */
 
-    var opacity = NAVHEIGHT/curHeight;
-    $('.scrolledNav').attr('opacity', opacity);
+    OPACITY = NAVHEIGHT/curHeight;
+    $('.scrolledNav').attr('opacity', OPACITY);
 
 
     // We only want the labels to appear when the navbar cover is completely opaque.
-    if(opacity == 1){
-        $('#triLabels').removeClass("hidden");
+    if(OPACITY == 1){
+        $('.triLbl').removeClass("hidden").css('padding-top', "8px");
+
     }
     else{
-        $('#triLabels').addClass("hidden");
+        $('.triLbl').addClass("hidden").css('padding-top', (curHeight * 0.4) + "px");
     }
 
 
@@ -230,23 +232,29 @@ $(function imageSelectors () {
     $('.im1').on('click', function() {
         smoothScroll('#our-story');
     }).hover(function() {
-            $('#landerImage1').css('opacity', 0.7)
+            $('#landerImage1').css('opacity', 0.7);
+            $('#triLbl1').removeClass('hidden');
         },
         function(){
-            $('#landerImage1').css('opacity', 1.0)
+            $('#landerImage1').css('opacity', 1.0);
+            if(OPACITY != 1) {
+                $('#triLbl1').addClass('hidden');
+            }
         }
     );
 
     // Our Story
     $('.im2').on('click', function() {
-        console.log('clicked');
         smoothScroll('#portfolio');
-
     }).hover(function() {
-            $('#landerImage2').css('opacity', 0.7)
+            $('#landerImage2').css('opacity', 0.7);
+            $('#triLbl2').removeClass('hidden');
         },
         function(){
-            $('#landerImage2').css('opacity', 1.0)
+            $('#landerImage2').css('opacity', 1.0);
+            if(OPACITY != 1) {
+                $('#triLbl2').addClass('hidden');
+            }
         }
     );
 
@@ -266,10 +274,14 @@ $(function imageSelectors () {
         smoothScroll('#application');
 
     }).hover(function() {
-            $('#landerImage4').css('opacity', 0.7)
+            $('#landerImage4').css('opacity', 0.7);
+            $('#triLbl3').removeClass('hidden');
         },
         function(){
-            $('#landerImage4').css('opacity', 1.0)
+            $('#landerImage4').css('opacity', 1.0);
+            if(OPACITY != 1) {
+                $('#triLbl3').addClass('hidden');
+            }
         }
     );
 
@@ -277,10 +289,14 @@ $(function imageSelectors () {
     $('.im5').on('click', function() {
         smoothScroll('#exec-team');
     }).hover(function() {
-            $('#landerImage5').css('opacity', 0.7)
+            $('#landerImage5').css('opacity', 0.7);
+            $('#triLbl4').removeClass('hidden');
         },
         function(){
-            $('#landerImage5').css('opacity', 1.0)
+            $('#landerImage5').css('opacity', 1.0);
+            if(OPACITY != 1) {
+                $('#triLbl4').addClass('hidden');
+            }
         }
     );
 
