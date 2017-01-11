@@ -20,6 +20,9 @@ h6 {
   text-transform: uppercase;
   font-weight: 600;
 }
+h2 {
+  font-size: 38px;
+}
 p {
   font-size: 20px;
 }
@@ -133,6 +136,7 @@ p {
   margin-bottom: 12% !important;
   padding: 5%;
   background-color: #e7e7e7;
+  box-shadow: -13px 13px;
 }
 @media (max-width: 1440px) {
   .description {
@@ -234,6 +238,7 @@ p {
   margin: 5%;
   padding: 5%;
   background-color: #efe8f8;
+  box-shadow: -13px 13px;
 }
 .applyTxt {
   font-size: 29px;
