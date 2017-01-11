@@ -8,9 +8,11 @@
 var TRIANGLE_BASE;
 var NAVHEIGHT = 40;
 var MOBILE = -1;
+var windowHeight;
 
 function resizeEvent(){
     var windowWidth = $(this).width();
+    windowHeight = $(this).height();
     TRIANGLE_BASE = Math.floor(windowWidth/3);
     var halfTriangleBase = Math.floor(windowWidth/6);
     var space = Math.floor(windowWidth * 0.005);
@@ -171,6 +173,11 @@ function scrollEvent() {
         $('#svg1').attr('height', curHeight);
     }
 
+
+    /* In case we don't want the down button overtop of the lander, I would need this to only fire when the width is greater than 650px.
+     $('#downButton').css('top', Math.max(windowHeight * 0.5, windowHeight * 0.8 - scroll) + "px");
+     */
+
     var opacity = NAVHEIGHT/curHeight;
     $('.scrolledNav').attr('opacity', opacity);
 
@@ -284,6 +291,17 @@ $(function imageSelectors () {
             $(this).attr('fill', '#4F2683')
         }
     );
+
+
+    // TODO: add destinations for application
+    $('#std').on('click', function () {
+        window.location.href = "#";
+    });
+
+    $('#npo').on('click', function () {
+        window.location.href = "#";
+    });
+
 
 });
 /**/

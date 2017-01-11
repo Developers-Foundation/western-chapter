@@ -117,13 +117,16 @@
   @media (min-width: 310px) and (max-width: 389px) {
     font-size: 9px;
   }
-  font-size: 7px;
+  @media (min-width: 249px) and (max-width: 309px) {
+    font-size: 7px;
+  }
+  font-size: 5px;
 }
 /*============================================  MISSIONSTATEMENT.PHP =====================================*/
 
 #mission-statement{
   padding: 8%;
-  padding-top: 4% !important;
+  padding-top: 2% !important;
 }
 
 #missionTitle{
@@ -135,13 +138,19 @@
   }
 }
 
+#msnStatement{
+  @media(max-width: 494px){
+    font-size: 15px;
+  }
+}
+
 .purple{
   color: @WESTERN_PURPLE;
 }
 /*============================================  OURSTORY.PHP =====================================*/
 
 #our-story{
-  margin: 8%;
+  margin: 5%;
   margin-bottom: 12% !important;
   padding: 5%;
   background-color: lighten(@WESTERN_GRAY, 40%);
@@ -156,10 +165,28 @@
   }
 }
 
+.description-header{
+  font-size: 23px;
+}
+
 /*============================================ PORTFOLIO.PHP =====================================*/
 
-#portfolio{
-  padding: 12%;
+#portfolio {
+  padding: 7%;
+}
+
+#portTtle{
+  @media(max-width: 330px){
+    font-size: 18px;
+  }
+}
+
+#portContainer{
+  border: solid 15px @WESTERN_PURPLE;
+  //width: 90
+  padding-left: 15%;
+  padding-right: 15%;
+  margin: 3px;
 }
 
 .portImg{
@@ -201,7 +228,110 @@
   font-size: 10px;
 }
 
+.footer-hover > li > a{
+  color: white;
+}
+
+/*============================================ NEXTBUTTON.PHP =====================================*/
+
+#downButton{
+  height: 29px;
+  width: 29px;
+  border: 2px solid orange;
+  font-size: 20px;
+  padding: 4px 6.5px;
+  border-radius: 50%;
+  color: white;
+  transition: all 0.5s;
+  background-color: orange;
+
+  position: fixed;
+  top: 50%;
+  left: 10px;
+
+  @media(max-width: 650px){
+    top: 90%;
+    left: calc(~'50% - 15px');
+  }
+
+
+  cursor: pointer;
+  z-index: 9999 !important;
+}
+
+
+
+/*============================================ APPLICATION.PHP =====================================*/
+
+*{
+  //border: solid 1px red !important;
+}
+
+#application{
+  margin: 5%;
+  padding: 5%;
+  background-color: lighten(@WESTERN_PURPLE, 61%);
+
+  /* If we would prefer an image here
+  background-image: url("//placekitten.com/g/1000/1000");
+  background-attachment: fixed;
+  */
+}
+
+
+.applyTxt{
+  font-size: 29px;
+  @media(max-width: 1060px){
+    font-size: 20px;
+  }
+  @media(max-width: 730px){
+    font-size: 16px;
+  }
+  @media(max-width: 405px){
+    font-size: 14px;
+  }
+}
+
+.applyTtl{
+  @media(max-width: 730px){
+    font-size: 20px;
+  }
+  @media(max-width: 405px){
+    font-size: 15px;
+  }
+}
+
+.selectAppl{
+  cursor: pointer;
+  &:hover{
+    color: @LIGHTER_PURPLE;
+  }
+  color: lighten(black, 50%);
+}
+
+
+/*============================================ EXECTEAM.PHP =====================================*/
+
+#exec-team{
+  margin: 2%;
+  padding: 3%;
+}
+
+.execName{
+  @media(max-width: 600px){
+    font-size: 16px;
+  }
+  @media(max-width: 450px){
+    font-size: 24px;
+  }
+  @media(max-width: 350px){
+    font-size: 18px;
+  }
+}
+
+
 /*============================================  =====================================*/
+
 
 /* Beginning of Our Story */
 //@OSBG: #f7f7f7;
@@ -269,72 +399,69 @@
 //}
 /* End of Portfolio */
 /* Applications */
-.apply-npo {
-  height: 30vh;
-  min-height: 200px;
-  padding: none;
-  background: url("../img/join/join1.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: white;
-}
-
-.apply-developer {
-  height: 30vh;
-  min-height: 200px;
-  padding: none;
-  background: url("../img/join/join2.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: white;
-}
-
-.parent-zoom {
-  overflow: hidden;
-  padding: 0;
-}
-
-.parent-zoom a {
-  display: block;
-  cursor: pointer;
-  text-decoration: none;
-  -webkit-transition: all .3s;
-  -moz-transition: all .3s;
-  -ms-transition: all .3s;
-  -o-transition: all .3s;
-  transition: all .3s;
-  text-decoration: none;
-}
-
-.parent-zoom a:hover {
-  -moz-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-}
-
-#application > div > div > div.col-md-6.apply-developer > h1, h2 {
-  margin-top: 0px;
-}
-
-#application > div > div > div.col-md-6.apply-npo > h1, h2 > small {
-  color: white;
-}
-
-/* Executives */
-.col-lg-4.col-sm-6.text-center {
-  padding-bottom: 20px;
-}
-
-
-/* Footer*/
-.modal-body  {
-  font-size: 8pt;
-}
-
-.modal-body > p {
-  font-size: 8pt;
-}
-
-.footer-hover > li > a{
-  color: white;
-}
+//.apply-npo {
+//  height: 30vh;
+//  min-height: 200px;
+//  padding: none;
+//  background: url("../img/join/join1.jpg");
+//  background-size: cover;
+//  background-repeat: no-repeat;
+//  color: white;
+//}
+//
+//.apply-developer {
+//  height: 30vh;
+//  min-height: 200px;
+//  padding: none;
+//  background: url("../img/join/join2.jpg");
+//  background-size: cover;
+//  background-repeat: no-repeat;
+//  color: white;
+//}
+//
+//.parent-zoom {
+//  overflow: hidden;
+//  padding: 0;
+//}
+//
+//.parent-zoom a {
+//  display: block;
+//  cursor: pointer;
+//  text-decoration: none;
+//  -webkit-transition: all .3s;
+//  -moz-transition: all .3s;
+//  -ms-transition: all .3s;
+//  -o-transition: all .3s;
+//  transition: all .3s;
+//  text-decoration: none;
+//}
+//
+//.parent-zoom a:hover {
+//  -moz-transform: scale(1.1);
+//  -webkit-transform: scale(1.1);
+//  transform: scale(1.1);
+//}
+//
+//#application > div > div > div.col-md-6.apply-developer > h1, h2 {
+//  margin-top: 0px;
+//}
+//
+//#application > div > div > div.col-md-6.apply-npo > h1, h2 > small {
+//  color: white;
+//}
+//
+///* Executives */
+//.col-lg-4.col-sm-6.text-center {
+//  padding-bottom: 20px;
+//}
+//
+//
+///* Footer*/
+//.modal-body  {
+//  font-size: 8pt;
+//}
+//
+//.modal-body > p {
+//  font-size: 8pt;
+//}
+//

@@ -1,8 +1,8 @@
 
 
 <div class="row" id="portfolio">
-    <div class="col-lg-12">
-        <h1>PORTFOLIO</h1>
+    <div class="col-lg-12" id="portContainer">
+        <h1 id="portTtle">PORTFOLIO</h1>
             <div class="row">
 
                 <div class="col-md-3 col-xs-6">

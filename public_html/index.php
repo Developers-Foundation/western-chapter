@@ -61,6 +61,7 @@
     <?php
         $page = "index-page";
         $hasGmap = true;
+        include_once "html_elements/nextButton.php";
         include_once "html_elements/triangleLanderAndNav.php";
 
         include_once "html_elements/missionStatement.php";
@@ -69,6 +70,7 @@
         include_once "html_elements/application.php";
         include_once "html_elements/execTeam.php";
     ?>
+
 
 
 <!-- Applications -->
@@ -97,10 +99,7 @@
     </div>
 </div>
 <!-- End of Applications -->
-<!-- Beginning of Exec -->
 
-<!-- End of Exec -->
-<!-- End of Contents -->
 
 <?php
 include_once "html_elements/footer.php";
@@ -118,10 +117,6 @@ include_once "html_elements/contactUsModal.php";
 <!-- Plugin JavaScript -->
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 
-<!-- Contact Form JavaScript -->
-<!-- <script src="js/jqBootstrapValidation.js"></script>-->
-<!-- <script src="js/contact_me.js"></script>-->
-
 <!-- Theme JavaScript -->
 <script src="assets/js/freelancer.js"></script>
 <script src="assets/js/material.min.js"></script>
@@ -135,65 +130,6 @@ include_once "html_elements/contactUsModal.php";
 <script src="//maps.google.com/maps/api/js?key=AIzaSyBjGkX6gbOjiM6Ewg3cTeqGyK25z6YFdqQ&callback=loadedGmap" async defer>
     loadedGmap();
 </script>
-
-<!-- Resizes Application section to be fullscreen-->
-<!--<script>-->
-<!--$(document).ready(function() {-->
-<!--    function setHeight() {-->
-<!--        windowHeight = $(window).innerHeight();-->
-<!--        // .outerHeight does not seem to pick up the 30 margin, adding it manually-->
-<!--        var clientHeight = $(".apply-text-height").outerHeight() + 30;-->
-<!--        // If the height of the navbar is changed, update value here-->
-<!--        // This is a static value to prevent divs from resizing when scrolling down-->
-<!--        var navHeight = 40;-->
-<!---->
-<!--        if (window.matchMedia('(max-width: 992px)').matches) {-->
-<!--            $('.hover-zoom').css('height', (windowHeight - clientHeight - navHeight)/2);-->
-<!---->
-<!--            $('.full-height-third').css({-->
-<!--                'margin-top': 70,-->
-<!--                'margin-bottom': 70-->
-<!--            });-->
-<!--        } else {-->
-<!--            $('.full-height-fourth').css('max-height', windowHeight - navHeight);-->
-<!--            $('.hover-zoom').css('height', windowHeight - clientHeight - navHeight);-->
-<!---->
-<!--            var containerHeight3 = $(".full-height-container-third").height();-->
-<!--            $('.full-height-third').css({-->
-<!--                'margin-top': (windowHeight - navHeight - containerHeight3) / 2,-->
-<!--                'margin-bottom': (windowHeight - navHeight - containerHeight3) / 2-->
-<!--            });-->
-<!--        }-->
-<!---->
-<!--        if (window.matchMedia('(max-width: 992px)').matches) {-->
-<!--            console.log("asdf");-->
-<!--        } else {-->
-<!--            console.log("fdsa");-->
-<!--        }-->
-<!---->
-<!--        var containerHeight1 = $(".full-height-container-first").height();-->
-<!--        $('.full-height-first').css({-->
-<!--            'margin-top': (windowHeight - navHeight - containerHeight1) / 2,-->
-<!--            'margin-bottom': (windowHeight - navHeight - containerHeight1) / 2-->
-<!--        });-->
-<!--        var containerHeight2 = $(".full-height-container-second").height();-->
-<!--        $('.full-height-second').css({-->
-<!--            'margin-top': (windowHeight - navHeight - containerHeight2) / 2,-->
-<!--            'margin-bottom': (windowHeight - navHeight - containerHeight2) / 2-->
-<!--        });-->
-<!--        var containerHeight4 = $(".full-height-container-fifth").height();-->
-<!--        $('.full-height-fifth').css({-->
-<!--            'margin-top': (windowHeight - navHeight - containerHeight4) / 2,-->
-<!--            'margin-bottom': (windowHeight - navHeight - containerHeight4) / 2-->
-<!--        });-->
-<!--    };-->
-<!--    setHeight();-->
-<!---->
-<!--    $(window).resize(function() {-->
-<!--        setHeight();-->
-<!--    });-->
-<!--});-->
-<!--</script>-->
 
 </body>
 </html>
