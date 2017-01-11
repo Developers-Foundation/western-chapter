@@ -6,7 +6,7 @@
     </div>
 
     <div class="col-sm-6">
-        <p>
+        <p id="msnStatement">
             We want to help underserved communities to become sustainably independent, through the leverage of
             technology.
             <br><br>

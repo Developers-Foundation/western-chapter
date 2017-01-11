@@ -67,7 +67,7 @@
   background-color: #6731ab;
 }
 #mobileNavLbl {
-  font-size: 7px;
+  font-size: 5px;
 }
 @media (min-width: 490px) {
   #mobileNavLbl {
@@ -84,10 +84,15 @@
     font-size: 9px;
   }
 }
+@media (min-width: 249px) and (max-width: 309px) {
+  #mobileNavLbl {
+    font-size: 7px;
+  }
+}
 /*============================================  MISSIONSTATEMENT.PHP =====================================*/
 #mission-statement {
   padding: 8%;
-  padding-top: 4% !important;
+  padding-top: 2% !important;
 }
 @media (max-width: 494px) {
   #missionTitle {
@@ -99,12 +104,17 @@
     font-size: 14px;
   }
 }
+@media (max-width: 494px) {
+  #msnStatement {
+    font-size: 15px;
+  }
+}
 .purple {
   color: #4F2683;
 }
 /*============================================  OURSTORY.PHP =====================================*/
 #our-story {
-  margin: 8%;
+  margin: 5%;
   margin-bottom: 12% !important;
   padding: 5%;
   background-color: #e7e7e7;
@@ -119,9 +129,23 @@
     font-size: 12px;
   }
 }
+.description-header {
+  font-size: 23px;
+}
 /*============================================ PORTFOLIO.PHP =====================================*/
 #portfolio {
-  padding: 12%;
+  padding: 7%;
+}
+@media (max-width: 330px) {
+  #portTtle {
+    font-size: 18px;
+  }
+}
+#portContainer {
+  border: solid 15px #4F2683;
+  padding-left: 15%;
+  padding-right: 15%;
+  margin: 3px;
 }
 .portImg {
   margin-bottom: 5vh;
@@ -154,67 +178,99 @@
   margin-top: 10px;
   font-size: 10px;
 }
+.footer-hover > li > a {
+  color: white;
+}
+/*============================================ NEXTBUTTON.PHP =====================================*/
+#downButton {
+  height: 29px;
+  width: 29px;
+  border: 2px solid orange;
+  font-size: 20px;
+  padding: 4px 6.5px;
+  border-radius: 50%;
+  color: white;
+  transition: all 0.5s;
+  background-color: orange;
+  position: fixed;
+  top: 50%;
+  left: 10px;
+  cursor: pointer;
+  z-index: 9999 !important;
+}
+@media (max-width: 650px) {
+  #downButton {
+    top: 90%;
+    left: calc(50% - 15px);
+  }
+}
+/*============================================ APPLICATION.PHP =====================================*/
+#application {
+  margin: 5%;
+  padding: 5%;
+  background-color: #efe8f8;
+  /* If we would prefer an image here
+  background-image: url("//placekitten.com/g/1000/1000");
+  background-attachment: fixed;
+  */
+}
+.applyTxt {
+  font-size: 29px;
+}
+@media (max-width: 1060px) {
+  .applyTxt {
+    font-size: 20px;
+  }
+}
+@media (max-width: 730px) {
+  .applyTxt {
+    font-size: 16px;
+  }
+}
+@media (max-width: 405px) {
+  .applyTxt {
+    font-size: 14px;
+  }
+}
+@media (max-width: 730px) {
+  .applyTtl {
+    font-size: 20px;
+  }
+}
+@media (max-width: 405px) {
+  .applyTtl {
+    font-size: 15px;
+  }
+}
+.selectAppl {
+  cursor: pointer;
+  color: #808080;
+}
+.selectAppl:hover {
+  color: #6731ab;
+}
+/*============================================ EXECTEAM.PHP =====================================*/
+#exec-team {
+  margin: 2%;
+  padding: 3%;
+}
+@media (max-width: 600px) {
+  .execName {
+    font-size: 16px;
+  }
+}
+@media (max-width: 450px) {
+  .execName {
+    font-size: 24px;
+  }
+}
+@media (max-width: 350px) {
+  .execName {
+    font-size: 18px;
+  }
+}
 /*============================================  =====================================*/
 /* Beginning of Our Story */
 /* End of Our Story */
 /* End of Portfolio */
 /* Applications */
-.apply-npo {
-  height: 30vh;
-  min-height: 200px;
-  padding: none;
-  background: url("../img/join/join1.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: white;
-}
-.apply-developer {
-  height: 30vh;
-  min-height: 200px;
-  padding: none;
-  background: url("../img/join/join2.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: white;
-}
-.parent-zoom {
-  overflow: hidden;
-  padding: 0;
-}
-.parent-zoom a {
-  display: block;
-  cursor: pointer;
-  -webkit-transition: all .3s;
-  -moz-transition: all .3s;
-  -ms-transition: all .3s;
-  -o-transition: all .3s;
-  transition: all .3s;
-  text-decoration: none;
-}
-.parent-zoom a:hover {
-  -moz-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-}
-#application > div > div > div.col-md-6.apply-developer > h1,
-h2 {
-  margin-top: 0px;
-}
-#application > div > div > div.col-md-6.apply-npo > h1,
-h2 > small {
-  color: white;
-}
-/* Executives */
-.col-lg-4.col-sm-6.text-center {
-  padding-bottom: 20px;
-}
-/* Footer*/
-.modal-body {
-  font-size: 8pt;
-}
-.modal-body > p {
-  font-size: 8pt;
-}
-.footer-hover > li > a {
-  color: white;
-}
