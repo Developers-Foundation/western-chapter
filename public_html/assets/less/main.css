@@ -135,6 +135,9 @@
 /*============================================ PORTFOLIO.PHP =====================================*/
 #portfolio {
   padding: 7%;
+  background-image: url("../img/stock/startup-photos.jpg");
+  background-attachment: fixed;
+  background-size: cover;
 }
 @media (max-width: 330px) {
   #portTtle {
@@ -146,6 +149,7 @@
   padding-left: 15%;
   padding-right: 15%;
   margin: 3px;
+  background-color: white !important;
 }
 .portImg {
   margin-bottom: 5vh;
@@ -210,8 +214,7 @@
   padding: 5%;
   background-color: #efe8f8;
   /* If we would prefer an image here
-  background-image: url("//placekitten.com/g/1000/1000");
-  background-attachment: fixed;
+
   */
 }
 .applyTxt {
