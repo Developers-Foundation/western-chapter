@@ -149,7 +149,7 @@ $(function (){
 
 /* ----------------------------------------------------------- */
 /* Scroll effect triangle gallery.
- /* ----------------------------------------------------------- */
+/* ----------------------------------------------------------- */
 
 // This value stores the position of the previous scroll event such that we can know by how much we have scrolled.
 var prevScroll = 0;
@@ -304,7 +304,40 @@ $(function imageSelectors () {
 
 
 });
-/**/
+
 /* ----------------------------------------------------------- */
 /* End of jQuery events.
+ /* ----------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------- */
+/* Scroll button.
+ /* ----------------------------------------------------------- */
+
+var SECTIONS = ['#our-story', '#portfolio', '#application', '#exec-team'];
+$(function scrollButton () {
+   $('#downButton').on('click', function () {
+       var top = $(window).scrollTop();
+
+       for(var section in SECTIONS){
+           if($(SECTIONS[section]).offset().top > (top + NAVHEIGHT + 2)){
+               smoothScroll(SECTIONS[section]);
+               break;
+           }
+           if(section == 3){
+               smoothScroll('#spacer');
+           }
+       }
+   });
+});
+
+/* ----------------------------------------------------------- */
+/* End of scroll button.
  /* ----------------------------------------------------------- */
