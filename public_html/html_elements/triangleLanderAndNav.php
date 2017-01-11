@@ -60,7 +60,7 @@ This module relies on code in main.js in order to properly function with resizin
         <image xlink:href="assets/img/stock/stockIm1.png" clip-path="url(#clip2)" class="im2" id="landerImage2"></image>
         <polygon class="poly2 im2 scrolledNav" fill="#4F2683"></polygon>
 
-        <image xlink:href="assets/img/logo/logoSmall.png" clip-path="url(#clip1)" class="im3" id="landerImage3"></image>
+        <image xlink:href="assets/img/logo/logoSmallDown.png" clip-path="url(#clip1)" class="im3" id="landerImage3"></image>
         <polygon class="poly1 im3 scrolledNav" fill="#4F2683"></polygon>
 
         <image xlink:href="assets/img/stock/stockIm3.png" clip-path="url(#clip2)" class="im4" id="landerImage4"></image>
