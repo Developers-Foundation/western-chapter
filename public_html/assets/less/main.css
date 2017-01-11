@@ -1,4 +1,13 @@
 /*============================================ COLOURS =====================================*/
+/*============================================ GENERAL =====================================*/
+.box {
+  color: #fe33ac;
+  border-color: #fdcdea;
+}
+.box div {
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
 * {
   font-family: 'Palanquin', sans-serif;
 }
@@ -11,14 +20,8 @@ h6 {
   text-transform: uppercase;
   font-weight: 600;
 }
-/*============================================ =====================================*/
-.box {
-  color: #fe33ac;
-  border-color: #fdcdea;
-}
-.box div {
-  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+p {
+  font-size: 20px;
 }
 /*============================================ TRIANGLELANDERANDNAV.PHP =====================================*/
 #triangleNav {
@@ -197,27 +200,33 @@ h6 {
 .footer-hover > li > a {
   color: white;
 }
+.modal-body {
+  font-size: 8pt;
+}
+.modal-body > p {
+  font-size: 8pt;
+}
 /*============================================ NEXTBUTTON.PHP =====================================*/
 #downButton {
-  height: 29px;
-  width: 29px;
+  height: 35px;
+  width: 35px;
   border: 2px solid orange;
-  font-size: 20px;
+  font-size: 27px;
   padding: 4px 6.5px;
   border-radius: 50%;
   color: white;
   transition: all 0.5s;
   background-color: orange;
+  cursor: pointer;
+  z-index: 9999 !important;
   position: fixed;
   top: 50%;
   left: 10px;
-  cursor: pointer;
-  z-index: 9999 !important;
 }
 @media (max-width: 650px) {
   #downButton {
     top: 90%;
-    left: calc(50% - 15px);
+    left: calc(50% - 17.5px);
   }
 }
 /*============================================ APPLICATION.PHP =====================================*/
@@ -225,9 +234,6 @@ h6 {
   margin: 5%;
   padding: 5%;
   background-color: #efe8f8;
-  /* If we would prefer an image here
-
-  */
 }
 .applyTxt {
   font-size: 29px;
@@ -274,12 +280,12 @@ h6 {
     font-size: 16px;
   }
 }
-@media (max-width: 450px) {
+@media (max-width: 400px) {
   .execName {
     font-size: 24px;
   }
 }
-@media (max-width: 350px) {
+@media (max-width: 300px) {
   .execName {
     font-size: 18px;
   }

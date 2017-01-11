@@ -244,12 +244,6 @@ p.small {
     font-size: 16px
 }
 
-/*h1, h2, h3, h4, h5, h6 {*/
-    /*font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;*/
-    /*text-transform: uppercase;*/
-    /*font-weight: 700*/
-/*}*/
-
 hr.star-light, hr.star-primary {
     padding: 0;
     border: none;
