@@ -4,18 +4,7 @@
 @LIGHTER_PURPLE: lighten(@WESTERN_PURPLE, 10%);
 @WESTERN_GRAY: #807F83;
 
-*{
-  font-family: 'Palanquin', sans-serif;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  text-transform: uppercase;
-  font-weight: 600;
-}
-
-
-
-/*============================================ =====================================*/
+/*============================================ GENERAL =====================================*/
 
 
 @base: #f938ab;
@@ -35,6 +24,19 @@ h1, h2, h3, h4, h5, h6 {
   div {
     .box-shadow(0 0 5px, 30%)
   }
+}
+
+*{
+  font-family: 'Palanquin', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+p{
+  font-size: 20px;
 }
 
 /*============================================ TRIANGLELANDERANDNAV.PHP =====================================*/
@@ -232,7 +234,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #copyright {
-  //padding-top: 16px;
   font-size: 12px;
 }
 
@@ -245,51 +246,46 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
 }
 
+.modal-body  {
+  font-size: 8pt;
+}
+
+.modal-body > p {
+  font-size: 8pt;
+}
+
 /*============================================ NEXTBUTTON.PHP =====================================*/
 
 #downButton{
-  height: 29px;
-  width: 29px;
+  height: 35px;
+  width: 35px;
   border: 2px solid orange;
-  font-size: 20px;
+  font-size: 27px;
   padding: 4px 6.5px;
   border-radius: 50%;
   color: white;
   transition: all 0.5s;
   background-color: orange;
-
+  cursor: pointer;
+  z-index: 9999 !important;
   position: fixed;
   top: 50%;
   left: 10px;
 
   @media(max-width: 650px){
     top: 90%;
-    left: calc(~'50% - 15px');
+    left: calc(~'50% - 17.5px');
   }
-
-
-  cursor: pointer;
-  z-index: 9999 !important;
 }
-
 
 
 /*============================================ APPLICATION.PHP =====================================*/
-
-*{
-  //border: solid 1px red;
-}
 
 #application{
   margin: 5%;
   padding: 5%;
   background-color: lighten(@WESTERN_PURPLE, 61%);
-
-  /* If we would prefer an image here
-
-  */
 }
-
 
 .applyTxt{
   font-size: 29px;
@@ -333,10 +329,10 @@ h1, h2, h3, h4, h5, h6 {
   @media(max-width: 600px){
     font-size: 16px;
   }
-  @media(max-width: 450px){
+  @media(max-width: 400px){
     font-size: 24px;
   }
-  @media(max-width: 350px){
+  @media(max-width: 300px){
     font-size: 18px;
   }
 }
@@ -469,11 +465,3 @@ h1, h2, h3, h4, h5, h6 {
 //
 //
 ///* Footer*/
-//.modal-body  {
-//  font-size: 8pt;
-//}
-//
-//.modal-body > p {
-//  font-size: 8pt;
-//}
-//
