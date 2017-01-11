@@ -20,8 +20,9 @@ TODO: add devfound logo in the center of the socials
 
         <div class="col-sm-12">
             <ul class="footer-social list-inline text-center">
+                <li><a href="//developersfoundation.ca" target="_blank"><img src="assets/img/logo/logoBlank.png" style="width: 140px"></img></a></li>
                 <li><a href="//www.facebook.com/developersfoundation/" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="//medium.com/@DevFound" target="_blank"><i class="fa fa-user"></i></a></li>
+                <li><a href="//medium.com/@DevFound" target="_blank"><i class="fa fa-medium"></i></a></li>
             </ul>
         </div>
 
