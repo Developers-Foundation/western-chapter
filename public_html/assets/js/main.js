@@ -218,9 +218,9 @@ $(function jQueryScroll (){
 /* jQuery events.
 /* ----------------------------------------------------------- */
 
-function smoothScroll(id){
+function smoothScroll(id, adjust){
     $('html, body').animate({
-        scrollTop: $(id).offset().top - NAVHEIGHT
+        scrollTop: $(id).offset().top - NAVHEIGHT - adjust
     }, 1000);
 }
 
@@ -230,7 +230,7 @@ $(function imageSelectors () {
 
     // Sponsors
     $('.im1').on('click', function() {
-        smoothScroll('#our-story');
+        smoothScroll('#our-story', windowHeight * 0.06);
     }).hover(function() {
             $('#landerImage1').css('opacity', 0.7);
             $('#triLbl1').removeClass('hidden');
@@ -245,7 +245,7 @@ $(function imageSelectors () {
 
     // Our Story
     $('.im2').on('click', function() {
-        smoothScroll('#portfolio');
+        smoothScroll('#portfolio', windowHeight * 0.03);
     }).hover(function() {
             $('#landerImage2').css('opacity', 0.7);
             $('#triLbl2').removeClass('hidden');
@@ -271,7 +271,7 @@ $(function imageSelectors () {
 
     // Our Team and Work
     $('.im4').on('click', function() {
-        smoothScroll('#application');
+        smoothScroll('#application', windowHeight * 0.20);
 
     }).hover(function() {
             $('#landerImage4').css('opacity', 0.7);
@@ -287,7 +287,7 @@ $(function imageSelectors () {
 
     // Application
     $('.im5').on('click', function() {
-        smoothScroll('#exec-team');
+        smoothScroll('#exec-team', 0);
     }).hover(function() {
             $('#landerImage5').css('opacity', 0.7);
             $('#triLbl4').removeClass('hidden');
@@ -338,17 +338,18 @@ $(function imageSelectors () {
  /* ----------------------------------------------------------- */
 
 var SECTIONS = ['#our-story', '#portfolio', '#application', '#exec-team'];
+var SECTIONS_OFFSET = [0.07, 0.03, 0.2, 0];
 $(function scrollButton () {
    $('#downButton').on('click', function () {
        var top = $(window).scrollTop();
 
        for(var section in SECTIONS){
-           if($(SECTIONS[section]).offset().top > (top + NAVHEIGHT + 2)){
-               smoothScroll(SECTIONS[section]);
+           if($(SECTIONS[section]).offset().top - windowHeight * SECTIONS_OFFSET[section] > (top + NAVHEIGHT + 2)){
+               smoothScroll(SECTIONS[section], windowHeight * SECTIONS_OFFSET[section]);
                break;
            }
            if(section == 3){
-               smoothScroll('#spacer');
+               smoothScroll('#spacer', 0);
            }
        }
    });

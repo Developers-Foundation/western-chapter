@@ -69,6 +69,10 @@ p {
   background: #4F2683;
   font-weight: 700;
   border: none;
+  text-transform: uppercase;
+}
+.navbar-custom .navbar-nav li a {
+  color: white;
 }
 .navbar-custom .navbar-nav li a:hover {
   color: #807F83;
@@ -238,6 +242,8 @@ p {
 /*============================================ APPLICATION.PHP =====================================*/
 #application {
   margin: 5%;
+  margin-top: 15% !important;
+  margin-bottom: 12% !important;
   padding: 5%;
   background-color: #efe8f8;
   box-shadow: -13px 13px;
@@ -298,7 +304,3 @@ p {
   }
 }
 /*============================================  =====================================*/
-/* Beginning of Our Story */
-/* End of Our Story */
-/* End of Portfolio */
-/* Applications */

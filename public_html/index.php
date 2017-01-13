@@ -72,7 +72,7 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 
 <!-- Theme JavaScript -->
-<!--<script src="assets/js/freelancer.js"></script>-->
+<script src="assets/js/freelancer.js"></script>
 <!--<script src="assets/js/material.min.js"></script>-->
 <!--<script src="assets/js/material-kit.js" type="text/javascript"></script>-->
 
