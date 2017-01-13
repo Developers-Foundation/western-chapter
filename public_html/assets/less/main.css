@@ -276,9 +276,16 @@ p {
     font-size: 15px;
   }
 }
+.applyTtl .applyClick {
+  background-color: white;
+}
+.applyClick {
+  margin-top: 4%;
+}
 .selectAppl {
   cursor: pointer;
   color: #808080;
+  text-decoration: underline;
 }
 .selectAppl:hover {
   color: #6731ab;
