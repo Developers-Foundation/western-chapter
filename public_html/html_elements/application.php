@@ -12,6 +12,6 @@
         </div>
     </div>
     <div class="row">
-        <h2 class="applyTtl">Let's get started, I am a <span class="selectAppl" id="npo"> non-profit organization </span> / <span class="selectAppl" id="std"> student </span></h2>
+        <h2 class="applyTtl applyClick">Let's get started, I am a <span class="selectAppl" id="npo"> non-profit organization</span> / <span class="selectAppl" id="std"> student </span></h2>
     </div>
 </div>
