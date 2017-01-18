@@ -160,7 +160,7 @@ p {
 /*============================================ PORTFOLIO.PHP =====================================*/
 #portfolio {
   padding: 7%;
-  background-image: url("../img/stock/startup-photos.jpg");
+  background-image: url("../img/stock/startup-photos.min.jpg");
   background-attachment: fixed;
   background-size: cover;
 }
