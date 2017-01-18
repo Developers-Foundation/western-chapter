@@ -6,7 +6,7 @@
  * Time: 2:50 PM
  */
 
-$sites = array('https://western.developers.foundation/', 'https://developers.foundation', 'https://queens.developers.foundation');
+$sites = array('https://western.developers.foundation/', 'https://developers.foundation/', 'https://queens.developers.foundation/');
 $handles = array();
 
 foreach ($sites as $i => $url) {
