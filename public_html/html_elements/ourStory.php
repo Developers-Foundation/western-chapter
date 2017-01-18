@@ -10,18 +10,21 @@
             functional websites for Student and Community organizations.</p>
     </div>
     <div class="col-md-4 descr">
-        <p class="description-header"><br><i class="fa fa-code" aria-hidden="true"></i> Future Efforts</p>
-        <p class="description">Throughout the first semester your clients will concentrate solely on catering to Student
-            organizations and charities/NPO. During the second semester of this school year, HQ will
-            recommend to include one small business client per month. This will be DF’s main source
-            of financial support. On average, we expected each chapter to work on at least 3 clients per
-            month. Another HQ initiative that we super excited about, is to increase the current number
-            of chapters, from 3 to 6 by the end of the second semester.</p>
+        <p class="description-header"><br><i class="fa fa-eye" aria-hidden="true"></i> The Developers' Foundation Vision</p>
+        <p class="description">To become a global changemaker in society through the creativity, energy and passion of students.<br>
+            <br><b>Our Bottom Line:</b><br>
+            We build technologies that create change, while providing students industry experience with organizations already making a difference.
+        </p>
     </div>
     <div class="col-md-4 descr">
-        <p class="description-header"><br><i class="fa fa-archive" aria-hidden="true"></i> Content Management System (CMS)</p>
-        <p class="description">We have also built our very own CMS (think wordpress), to make it easier for both our clients
-            and us when it comes to content maintenance. We believe this has a huge value in also
-            building an ecosystem where NPO and charities can rely on.</p>
+        <p class="description-header"><br><i class="fa fa-check-square" aria-hidden="true"></i> Our Objectives</p>
+        <p class="description">
+            <ul>
+            <li>Support and empower organizations with technology solutions to better tackle their causes.</li>
+            <li>Expose students to humanitarian engineering by working with organizations that need technology solutions.</li>
+            <li>Educate students to gain an increased awareness of poverty and their individual responsibility as Global Citizens.</li>
+            <li>Educate students to graduate with industry skills through their work experience at Developers' Foundation with organization</li>
+        </ul>
+        </p>
     </div>
 </div>
