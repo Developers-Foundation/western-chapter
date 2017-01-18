@@ -27,7 +27,7 @@ TODO: add devfound logo in the center of the socials
         </div>
 
         <div class="col-sm-12 text-center">
-            <p id="copyright">Copyright &copy; 2016. Developers' Foundation. Made with love 🖤</a></p>
+            <p id="copyright">Copyright &copy; 2016. Developers' Foundation. Made with love ♥</a></p>
         </div>
     </div>
 </nav>
