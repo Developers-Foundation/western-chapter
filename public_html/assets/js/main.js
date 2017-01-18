@@ -230,7 +230,7 @@ $(function imageSelectors () {
 
     // Sponsors
     $('.im1').on('click', function() {
-        smoothScroll('#our-story', windowHeight * 0.06);
+        smoothScroll('#our-story', windowHeight * 0.055);
     }).hover(function() {
             $('#landerImage1').css('opacity', 0.7);
             $('#triLbl1').removeClass('hidden');
@@ -271,7 +271,7 @@ $(function imageSelectors () {
 
     // Our Team and Work
     $('.im4').on('click', function() {
-        smoothScroll('#application', windowHeight * 0.20);
+        smoothScroll('#application', windowHeight * 0.10);
 
     }).hover(function() {
             $('#landerImage4').css('opacity', 0.7);
