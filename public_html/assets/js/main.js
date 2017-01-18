@@ -121,17 +121,17 @@ function resizeEvent(){
 
 
 // Whenever a window is resized we need to update the sizes of the triangles (for responsiveness)
-/*$(function jQueryResize (){
+$(function jQueryResize (){
     $(window).resize(function(){
         resizeEvent();
     })
-});*/
+});
 
 
 // Since we use absolute positioning, we need to resize when the website is loaded in order to fit to the current screen size.
-//$(function (){
+$(function (){
     resizeEvent();
-//});
+});
 
 
 /* ----------------------------------------------------------- */
