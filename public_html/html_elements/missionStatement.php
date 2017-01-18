@@ -7,8 +7,7 @@
 
     <div class="col-sm-6">
         <p id="msnStatement">
-            We want to help underserved communities to become sustainably independent, through the leverage of
-            technology.
+            We build technologies that create change in communities while exposing students to humanitarian engineering and providing them with industry experience.
             <br><br>
             We are group of students and aspiring designers/developers from The University of Western Ontario
             which serves as a subteam for Developers' Foundation.

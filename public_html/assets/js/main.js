@@ -338,7 +338,7 @@ $(function imageSelectors () {
  /* ----------------------------------------------------------- */
 
 var SECTIONS = ['#our-story', '#portfolio', '#application', '#exec-team'];
-var SECTIONS_OFFSET = [0.07, 0.03, 0.2, 0];
+var SECTIONS_OFFSET = [0.055, 0.03, 0.1, 0];
 $(function scrollButton () {
    $('#downButton').on('click', function () {
        var top = $(window).scrollTop();
