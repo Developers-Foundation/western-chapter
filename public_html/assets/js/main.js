@@ -129,9 +129,9 @@ function resizeEvent(){
 
 
 // Since we use absolute positioning, we need to resize when the website is loaded in order to fit to the current screen size.
-$(function (){
+//$(function (){
     resizeEvent();
-});
+//});
 
 
 /* ----------------------------------------------------------- */
