@@ -19,7 +19,7 @@
     <div class="col-md-4 descr">
         <p class="description-header"><br><i class="fa fa-check-square" aria-hidden="true"></i> Our Objectives</p>
         <p class="description">
-            <ul>
+            <ul class="description">
             <li>Support and empower organizations with technology solutions to better tackle their causes.</li>
             <li>Expose students to humanitarian engineering by working with organizations that need technology solutions.</li>
             <li>Educate students to gain an increased awareness of poverty and their individual responsibility as Global Citizens.</li>
