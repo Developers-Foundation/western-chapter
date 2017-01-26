@@ -193,10 +193,6 @@ function scrollEvent() {
         $('.triLbl').addClass("hidden").css('padding-top', (curHeight * 0.4) + "px");
     }
 
-    if(curHeight == NAVHEIGHT){
-        console.log(scroll);
-    }
-
     if(windowWidth > 750 && scroll > TRIANGLE_BASE * 0.6 && (curHeight != NAVHEIGHT || first)){
         first = false;
         $('#spacer').css('margin-top', TRIANGLE_BASE + 10 + Math.min(scroll, TRIANGLE_BASE - 20) - TRIANGLE_BASE * 0.6 + "px");
@@ -228,6 +224,9 @@ $(function jQueryScroll (){
 /* ----------------------------------------------------------- */
 
 function smoothScroll(id, adjust){
+    if(windowWidth > 750) {
+        adjust -= ($('#svg1').attr('height') - NAVHEIGHT) / 1.75;
+    }
     $('html, body').animate({
         scrollTop: $(id).offset().top - NAVHEIGHT - adjust
     }, 1000);
@@ -254,7 +253,7 @@ $(function imageSelectors () {
 
     // Portfolio
     $('.im2').on('click', function() {
-        smoothScroll('#portfolio', windowHeight * 0);
+        smoothScroll('#portfolio', 0);
     }).hover(function() {
             $('#landerImage2').css('opacity', 0.7);
             $('#triLbl2').removeClass('hidden');
