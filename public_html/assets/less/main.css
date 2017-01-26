@@ -79,7 +79,7 @@ p {
   color: white;
 }
 .navbar-custom .navbar-nav li a:hover {
-  color: #807F83;
+  color: #4F2683;
   outline: 0;
 }
 .navbar-custom .navbar-toggle {
@@ -296,12 +296,8 @@ p {
   margin-bottom: 12% !important;
   padding: 5%;
 }
-.applyText {
+.grey {
   background-color: #e7e7e7;
-  margin: 5px;
-  width: 45%;
-  height: 100%;
-  display: inline-block;
 }
 .applyTxt {
   font-size: 29px;
@@ -321,6 +317,9 @@ p {
     font-size: 14px;
   }
 }
+.applyTtl {
+  font-size: 33px;
+}
 @media (max-width: 730px) {
   .applyTtl {
     font-size: 20px;
@@ -336,10 +335,23 @@ p {
 }
 .applyClick {
   margin-top: 4%;
+  font-size: 50px;
+}
+@media (max-width: 500px) {
+  .applyClick {
+    font-size: 35px;
+  }
 }
 .selectAppl {
+  font-size: 43px;
+  margin-bottom: 10%;
   cursor: pointer;
   color: #808080;
+}
+@media (max-width: 500px) {
+  .selectAppl {
+    font-size: 20px;
+  }
 }
 .selectAppl:hover {
   color: #988FCE;
