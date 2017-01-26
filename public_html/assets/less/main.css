@@ -26,6 +26,10 @@ h2 {
 p {
   font-size: 20px;
 }
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
 /*============================================ TRIANGLELANDERANDNAV.PHP =====================================*/
 #triangleNav {
   min-height: 43px;
@@ -66,7 +70,7 @@ p {
 }
 /*============================================ NAVBAR.PHP =====================================*/
 .navbar-custom {
-  background: #4F2683;
+  background: #988FCE;
   font-weight: 700;
   border: none;
   text-transform: uppercase;
@@ -86,7 +90,7 @@ p {
 }
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
-  background-color: #6731ab;
+  background-color: #b9b2de;
 }
 #mobileNavLbl {
   text-transform: uppercase;
@@ -117,6 +121,7 @@ p {
 #mission-statement {
   padding: 8%;
   padding-top: 2% !important;
+  margin-bottom: 20%;
 }
 #missionTitle {
   padding-top: 4% !important;
@@ -140,15 +145,15 @@ p {
   }
 }
 .purple {
-  color: #4F2683;
+  color: #988FCE;
 }
 /*============================================  OURSTORY.PHP =====================================*/
 #our-story {
-  margin: 5%;
   margin-bottom: 12% !important;
   padding: 5%;
+  padding-top: 20% !important;
+  padding-bottom: 20% !important;
   background-color: #e7e7e7;
-  box-shadow: -13px 13px;
 }
 @media (max-width: 1440px) {
   .description {
@@ -179,7 +184,7 @@ p {
   }
 }
 #portContainer {
-  border: solid 15px #4F2683;
+  opacity: 0.8;
   padding-left: 15%;
   padding-right: 15%;
   margin: 3px;
@@ -187,13 +192,14 @@ p {
 }
 .portImg {
   margin-bottom: 5vh;
+  filter: grayscale(100%);
 }
 .portImg:hover {
-  opacity: 0.7;
+  filter: grayscale(0%);
 }
 /*============================================ FOOTER.PHP =====================================*/
 #footer {
-  background-color: #4F2683;
+  background-color: #988FCE;
   color: white;
 }
 #footer i.fa {
@@ -207,7 +213,7 @@ p {
   transition: all 0.5s;
 }
 #footer i.fa:hover {
-  background: #6731ab;
+  background: #b9b2de;
 }
 #copyright {
   font-size: 12px;
@@ -226,36 +232,77 @@ p {
   font-size: 8pt;
 }
 /*============================================ NEXTBUTTON.PHP =====================================*/
-#downButton {
+.navButton {
   height: 35px;
   width: 35px;
-  border: 2px solid orange;
+  border: 2px solid #988FCE;
   font-size: 27px;
-  padding: 4px 6.5px;
   border-radius: 50%;
   color: white;
   transition: all 0.5s;
-  background-color: orange;
+  background-color: #988FCE;
   cursor: pointer;
   z-index: 9999 !important;
   position: fixed;
-  top: 50%;
   left: 10px;
+}
+#downButton {
+  height: 35px;
+  width: 35px;
+  border: 2px solid #988FCE;
+  font-size: 27px;
+  border-radius: 50%;
+  color: white;
+  transition: all 0.5s;
+  background-color: #988FCE;
+  cursor: pointer;
+  z-index: 9999 !important;
+  position: fixed;
+  left: 10px;
+  top: calc(50% + 30px);
+  padding: 4px 7px;
 }
 @media (max-width: 650px) {
   #downButton {
     top: 90%;
-    left: calc(50% - 17.5px);
+    left: calc(50% + 13.5px);
+  }
+}
+#upButton {
+  height: 35px;
+  width: 35px;
+  border: 2px solid #988FCE;
+  font-size: 27px;
+  border-radius: 50%;
+  color: white;
+  transition: all 0.5s;
+  background-color: #988FCE;
+  cursor: pointer;
+  z-index: 9999 !important;
+  position: fixed;
+  left: 10px;
+  top: calc(50% - 30px);
+  padding: 2px 7px;
+}
+@media (max-width: 650px) {
+  #upButton {
+    top: 90%;
+    left: calc(50% - 47.5px);
   }
 }
 /*============================================ APPLICATION.PHP =====================================*/
 #application {
-  margin: 5%;
+  margin: 5% !important;
   margin-top: 15% !important;
   margin-bottom: 12% !important;
   padding: 5%;
-  background-color: #efe8f8;
-  box-shadow: -13px 13px;
+}
+.applyText {
+  background-color: #e7e7e7;
+  margin: 5px;
+  width: 45%;
+  height: 100%;
+  display: inline-block;
 }
 .applyTxt {
   font-size: 29px;
@@ -294,10 +341,16 @@ p {
 .selectAppl {
   cursor: pointer;
   color: #808080;
-  text-decoration: underline;
 }
 .selectAppl:hover {
-  color: #6731ab;
+  color: #b9b2de;
+}
+#applicationContainer {
+  background-image: url("../img/triangles.png");
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin-top: 20px;
+  background-size: 100%;
 }
 /*============================================ EXECTEAM.PHP =====================================*/
 #exec-team {
