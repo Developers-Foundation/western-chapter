@@ -178,8 +178,6 @@ p{
 /*============================================  OURSTORY.PHP =====================================*/
 
 #our-story{
-  //margin: 5%;
-  margin-bottom: 12% !important;
   padding: 5%;
   padding-top: 20% !important;
   padding-bottom: 20% !important;
@@ -212,10 +210,9 @@ p{
   background-size: cover;
 }
 
-#portTtle{
-  @media(max-width: 330px){
-    font-size: 18px;
-  }
+#portTitle{
+  color: white;
+  margin-bottom: 30px;
 }
 
 #portContainer{
@@ -227,6 +224,7 @@ p{
 }
 
 .portImg{
+  margin-top: 5vh;
   margin-bottom: 5vh;
   filter: grayscale(100%);
 
@@ -338,8 +336,6 @@ p{
 
 .applyTxt{
   font-size: 29px;
-  //height: 100%;
-  //width: 100%;
   @media(max-width: 1060px){
     font-size: 20px;
   }
@@ -370,7 +366,7 @@ p{
 .selectAppl{
   cursor: pointer;
   &:hover{
-    color: @LIGHTER_PURPLE;
+    color: @NOT_WESTERN_PURPLE;
   }
   color: lighten(black, 50%);
 }
@@ -388,8 +384,8 @@ p{
 
 #exec-team{
   margin: 2%;
+  margin-top: 0 !important;
   padding: 3%;
-  //min-width: 400px;
 }
 
 .execName{
@@ -404,17 +400,20 @@ p{
   }
 }
 
+#execTitle{
+  margin-bottom: 30px;
+}
+
 /*============================================ CONTACTUS1.PHP ========================================================*/
 
 
 #mailerForm {
   width: 100%;
   padding: 20px;
-  background-color: #3e3e3b;
 }
 
 .contactUsText {
-  color: ghostwhite;
+  color: white;
 }
 
 .contactUsContainer {
