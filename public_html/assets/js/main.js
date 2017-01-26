@@ -237,9 +237,9 @@ function smoothScroll(id, adjust){
 /**/
 $(function imageSelectors () {
 
-    // Sponsors
+    // Our Story
     $('.im1').on('click', function() {
-        smoothScroll('#our-story', windowHeight * 0.055);
+        smoothScroll('#our-story', windowHeight * -0.12);
     }).hover(function() {
             $('#landerImage1').css('opacity', 0.7);
             $('#triLbl1').removeClass('hidden');
@@ -252,9 +252,9 @@ $(function imageSelectors () {
         }
     );
 
-    // Our Story
+    // Portfolio
     $('.im2').on('click', function() {
-        smoothScroll('#portfolio', windowHeight * 0.03);
+        smoothScroll('#portfolio', windowHeight * 0);
     }).hover(function() {
             $('#landerImage2').css('opacity', 0.7);
             $('#triLbl2').removeClass('hidden');
@@ -278,9 +278,9 @@ $(function imageSelectors () {
         }
     );
 
-    // Our Team and Work
+    // Application
     $('.im4').on('click', function() {
-        smoothScroll('#application', windowHeight * 0.10);
+        smoothScroll('#application', windowHeight * 0.05);
 
     }).hover(function() {
             $('#landerImage4').css('opacity', 0.7);
@@ -294,7 +294,7 @@ $(function imageSelectors () {
         }
     );
 
-    // Application
+    // Our Team
     $('.im5').on('click', function() {
         smoothScroll('#exec-team', 0);
     }).hover(function() {
@@ -346,7 +346,7 @@ $(function imageSelectors () {
  /* ----------------------------------------------------------- */
 
 var SECTIONS = ['#our-story', '#portfolio', '#application', '#exec-team'];
-var SECTIONS_OFFSET = [0.055, 0.03, 0.1, 0];
+var SECTIONS_OFFSET = [-0.12, 0, 0.05, 0];
 $(function scrollButton () {
     $('#upButton').on('click', determineNextSectionCall);
     $('#downButton').on('click', determineNextSection);
@@ -368,7 +368,7 @@ function determineNextSection(down){
             break;
         }
         if((down && i == 3) || (!down && i == 0)){
-            smoothScroll('#spacer', 0);
+            smoothScroll('#spacer', windowHeight * 0.1);
             break;
         }
     }

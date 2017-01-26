@@ -109,7 +109,7 @@ p{
     li {
       a {
         &:hover {
-          color: @WESTERN_GRAY;
+          color: @WESTERN_PURPLE;
           outline: 0
         }
         color: white;
@@ -326,12 +326,9 @@ p{
 
 }
 
-.applyText{
+.grey{
   background-color: lighten(@WESTERN_GRAY, 40%);
-  margin: 5px;
-  width: 45%;
-  height: 100%;
-  display: inline-block;
+
 }
 
 .applyTxt{
@@ -348,6 +345,7 @@ p{
 }
 
 .applyTtl{
+  font-size: 33px;
   @media(max-width: 730px){
     font-size: 20px;
   }
@@ -361,9 +359,18 @@ p{
 
 .applyClick{
   margin-top: 4%;
+  font-size: 50px;
+  @media(max-width: 500px){
+    font-size: 35px;
+  }
 }
 
 .selectAppl{
+  font-size: 43px;
+  @media(max-width: 500px){
+    font-size: 20px;
+  }
+  margin-bottom: 10%;
   cursor: pointer;
   &:hover{
     color: @NOT_WESTERN_PURPLE;
@@ -378,7 +385,6 @@ p{
   margin-top: 20px;
   background-size: 100%;
 }
-
 
 /*============================================ EXECTEAM.PHP =====================================*/
 
