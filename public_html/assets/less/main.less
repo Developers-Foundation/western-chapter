@@ -1,7 +1,8 @@
 /*============================================ COLOURS =====================================*/
 
 @WESTERN_PURPLE: #4F2683;
-@LIGHTER_PURPLE: lighten(@WESTERN_PURPLE, 10%);
+@NOT_WESTERN_PURPLE: #988FCE;
+@LIGHTER_PURPLE: lighten(@NOT_WESTERN_PURPLE, 10%);
 @WESTERN_GRAY: #807F83;
 
 /*============================================ GENERAL =====================================*/
@@ -41,6 +42,11 @@ h2{
 
 p{
   font-size: 20px;
+}
+
+.row{
+  margin-left: 0;
+  margin-right: 0;
 }
 
 /*============================================ TRIANGLELANDERANDNAV.PHP =====================================*/
@@ -95,7 +101,7 @@ p{
 /*============================================ NAVBAR.PHP =====================================*/
 
 .navbar-custom {
-  background: @WESTERN_PURPLE;
+  background: @NOT_WESTERN_PURPLE;
   font-weight: 700;
   border: none;
   text-transform: uppercase;
@@ -146,6 +152,7 @@ p{
 #mission-statement{
   padding: 8%;
   padding-top: 2% !important;
+  margin-bottom: 20%;
 }
 
 #missionTitle{
@@ -166,16 +173,17 @@ p{
 }
 
 .purple{
-  color: @WESTERN_PURPLE;
+  color: @NOT_WESTERN_PURPLE;
 }
 /*============================================  OURSTORY.PHP =====================================*/
 
 #our-story{
-  margin: 5%;
+  //margin: 5%;
   margin-bottom: 12% !important;
   padding: 5%;
+  padding-top: 20% !important;
+  padding-bottom: 20% !important;
   background-color: lighten(@WESTERN_GRAY, 40%);
-  box-shadow: -13px 13px;
 }
 
 .description{
@@ -211,8 +219,7 @@ p{
 }
 
 #portContainer{
-  border: solid 15px @WESTERN_PURPLE;
-  //box-shadow: -13px 13px @WESTERN_PURPLE;
+  opacity: 0.8;
   padding-left: 15%;
   padding-right: 15%;
   margin: 3px;
@@ -221,8 +228,10 @@ p{
 
 .portImg{
   margin-bottom: 5vh;
+  filter: grayscale(100%);
+
   &:hover{
-    opacity: 0.7;
+    filter: grayscale(0%);
   }
 }
 
@@ -244,7 +253,7 @@ p{
     }
   }
 
-  background-color: @WESTERN_PURPLE;
+  background-color: @NOT_WESTERN_PURPLE;
   color: white;
 }
 
@@ -268,28 +277,43 @@ p{
 .modal-body > p {
   font-size: 8pt;
 }
-
 /*============================================ NEXTBUTTON.PHP =====================================*/
 
-#downButton{
+.navButton{
   height: 35px;
   width: 35px;
-  border: 2px solid orange;
+  border: 2px solid @NOT_WESTERN_PURPLE;
   font-size: 27px;
-  padding: 4px 6.5px;
   border-radius: 50%;
   color: white;
   transition: all 0.5s;
-  background-color: orange;
+  background-color: @NOT_WESTERN_PURPLE;
   cursor: pointer;
   z-index: 9999 !important;
   position: fixed;
-  top: 50%;
   left: 10px;
+}
+
+#downButton{
+  .navButton;
+  top: calc(~'50% + 30px');
+  padding: 4px 7px;
 
   @media(max-width: 650px){
     top: 90%;
-    left: calc(~'50% - 17.5px');
+    left: calc(~'50% + 13.5px');
+  }
+
+}
+
+#upButton{
+  .navButton;
+  top: calc(~'50% - 30px');
+  padding: 2px 7px;
+
+  @media(max-width: 650px) {
+    top: 90%;
+    left: calc(~'50% - 47.5px');
   }
 }
 
@@ -297,17 +321,25 @@ p{
 /*============================================ APPLICATION.PHP =====================================*/
 
 #application{
-  margin: 5%;
+  margin: 5% !important;
   margin-top: 15% !important;
   margin-bottom: 12% !important;
   padding: 5%;
-  background-color: lighten(@WESTERN_PURPLE, 61%);
-  box-shadow: -13px 13px;
 
+}
+
+.applyText{
+  background-color: lighten(@WESTERN_GRAY, 40%);
+  margin: 5px;
+  width: 45%;
+  height: 100%;
+  display: inline-block;
 }
 
 .applyTxt{
   font-size: 29px;
+  //height: 100%;
+  //width: 100%;
   @media(max-width: 1060px){
     font-size: 20px;
   }
@@ -341,7 +373,14 @@ p{
     color: @LIGHTER_PURPLE;
   }
   color: lighten(black, 50%);
-  text-decoration: underline;
+}
+
+#applicationContainer{
+  background-image: url("../img/triangles.png");
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin-top: 20px;
+  background-size: 100%;
 }
 
 
