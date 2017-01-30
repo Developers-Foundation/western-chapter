@@ -9,9 +9,11 @@ var TRIANGLE_BASE;
 var NAVHEIGHT = 40;
 var MOBILE = -1;
 var windowHeight;
+var windowWidth;
+var first = true;
 
 function resizeEvent(){
-    var windowWidth = $(this).width();
+    windowWidth = $(this).width();
     windowHeight = $(this).height();
     TRIANGLE_BASE = Math.floor(windowWidth/3);
     var halfTriangleBase = Math.floor(windowWidth/6);
@@ -25,7 +27,7 @@ function resizeEvent(){
             MOBILE = 1;
             $('#mobileNav').removeClass('hidden');
             $('#triangleNav').addClass('hidden');
-            $('#spacer').css('margin-top', NAVHEIGHT);
+            $('#spacer').css('margin-top', NAVHEIGHT + 30);
         }
 
     }
@@ -35,7 +37,6 @@ function resizeEvent(){
         if(MOBILE == 1 || MOBILE == -1) {
             MOBILE = 0;
             $('#triangleNav').removeClass('hidden');
-            $('#spacer').removeClass('hidden');
             $('#mobileNav').addClass('hidden');
         }
         $('#svg1').attr({
@@ -44,7 +45,7 @@ function resizeEvent(){
         });
 
         // We choose 15px as the space between each triangle.
-        $('#spacer').css('margin-top', TRIANGLE_BASE + 10);
+        $('#spacer').css('margin-top', Math.max(TRIANGLE_BASE + 10, windowHeight/2) + "px");
 
         // Resize the shape of the polygon (the triangles)
 
@@ -192,6 +193,10 @@ function scrollEvent() {
         $('.triLbl').addClass("hidden").css('padding-top', (curHeight * 0.4) + "px");
     }
 
+    if(windowWidth > 750 && scroll > TRIANGLE_BASE * 0.6 && (curHeight != NAVHEIGHT || first)){
+        first = false;
+        $('#spacer').css('margin-top', TRIANGLE_BASE + 10 + Math.min(scroll, TRIANGLE_BASE - 20) - TRIANGLE_BASE * 0.6 + "px");
+    }
 
 
 }
@@ -219,6 +224,9 @@ $(function jQueryScroll (){
 /* ----------------------------------------------------------- */
 
 function smoothScroll(id, adjust){
+    if(windowWidth > 750) {
+        adjust -= ($('#svg1').attr('height') - NAVHEIGHT) / 1.75;
+    }
     $('html, body').animate({
         scrollTop: $(id).offset().top - NAVHEIGHT - adjust
     }, 1000);
@@ -228,9 +236,9 @@ function smoothScroll(id, adjust){
 /**/
 $(function imageSelectors () {
 
-    // Sponsors
+    // Our Story
     $('.im1').on('click', function() {
-        smoothScroll('#our-story', windowHeight * 0.055);
+        smoothScroll('#our-story', windowHeight * -0.12);
     }).hover(function() {
             $('#landerImage1').css('opacity', 0.7);
             $('#triLbl1').removeClass('hidden');
@@ -243,9 +251,9 @@ $(function imageSelectors () {
         }
     );
 
-    // Our Story
+    // Portfolio
     $('.im2').on('click', function() {
-        smoothScroll('#portfolio', windowHeight * 0.03);
+        smoothScroll('#portfolio', 0);
     }).hover(function() {
             $('#landerImage2').css('opacity', 0.7);
             $('#triLbl2').removeClass('hidden');
@@ -269,9 +277,9 @@ $(function imageSelectors () {
         }
     );
 
-    // Our Team and Work
+    // Application
     $('.im4').on('click', function() {
-        smoothScroll('#application', windowHeight * 0.10);
+        smoothScroll('#application', windowHeight * 0.05);
 
     }).hover(function() {
             $('#landerImage4').css('opacity', 0.7);
@@ -285,7 +293,7 @@ $(function imageSelectors () {
         }
     );
 
-    // Application
+    // Our Team
     $('.im5').on('click', function() {
         smoothScroll('#exec-team', 0);
     }).hover(function() {
@@ -301,10 +309,10 @@ $(function imageSelectors () {
     );
 
     $('.scrolledNav').hover(function () {
-        $(this).attr('fill', '#6731ab')
+        $(this).attr('fill', '#b9b2de')
     },
         function () {
-            $(this).attr('fill', '#4F2683')
+            $(this).attr('fill', '#988FCE')
         }
     );
 
@@ -317,7 +325,6 @@ $(function imageSelectors () {
     $('#npo').on('click', function () {
         window.location.href = "#";
     });
-
 
 });
 
@@ -338,28 +345,50 @@ $(function imageSelectors () {
  /* ----------------------------------------------------------- */
 
 var SECTIONS = ['#our-story', '#portfolio', '#application', '#exec-team'];
-var SECTIONS_OFFSET = [0.055, 0.03, 0.1, 0];
+var SECTIONS_OFFSET = [-0.12, 0, 0.05, 0];
 $(function scrollButton () {
-   $('#downButton').on('click', function () {
-       var top = $(window).scrollTop();
-
-       for(var section in SECTIONS){
-           if($(SECTIONS[section]).offset().top - windowHeight * SECTIONS_OFFSET[section] > (top + NAVHEIGHT + 2)){
-               smoothScroll(SECTIONS[section], windowHeight * SECTIONS_OFFSET[section]);
-               break;
-           }
-           if(section == 3){
-               smoothScroll('#spacer', 0);
-           }
-       }
-   });
+    $('#upButton').on('click', determineNextSectionCall);
+    $('#downButton').on('click', determineNextSection);
 });
+
+function determineNextSection(down){
+
+    var start = down ? 0 : 2;
+    var dif = down ? 2 : -2;
+    if(down == null){
+        down = true;
+    }
+
+    var top = $(window).scrollTop();
+
+    for(var i = start; i < start + 4; i = down ? i + 1 : i - 1){
+        if(compare($(SECTIONS[i % 4]).offset().top - windowHeight * SECTIONS_OFFSET[i % 4], (top + NAVHEIGHT + dif), down)){
+            smoothScroll(SECTIONS[i % 4], windowHeight * SECTIONS_OFFSET[i % 4]);
+            break;
+        }
+        if((down && i == 3) || (!down && i == 0)){
+            smoothScroll('#spacer', windowHeight * 0.1);
+            break;
+        }
+    }
+}
+
+function determineNextSectionCall(){
+    determineNextSection(false);
+}
+
+function compare(a, b, greater){
+    if(greater){
+        return a > b;
+    }
+    else{
+        return a < b;
+    }
+}
 
 /* ----------------------------------------------------------- */
 /* End of scroll button.
  /* ----------------------------------------------------------- */
-
-
 
 
 

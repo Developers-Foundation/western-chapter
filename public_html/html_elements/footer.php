@@ -8,9 +8,9 @@ TODO: add devfound logo in the center of the socials
 -->
 
 <nav id="footer">
-    <div class="row">
+    <div class="row" id="footerRow">
         <div class="col-sm-12">
-            <ul class="list-inline text-center h4 footer-hover">
+            <ul class="list-inline text-center h6 footer-hover">
                 <li><a href="#" data-toggle="modal" data-target="#ContactUs">Contact Us</a></li>
                 <li><a href="#" data-toggle="modal" data-target="#TermsOfService">Terms of Service</a></li>
                 <li><a href="#" data-toggle="modal" data-target="#PrivacyPolicy">Privacy Policy</a></li>
