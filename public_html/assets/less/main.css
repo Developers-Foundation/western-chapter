@@ -26,6 +26,10 @@ h2 {
 p {
   font-size: 20px;
 }
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
 /*============================================ TRIANGLELANDERANDNAV.PHP =====================================*/
 #triangleNav {
   min-height: 43px;
@@ -66,7 +70,7 @@ p {
 }
 /*============================================ NAVBAR.PHP =====================================*/
 .navbar-custom {
-  background: #4F2683;
+  background: #988FCE;
   font-weight: 700;
   border: none;
   text-transform: uppercase;
@@ -75,7 +79,7 @@ p {
   color: white;
 }
 .navbar-custom .navbar-nav li a:hover {
-  color: #807F83;
+  color: #4F2683;
   outline: 0;
 }
 .navbar-custom .navbar-toggle {
@@ -86,7 +90,7 @@ p {
 }
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
-  background-color: #6731ab;
+  background-color: #b9b2de;
 }
 #mobileNavLbl {
   text-transform: uppercase;
@@ -117,6 +121,10 @@ p {
 #mission-statement {
   padding: 8%;
   padding-top: 2% !important;
+  margin-bottom: 20%;
+}
+#missionTitle {
+  padding-top: 4% !important;
 }
 @media (max-width: 494px) {
   #missionTitle {
@@ -128,21 +136,23 @@ p {
     font-size: 14px;
   }
 }
+#msnStatement {
+  font-size: 22px;
+}
 @media (max-width: 494px) {
   #msnStatement {
     font-size: 15px;
   }
 }
 .purple {
-  color: #4F2683;
+  color: #988FCE;
 }
 /*============================================  OURSTORY.PHP =====================================*/
 #our-story {
-  margin: 5%;
-  margin-bottom: 12% !important;
   padding: 5%;
+  padding-top: 20% !important;
+  padding-bottom: 20% !important;
   background-color: #e7e7e7;
-  box-shadow: -13px 13px;
 }
 @media (max-width: 1440px) {
   .description {
@@ -157,6 +167,9 @@ p {
 .description-header {
   font-size: 23px;
 }
+#storyDescription {
+  font-size: 20px;
+}
 /*============================================ PORTFOLIO.PHP =====================================*/
 #portfolio {
   padding: 7%;
@@ -164,27 +177,28 @@ p {
   background-attachment: fixed;
   background-size: cover;
 }
-@media (max-width: 330px) {
-  #portTtle {
-    font-size: 18px;
-  }
+#portTitle {
+  color: white;
+  margin-bottom: 30px;
 }
 #portContainer {
-  border: solid 15px #4F2683;
+  opacity: 0.8;
   padding-left: 15%;
   padding-right: 15%;
   margin: 3px;
   background-color: white !important;
 }
 .portImg {
+  margin-top: 5vh;
   margin-bottom: 5vh;
+  filter: grayscale(100%);
 }
 .portImg:hover {
-  opacity: 0.7;
+  filter: grayscale(0%);
 }
 /*============================================ FOOTER.PHP =====================================*/
 #footer {
-  background-color: #4F2683;
+  background-color: #988FCE;
   color: white;
 }
 #footer i.fa {
@@ -198,7 +212,7 @@ p {
   transition: all 0.5s;
 }
 #footer i.fa:hover {
-  background: #6731ab;
+  background: #b9b2de;
 }
 #copyright {
   font-size: 12px;
@@ -217,36 +231,73 @@ p {
   font-size: 8pt;
 }
 /*============================================ NEXTBUTTON.PHP =====================================*/
-#downButton {
+.navButton {
   height: 35px;
   width: 35px;
-  border: 2px solid orange;
+  border: 2px solid #988FCE;
   font-size: 27px;
-  padding: 4px 6.5px;
   border-radius: 50%;
   color: white;
   transition: all 0.5s;
-  background-color: orange;
+  background-color: #988FCE;
   cursor: pointer;
   z-index: 9999 !important;
   position: fixed;
-  top: 50%;
   left: 10px;
+}
+#downButton {
+  height: 35px;
+  width: 35px;
+  border: 2px solid #988FCE;
+  font-size: 27px;
+  border-radius: 50%;
+  color: white;
+  transition: all 0.5s;
+  background-color: #988FCE;
+  cursor: pointer;
+  z-index: 9999 !important;
+  position: fixed;
+  left: 10px;
+  top: calc(50% + 30px);
+  padding: 4px 7px;
 }
 @media (max-width: 650px) {
   #downButton {
     top: 90%;
-    left: calc(50% - 17.5px);
+    left: calc(50% + 13.5px);
+  }
+}
+#upButton {
+  height: 35px;
+  width: 35px;
+  border: 2px solid #988FCE;
+  font-size: 27px;
+  border-radius: 50%;
+  color: white;
+  transition: all 0.5s;
+  background-color: #988FCE;
+  cursor: pointer;
+  z-index: 9999 !important;
+  position: fixed;
+  left: 10px;
+  top: calc(50% - 30px);
+  padding: 2px 7px;
+}
+@media (max-width: 650px) {
+  #upButton {
+    top: 90%;
+    left: calc(50% - 47.5px);
   }
 }
 /*============================================ APPLICATION.PHP =====================================*/
 #application {
-  margin: 5%;
+  margin: 5% !important;
   margin-top: 15% !important;
   margin-bottom: 12% !important;
   padding: 5%;
-  background-color: #efe8f8;
-  box-shadow: -13px 13px;
+}
+.grey {
+  background-color: #e7e7e7;
 }
 .applyTxt {
   font-size: 29px;
@@ -266,6 +317,9 @@ p {
     font-size: 14px;
   }
 }
+.applyTtl {
+  font-size: 33px;
+}
 @media (max-width: 730px) {
   .applyTtl {
     font-size: 20px;
@@ -281,18 +335,38 @@ p {
 }
 .applyClick {
   margin-top: 4%;
+  font-size: 50px;
+}
+@media (max-width: 500px) {
+  .applyClick {
+    font-size: 35px;
+  }
 }
 .selectAppl {
+  font-size: 43px;
+  margin-bottom: 10%;
   cursor: pointer;
   color: #808080;
-  text-decoration: underline;
+}
+@media (max-width: 500px) {
+  .selectAppl {
+    font-size: 20px;
+  }
 }
 .selectAppl:hover {
-  color: #6731ab;
+  color: #988FCE;
+}
+#applicationContainer {
+  background-image: url("../img/triangles.png");
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin-top: 20px;
+  background-size: 100%;
 }
 /*============================================ EXECTEAM.PHP =====================================*/
 #exec-team {
   margin: 2%;
+  margin-top: 0 !important;
   padding: 3%;
 }
 @media (max-width: 600px) {
@@ -310,14 +384,16 @@ p {
     font-size: 18px;
   }
 }
+#execTitle {
+  margin-bottom: 30px;
+}
 /*============================================ CONTACTUS1.PHP ========================================================*/
 #mailerForm {
   width: 100%;
   padding: 20px;
-  background-color: #3e3e3b;
 }
 .contactUsText {
-  color: ghostwhite;
+  color: white;
 }
 .contactUsContainer {
   margin-bottom: 20px;
