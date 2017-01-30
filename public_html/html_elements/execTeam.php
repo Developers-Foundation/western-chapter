@@ -34,20 +34,20 @@
         </div>
 
         <div class="row execRow">
-            <div class="col-sm-3 col-xs-6 text-center">
-                <img class="img-responsive" src="./assets/img/portfolio/old/preview.png" alt="">
+            <div class="col-sm-4 col-xs-6 text-center">
+                <img class="img-responsive" src="./assets/img/team/EunSu.jpg" alt="">
                 <h3 class="execName">Eun Su Shim
                     <br><small>Techincal Product Manager</small>
                 </h3>
             </div>
-            <div class="col-sm-3 col-xs-6 text-center">
-                <img class="img-responsive" src="./assets/img/portfolio/old/preview.png" alt="">
+            <div class="col-sm-4 col-xs-6 text-center">
+                <img class="img-responsive" src="./assets/img/team/Paul.jpg" alt="">
                 <h3 class="execName">Paul Salvatore
                     <br><small>Developer</small>
                 </h3>
             </div>
-            <div class="col-sm-3 col-xs-6 text-center">
-                <img class="img-responsive" src="./assets/img/portfolio/old/preview.png" alt="">
+            <div class="col-sm-4 col-xs-6 text-center">
+                <img class="img-responsive" src="./assets/img/team/Alex.jpg" alt="">
                 <h3 class="execName">Alex Madrzyk
                     <br><small>Developer</small>
                 </h3>
