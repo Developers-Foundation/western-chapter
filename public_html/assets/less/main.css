@@ -42,7 +42,7 @@ p {
   top: 0;
   height: 40px;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 600;
   padding-top: 8px;
   font-size: 16px;
 }
@@ -121,7 +121,7 @@ p {
 #mission-statement {
   padding: 8%;
   padding-top: 2% !important;
-  margin-bottom: 20%;
+  margin-bottom: 10%;
 }
 #missionTitle {
   padding-top: 4% !important;
@@ -150,8 +150,8 @@ p {
 /*============================================  OURSTORY.PHP =====================================*/
 #our-story {
   padding: 5%;
-  padding-top: 20% !important;
-  padding-bottom: 20% !important;
+  padding-top: 17% !important;
+  padding-bottom: 18% !important;
   background-color: #e7e7e7;
 }
 @media (max-width: 1440px) {
