@@ -108,12 +108,12 @@ function navLabelScaling(halfTriangleBase, space){
     });
 
     $('#triLbl2').css({
-        left: (1 * (space + halfTriangleBase) + offset + 10) + "px",
+        left: (1 * (space + halfTriangleBase) + offset) + "px",
         width: (TRIANGLE_BASE - 2 * offset) + "px"
     });
 
     $('#triLbl3').css({
-        left: (3 * (space + halfTriangleBase) + offset + 10) + "px",
+        left: (3 * (space + halfTriangleBase) + offset) + "px",
         width: (TRIANGLE_BASE - 2 * offset) + "px"
     });
 
@@ -121,13 +121,6 @@ function navLabelScaling(halfTriangleBase, space){
         left: (5 * (space + halfTriangleBase)) + "px",
         width: halfTriangleBase + "px"
     });
-
-    // $('.triLbl').css({
-        // none
-    // });
-
-    console.log(windowWidth);
-    console.log($('.triLbl').css('font-size'));
 
 }
 
@@ -197,12 +190,19 @@ function scrollEvent() {
 
     // We only want the labels to appear when the navbar cover is completely opaque.
     if(OPACITY == 1){
-        $('.triLbl').removeClass("hidden").css('padding-top', "8px");
+        $('.triLbl').removeClass("hidden").css({
+            'padding-top': "8px",
+            'font-size': NAVHEIGHT * 0.45 + "px"
+        });
 
     }
     else{
-        $('.triLbl').addClass("hidden").css('padding-top', (curHeight * 0.4) + "px");
+        $('.triLbl').addClass("hidden").css({
+            'padding-top': (curHeight * 0.3) + "px",
+            'font-size': Math.max((curHeight + scroll/2) * 0.07, NAVHEIGHT * 0.5) + "px"
+        });
     }
+
 
     /* Used to make the misson statement stop at the center of the screen however implementation is very jerky (goes up and then back down) */
     // if(windowWidth > 750 && scroll > TRIANGLE_BASE * 0.6 && (curHeight != NAVHEIGHT || first)){
@@ -388,11 +388,12 @@ function determineNextSectionCall(){
 }
 
 function compare(a, b, greater){
+
     if(greater){
         return a > b;
     }
     else{
-        return Math.abs(a - b) > 70 ? a < b : false;
+        return Math.abs(a - b) > windowWidth * 0.3 ? a < b : false;
     }
 }
 
