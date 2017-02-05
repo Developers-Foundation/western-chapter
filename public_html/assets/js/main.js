@@ -454,7 +454,6 @@ $(document).ready(function () {
                 contentType: 'application/json; charset=utf-8',
                 success: function (data) {
                     // Deal with JSON
-                    console.log(data);
                     var returnData = data;
 
                     submitButton.removeClass("btn-primary");
@@ -473,14 +472,16 @@ $(document).ready(function () {
                     submitButton.prop("disabled", false);
                 },
                 error: function (error) {
-                    // console.log(sendData);
-                    console.log("Email was not sent successfully.");
-                    console.log(error);
                     // Throw error message
-                    submitButton.html("Sorry an error occured");
-                    submitButton.removeClass("btn-primary");
-                    submitButton.addClass("btn-danger");
-                    submitButton.prop("disabled", false);
+
+                    // TODO: email submits successfully however still throws an error. I've put a band-aid on this for now.
+                    submitButton.html("Received");
+                    submitButton.addClass("btn-success");
+
+                    // submitButton.html("Sorry an error occurred.");
+                    // submitButton.removeClass("btn-primary");
+                    // submitButton.addClass("btn-danger");
+                    // submitButton.prop("disabled", false);
                 }
             });
         }
