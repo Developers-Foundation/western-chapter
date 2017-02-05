@@ -59,11 +59,8 @@ p {
   position: fixed;
   width: 100%;
 }
-#triLbl1 {
-  padding-left: 3%;
-}
 #triLbl4 {
-  padding-right: 1%;
+  padding-right: 3%;
 }
 .scrolledNav:hover {
   cursor: pointer;
