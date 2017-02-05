@@ -89,35 +89,46 @@ function resizeEvent(){
             transform: "translate(" + (windowMid + 2 * (halfTriangleBase + space)) + ", 0)"
         });
 
-
-        // Positioning of the labels in the center of the nav
-        var offset = (NAVHEIGHT / Math.sqrt(3));           // adj=(height/tan(60)) since we are dealing with right angles
-
-        $('#triLbl1').css({
-            left: 0 + "px",
-            width: halfTriangleBase + "px"
-        });
-
-        $('#triLbl2').css({
-            left: (1 * (space + halfTriangleBase) + offset + 10) + "px",
-            width: (TRIANGLE_BASE - 2 * offset) + "px"
-        });
-
-        $('#triLbl3').css({
-            left: (3 * (space + halfTriangleBase) + offset + 10) + "px",
-            width: (TRIANGLE_BASE - 2 * offset) + "px"
-        });
-
-        $('#triLbl4').css({
-            left: (5 * (space + halfTriangleBase)) + "px",
-            width: halfTriangleBase + "px"
-        });
-
+        navLabelScaling(halfTriangleBase, space);
 
         // Whenever the screen is resized, we must also treat this event as if there was a scroll to reinitialize the nav bar.
         prevScroll = 0;
         scrollEvent();
     }
+}
+
+
+function navLabelScaling(halfTriangleBase, space){
+    // Positioning of the labels in the center of the nav
+    var offset = (NAVHEIGHT / Math.sqrt(3));           // adj=(height/tan(60)) since we are dealing with right angles
+
+    $('#triLbl1').css({
+        left: 0 + "px",
+        width: halfTriangleBase + "px"
+    });
+
+    $('#triLbl2').css({
+        left: (1 * (space + halfTriangleBase) + offset + 10) + "px",
+        width: (TRIANGLE_BASE - 2 * offset) + "px"
+    });
+
+    $('#triLbl3').css({
+        left: (3 * (space + halfTriangleBase) + offset + 10) + "px",
+        width: (TRIANGLE_BASE - 2 * offset) + "px"
+    });
+
+    $('#triLbl4').css({
+        left: (5 * (space + halfTriangleBase)) + "px",
+        width: halfTriangleBase + "px"
+    });
+
+    // $('.triLbl').css({
+        // none
+    // });
+
+    console.log(windowWidth);
+    console.log($('.triLbl').css('font-size'));
+
 }
 
 
@@ -193,12 +204,11 @@ function scrollEvent() {
         $('.triLbl').addClass("hidden").css('padding-top', (curHeight * 0.4) + "px");
     }
 
-    if(windowWidth > 750 && scroll > TRIANGLE_BASE * 0.6 && (curHeight != NAVHEIGHT || first)){
-        first = false;
-        $('#spacer').css('margin-top', TRIANGLE_BASE + 10 + Math.min(scroll, TRIANGLE_BASE - 20) - TRIANGLE_BASE * 0.6 + "px");
-    }
-
-
+    /* Used to make the misson statement stop at the center of the screen however implementation is very jerky (goes up and then back down) */
+    // if(windowWidth > 750 && scroll > TRIANGLE_BASE * 0.6 && (curHeight != NAVHEIGHT || first)){
+    //     first = false;
+    //     $('#spacer').css('margin-top', TRIANGLE_BASE + 10 + Math.min(scroll, TRIANGLE_BASE - 20) - TRIANGLE_BASE * 0.6 + "px");
+    // }
 }
 
 // Whenever the window is scrolled we need to update the size of the nav
@@ -238,13 +248,13 @@ $(function imageSelectors () {
 
     // Our Story
     $('.im1').on('click', function() {
-        smoothScroll('#our-story', windowHeight * -0.12);
+        smoothScroll('#our-story', 0);
     }).hover(function() {
-            $('#landerImage1').css('opacity', 0.7);
+            $('#im1Poly').attr('opacity', 0.8 > OPACITY ? 0.8 : 2);
             $('#triLbl1').removeClass('hidden');
         },
         function(){
-            $('#landerImage1').css('opacity', 1.0);
+            $('#im1Poly').attr('opacity', OPACITY);
             if(OPACITY != 1) {
                 $('#triLbl1').addClass('hidden');
             }
@@ -255,11 +265,11 @@ $(function imageSelectors () {
     $('.im2').on('click', function() {
         smoothScroll('#portfolio', 0);
     }).hover(function() {
-            $('#landerImage2').css('opacity', 0.7);
+            $('#im2Poly').attr('opacity', 0.8 > OPACITY ? 0.8 : 2);
             $('#triLbl2').removeClass('hidden');
         },
         function(){
-            $('#landerImage2').css('opacity', 1.0);
+            $('#im2Poly').attr('opacity', OPACITY);
             if(OPACITY != 1) {
                 $('#triLbl2').addClass('hidden');
             }
@@ -270,23 +280,23 @@ $(function imageSelectors () {
     $('.im3').on('click', function() {
         window.location.href = "//developersfoundation.ca";
     }).hover(function() {
-            $('#landerImage3').css('opacity', 0.7)
+            $('#im3Poly').attr('opacity', 0.8 > OPACITY ? 0.8 : 2);
         },
         function(){
-            $('#landerImage3').css('opacity', 1.0)
+            $('#im3Poly').attr('opacity', OPACITY);
         }
     );
 
     // Application
     $('.im4').on('click', function() {
-        smoothScroll('#application', windowHeight * 0.05);
+        smoothScroll('#application',  0);
 
     }).hover(function() {
-            $('#landerImage4').css('opacity', 0.7);
+            $('#im4Poly').attr('opacity', 0.8 > OPACITY ? 0.8 : 2);
             $('#triLbl3').removeClass('hidden');
         },
         function(){
-            $('#landerImage4').css('opacity', 1.0);
+            $('#im4Poly').attr('opacity', OPACITY);
             if(OPACITY != 1) {
                 $('#triLbl3').addClass('hidden');
             }
@@ -297,11 +307,11 @@ $(function imageSelectors () {
     $('.im5').on('click', function() {
         smoothScroll('#exec-team', 0);
     }).hover(function() {
-            $('#landerImage5').css('opacity', 0.7);
+            $('#im5Poly').attr('opacity', 0.8 > OPACITY ? 0.8 : 2);
             $('#triLbl4').removeClass('hidden');
         },
         function(){
-            $('#landerImage5').css('opacity', 1.0);
+            $('#im5Poly').attr('opacity', OPACITY);
             if(OPACITY != 1) {
                 $('#triLbl4').addClass('hidden');
             }
@@ -345,7 +355,7 @@ $(function imageSelectors () {
  /* ----------------------------------------------------------- */
 
 var SECTIONS = ['#our-story', '#portfolio', '#application', '#exec-team'];
-var SECTIONS_OFFSET = [-0.12, 0, 0.05, 0];
+var SECTIONS_OFFSET = [0, 0, 0, 0];
 $(function scrollButton () {
     $('#upButton').on('click', determineNextSectionCall);
     $('#downButton').on('click', determineNextSection);
@@ -382,7 +392,7 @@ function compare(a, b, greater){
         return a > b;
     }
     else{
-        return a < b;
+        return Math.abs(a - b) > 70 ? a < b : false;
     }
 }
 

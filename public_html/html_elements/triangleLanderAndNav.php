@@ -6,7 +6,7 @@ This module relies on code in main.js in order to properly function with resizin
 -->
 
 
-<nav class="hidden navbar navbar-default navbar-fixed-top" id="triangleNav">
+<nav class="hidden navbar navbar-default navbar-fixed-top" id="triangleNav"  style="border: none; background-color: white">
 
     <div class="row" id="triLabels">
         <div class="triLbl text-center hidden" id="triLbl1">Our Story</div>
@@ -55,19 +55,19 @@ This module relies on code in main.js in order to properly function with resizin
         <!-- We create each image and assign the required variables.
         Important variable to note are the clip-path (to create the triangle) and translate (so they aren't all overlapping) -->
         <image xlink:href="assets/img/stock/stockIm4.min.png" clip-path="url(#clip5)" class="im1" id="landerImage1"></image>
-        <polygon class="poly5 im1 scrolledNav" fill="#988FCE"></polygon>
+        <polygon class="poly5 im1 scrolledNav" id="im1Poly" fill="#988FCE"></polygon>
 
         <image xlink:href="assets/img/stock/stockIm1.min.png" clip-path="url(#clip2)" class="im2" id="landerImage2"></image>
-        <polygon class="poly2 im2 scrolledNav" fill="#988FCE"></polygon>
+        <polygon class="poly2 im2 scrolledNav" id="im2Poly" fill="#988FCE"></polygon>
 
         <image xlink:href="assets/img/logo/logoSmallDown.png" clip-path="url(#clip1)" class="im3" id="landerImage3"></image>
-        <polygon class="poly1 im3 scrolledNav" fill="#988FCE"></polygon>
+        <polygon class="poly1 im3 scrolledNav" id="im3Poly" fill="#988FCE"></polygon>
 
         <image xlink:href="assets/img/stock/stockIm3.min.png" clip-path="url(#clip2)" class="im4" id="landerImage4"></image>
-        <polygon class="poly2 im4 scrolledNav" fill="#988FCE"></polygon>
+        <polygon class="poly2 im4 scrolledNav" id="im4Poly" fill="#988FCE"></polygon>
 
         <image xlink:href="assets/img/stock/stockIm2.min.png" clip-path="url(#clip6)" class="im5" id="landerImage5"></image>
-        <polygon class="poly6 im5 scrolledNav" fill="#988FCE"></polygon>
+        <polygon class="poly6 im5 scrolledNav" id="im5Poly" fill="#988FCE"></polygon>
 
     </svg>
 </nav>
