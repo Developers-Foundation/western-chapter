@@ -7,8 +7,8 @@ TODO: add devfound logo in the center of the socials
 
 -->
 
-<nav id="footer">
-    <div class="row" id="footerRow">
+<nav class="footer">
+    <div class="row footerRow">
         <div class="col-sm-12">
             <ul class="list-inline text-center h6 footer-hover">
                 <li><a href="#" data-toggle="modal" data-target="#ContactUs">Contact Us</a></li>
@@ -20,14 +20,14 @@ TODO: add devfound logo in the center of the socials
 
         <div class="col-sm-12">
             <ul class="footer-social list-inline text-center">
-                <li><a href="//developersfoundation.ca" target="_blank"><img src="assets/img/logo/logoBlank.png" style="width: 140px"></img></a></li>
                 <li><a href="//www.facebook.com/developersfoundation/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="//developersfoundation.ca" target="_blank"><img src="assets/img/logo/logoBlank.png" style="width: 140px"></img></a></li>
                 <li><a href="//medium.com/@DevFound" target="_blank"><i class="fa fa-medium"></i></a></li>
             </ul>
         </div>
 
         <div class="col-sm-12 text-center">
-            <p id="copyright">Copyright &copy; 2016. Developers' Foundation. Made with love ♥</a></p>
+            <p class="copyright">Copyright &copy; 2016. Developers' Foundation. Made with love ♥</a></p>
         </div>
     </div>
 </nav>
