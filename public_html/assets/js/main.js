@@ -27,6 +27,7 @@ function resizeEvent(){
             MOBILE = 1;
             $('#mobileNav').removeClass('hidden');
             $('#triangleNav').addClass('hidden');
+            $('.arrowNav').addClass('hidden');
             $('#spacer').css('margin-top', NAVHEIGHT + 30);
         }
 
@@ -37,6 +38,7 @@ function resizeEvent(){
         if(MOBILE == 1 || MOBILE == -1) {
             MOBILE = 0;
             $('#triangleNav').removeClass('hidden');
+            $('.arrowNav').removeClass('hidden');
             $('#mobileNav').addClass('hidden');
         }
         $('#svg1').attr({
@@ -234,9 +236,6 @@ $(function jQueryScroll (){
 /* ----------------------------------------------------------- */
 
 function smoothScroll(id, adjust){
-    if(windowWidth > 750) {
-        adjust -= ($('#svg1').attr('height') - NAVHEIGHT) / 1.75;
-    }
     $('html, body').animate({
         scrollTop: $(id).offset().top - NAVHEIGHT - adjust
     }, 1000);
