@@ -146,13 +146,13 @@ p{
 
 /*============================================  MISSIONSTATEMENT.PHP =====================================*/
 
-#mission-statement{
+.mission-statement{
   padding: 8%;
   padding-top: 2% !important;
   margin-bottom: 10%;
 }
 
-#missionTitle{
+.missionTitle{
   padding-top: 4% !important;
   @media(max-width: 494px){
     font-size: 18px;
@@ -162,7 +162,7 @@ p{
   }
 }
 
-#msnStatement{
+.msnStatement{
   font-size: 22px;
   @media(max-width: 494px){
     font-size: 15px;
@@ -174,7 +174,7 @@ p{
 }
 /*============================================  OURSTORY.PHP =====================================*/
 
-#our-story{
+.our-story{
   padding: 5%;
   padding-top: 17% !important;
   padding-bottom: 18% !important;
@@ -194,25 +194,21 @@ p{
   font-size: 23px;
 }
 
-#storyDescription{
-  font-size: 20px;
-}
-
 /*============================================ PORTFOLIO.PHP =====================================*/
 
-#portfolio {
+.portfolio {
   padding: 7%;
   background-image: url("../img/stock/startup-photos.min.jpg");
   background-attachment: fixed;
   background-size: cover;
 }
 
-#portTitle{
+.portTitle{
   color: white;
   margin-bottom: 30px;
 }
 
-#portContainer{
+.portContainer{
   opacity: 0.8;
   padding-left: 15%;
   padding-right: 15%;
@@ -232,7 +228,7 @@ p{
 
 /*============================================ FOOTER.PHP =====================================*/
 
-#footer{
+.footer{
   i.fa {
     height: 30px;
     width: 30px;
@@ -252,7 +248,7 @@ p{
   color: white;
 }
 
-#copyright {
+.copyright {
   font-size: 12px;
 }
 
@@ -315,26 +311,40 @@ p{
 
 /*============================================ APPLICATION.PHP =====================================*/
 
-#application{
+.application{
   margin: 5% !important;
   margin-top: 15% !important;
-  margin-bottom: 12% !important;
+  margin-bottom: 10% !important;
   padding: 5%;
 
 }
 
 .grey{
   background-color: lighten(@WESTERN_GRAY, 40%);
+  .applyText{
+    padding: 4%;
+    }
+  @media(max-width: 790px) {
+    .rightCol {
+      padding-top: 0 !important;
+    }
 
+    .leftCol {
+      padding-bottom: 0 !important;
+    }
+  }
 }
 
+
 .applyTxt{
-  font-size: 29px;
+  font-size: 20px;
+  font-weight: 200;
+  margin-bottom: 5%;
   @media(max-width: 1060px){
-    font-size: 20px;
+    font-size: 17px;
   }
   @media(max-width: 730px){
-    font-size: 16px;
+    font-size: 15px;
   }
   @media(max-width: 405px){
     font-size: 14px;
@@ -342,30 +352,30 @@ p{
 }
 
 .applyTtl{
-  font-size: 33px;
+  font-size: 25px;
   @media(max-width: 730px){
-    font-size: 20px;
+    font-size: 17px;
   }
   @media(max-width: 405px){
-    font-size: 15px;
+    font-size: 14px;
   }
   .applyClick{
-    background-color: white;
+    background-color: white;;
   }
 }
 
 .applyClick{
-  margin-top: 4%;
-  font-size: 50px;
+  margin-top: 9%;
+  font-size: 75px;
   @media(max-width: 500px){
-    font-size: 35px;
+    font-size: 55px;
   }
 }
 
 .selectAppl{
   font-size: 43px;
   @media(max-width: 500px){
-    font-size: 20px;
+    font-size: 33px;
   }
   margin-bottom: 10%;
   cursor: pointer;
@@ -375,17 +385,16 @@ p{
   color: lighten(black, 50%);
 }
 
-#applicationContainer{
+.applicationContainer{
   background-image: url("../img/triangles.png");
   padding-top: 5%;
   padding-bottom: 5%;
-  margin-top: 20px;
   background-size: 100%;
 }
 
 /*============================================ EXECTEAM.PHP =====================================*/
 
-#exec-team{
+.exec-team{
   margin: 2%;
   margin-top: 0 !important;
   padding: 3%;
@@ -403,7 +412,7 @@ p{
   }
 }
 
-#execTitle{
+.execTitle{
   margin-bottom: 30px;
 }
 

@@ -248,7 +248,7 @@ $(function imageSelectors () {
 
     // Our Story
     $('.im1').on('click', function() {
-        smoothScroll('#our-story', 0);
+        smoothScroll('.our-story', 0);
     }).hover(function() {
             $('#im1Poly').attr('opacity', 0.8 > OPACITY ? 0.8 : 2);
             $('#triLbl1').removeClass('hidden');
@@ -263,7 +263,7 @@ $(function imageSelectors () {
 
     // Portfolio
     $('.im2').on('click', function() {
-        smoothScroll('#portfolio', 0);
+        smoothScroll('.portfolio', 0);
     }).hover(function() {
             $('#im2Poly').attr('opacity', 0.8 > OPACITY ? 0.8 : 2);
             $('#triLbl2').removeClass('hidden');
@@ -289,7 +289,7 @@ $(function imageSelectors () {
 
     // Application
     $('.im4').on('click', function() {
-        smoothScroll('#application',  0);
+        smoothScroll('.application',  0);
 
     }).hover(function() {
             $('#im4Poly').attr('opacity', 0.8 > OPACITY ? 0.8 : 2);
@@ -305,7 +305,7 @@ $(function imageSelectors () {
 
     // Our Team
     $('.im5').on('click', function() {
-        smoothScroll('#exec-team', 0);
+        smoothScroll('.exec-team', 0);
     }).hover(function() {
             $('#im5Poly').attr('opacity', 0.8 > OPACITY ? 0.8 : 2);
             $('#triLbl4').removeClass('hidden');
@@ -338,6 +338,14 @@ $(function imageSelectors () {
 
 });
 
+
+function blink(){
+    $('#blink').fadeOut(500).fadeIn(500);
+    // $('#blink').fadeIn(500);
+}
+
+setInterval(blink, 1300);
+
 /* ----------------------------------------------------------- */
 /* End of jQuery events.
  /* ----------------------------------------------------------- */
@@ -354,7 +362,7 @@ $(function imageSelectors () {
 /* Scroll button.
  /* ----------------------------------------------------------- */
 
-var SECTIONS = ['#our-story', '#portfolio', '#application', '#exec-team'];
+var SECTIONS = ['.our-story', '.portfolio', '.application', '.exec-team'];
 var SECTIONS_OFFSET = [0, 0, 0, 0];
 $(function scrollButton () {
     $('#upButton').on('click', determineNextSectionCall);

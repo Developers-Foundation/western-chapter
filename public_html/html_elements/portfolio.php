@@ -1,10 +1,9 @@
 
 
-<div class="row" id="portfolio">
-    <h1 id="portTitle">PORTFOLIO</h1>
+<div class="row portfolio">
+    <h1 class="portTitle">PORTFOLIO</h1>
 
-    <div class="col-lg-12" id="portContainer">
-<!--        <h1 class="text-right" id="portTitle">PORTFOLIO</h1>-->
+    <div class="col-lg-12 portContainer">
             <div class="row">
 
                 <div class="col-md-3 col-xs-6">
