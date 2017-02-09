@@ -2,7 +2,7 @@
 
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="execTitle">Our Team</h1>
+                <h1 class="execTitle text-center">Our Team</h1>
             </div>
         </div>
 

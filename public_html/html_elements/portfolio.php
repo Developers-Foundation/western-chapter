@@ -1,7 +1,7 @@
 
 
 <div class="row portfolio">
-    <h1 class="portTitle">PORTFOLIO</h1>
+    <h1 class="portTitle text-center">PORTFOLIO</h1>
 
     <div class="col-lg-12 portContainer">
             <div class="row">

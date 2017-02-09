@@ -1,6 +1,6 @@
 <div class="row our-story">
     <div class="col-md-12">
-        <h1>Our Story</h1>
+        <h1 class="text-center">Our Story</h1>
     </div>
     <div class="col-sm-4 descr">
         <p class="description-header"><br><i class="fa fa-user" aria-hidden="true"></i> Current Efforts</p>
