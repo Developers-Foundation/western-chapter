@@ -180,7 +180,7 @@ p {
   background-size: cover;
 }
 .portTitle {
-  color: black;
+  color: white;
   margin-bottom: 30px;
 }
 .portContainer {
@@ -294,28 +294,21 @@ p {
 /*============================================ APPLICATION.PHP =====================================*/
 .application {
   margin: 5% !important;
-  margin-top: 15% !important;
-  margin-bottom: 10% !important;
+  margin-top: 3% !important;
+  margin-bottom: 3% !important;
   padding: 5%;
 }
 .grey {
-  background-color: #e7e7e7;
+  background-color: rgba(231, 231, 231, 0.8);
 }
 .grey .applyText {
   padding: 4%;
-}
-@media (max-width: 790px) {
-  .grey .rightCol {
-    padding-top: 0 !important;
-  }
-  .grey .leftCol {
-    padding-bottom: 0 !important;
-  }
+  padding-top: 1% !important;
 }
 .applyTxt {
   font-size: 20px;
   font-weight: 200;
-  margin-bottom: 5%;
+  margin-bottom: 2%;
 }
 @media (max-width: 1060px) {
   .applyTxt {
@@ -333,7 +326,7 @@ p {
   }
 }
 .applyTtl {
-  font-size: 25px;
+  font-size: 23px;
 }
 @media (max-width: 730px) {
   .applyTtl {
@@ -349,7 +342,8 @@ p {
   background-color: white;
 }
 .applyClick {
-  margin-top: 9%;
+  margin-top: 4%;
+  margin-bottom: 3%;
   font-size: 75px;
 }
 @media (max-width: 500px) {
@@ -358,14 +352,14 @@ p {
   }
 }
 .selectAppl {
-  font-size: 43px;
-  margin-bottom: 10%;
+  font-size: 50px;
+  margin-bottom: 3%;
   cursor: pointer;
   color: #808080;
 }
 @media (max-width: 500px) {
   .selectAppl {
-    font-size: 33px;
+    font-size: 37px;
   }
 }
 .selectAppl:hover {
