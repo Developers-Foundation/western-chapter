@@ -36,8 +36,7 @@ $email
 //test
 try {
     $sendgrid->send($email);
-//    echo json_encode(array('success' => true, 'message' => "done"));
-    json_encode(array('success' => true, 'message' => "done"));
+    echo json_encode(array('success' => true, 'message' => "done"));
 } catch (\SendGrid\Exception $e) {
     $err = $e->getCode() . "\n";
     foreach ($e->getErrors() as $er) {
