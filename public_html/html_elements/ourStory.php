@@ -17,7 +17,7 @@
     <div class="col-sm-8 descr">
 
         <div class="descrCol1">
-            <p class="description-header"><br><i class="fa fa-check-square" aria-hidden="true"></i> Our Objectives</p>
+            <p class="description-header"><i class="fa fa-check-square" aria-hidden="true"></i> Our Objectives</p>
             <div class="col-sm-6 descr">
                 <p class="description">
                     Support and empower organizations with technology solutions to better tackle their causes.<br>
@@ -27,6 +27,7 @@
         </div>
 
         <div class="descrCol2">
+            <p class="description-header"><i class="fa fa-check-square" aria-hidden="true"></i> Our Objectives</p>
             <div class="col-sm-6 descr">
                 <p class="description">
                     Educate students to gain an increased awareness of poverty and their individual responsibility as Global Citizens.<br>
