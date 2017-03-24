@@ -30,6 +30,9 @@ p {
   margin-left: 0;
   margin-right: 0;
 }
+a:hover {
+  text-decoration: none;
+}
 /*============================================ TRIANGLELANDERANDNAV.PHP =====================================*/
 #triangleNav {
   min-height: 43px;
@@ -413,4 +416,16 @@ p {
 .contactIcon {
   width: 30px;
 }
-/*============================================  =====================================*/
+/*============================================ APPLICATIONPAGE.PHP ===================================================*/
+.applicationArea {
+  padding: 100px;
+}
+.applicationArea input {
+  border: none;
+  border-bottom: #807F83 !important;
+  margin-bottom: 6vh;
+}
+.applicationArea input:focus {
+  border: none;
+  border-bottom: #807F83 !important;
+}

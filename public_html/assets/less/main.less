@@ -49,6 +49,12 @@ p{
   margin-right: 0;
 }
 
+a{
+  &:hover{
+    text-decoration: none;
+  }
+}
+
 /*============================================ TRIANGLELANDERANDNAV.PHP =====================================*/
 
 @NAVHEIGHT: 40px;
@@ -449,4 +455,20 @@ p{
 }
 
 
-/*============================================  =====================================*/
+/*============================================ APPLICATIONPAGE.PHP ===================================================*/
+
+.applicationArea{
+
+  padding: 100px;
+
+  input {
+    border: none;
+    border-bottom: @WESTERN_GRAY !important;
+    margin-bottom: 6vh;
+
+    &:focus{
+      border: none;
+      border-bottom: @WESTERN_GRAY !important;
+    }
+  }
+}
