@@ -450,6 +450,22 @@ a:hover {
   border: none;
   border-bottom: #807F83 !important;
 }
+.applicationArea input::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #807F83;
+}
+.applicationArea input::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #807F83;
+}
+.applicationArea input:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #807F83;
+}
+.applicationArea input:-moz-placeholder {
+  /* Firefox 18- */
+  color: #807F83;
+}
 .applicationArea select {
   border: none;
   background: transparent;
