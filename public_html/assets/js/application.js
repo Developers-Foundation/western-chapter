@@ -24,6 +24,20 @@ $(document).ready(function() {
     $('#fileToUpload').change(function(e) {
         fileSubmit(this);
     });
+
+    var lol = true;
+    setInterval(function() {
+        var e = document.getElementById("lol");
+        if (e) {
+            if (lol) {
+                e.innerHTML = "_";
+                lol = false;
+            } else {
+                e.innerHTML = " ";
+                lol = true;
+            }
+        }
+    },1000);
 });
 
 function fileSubmit(self) {
@@ -99,6 +113,8 @@ function formSubmit(theForm) {
         return application.save();
     }).then(function(obj) {
         console.log("success");
+        console.log(theForm);
+        document.getElementById("theForm").parentNode.innerHTML = "<h4>Thank You for Submitting your Application.</h4><p>We will get back to as soon as possible<span id='lol'>_</span></p>";
     }, function(err) {
         console.log("error");
         console.log(err);
