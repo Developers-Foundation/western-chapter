@@ -470,6 +470,7 @@ a:hover {
 .applicationArea select {
   border: none;
   background: transparent;
+  color: #807F83;
   opacity: 0.4;
   text-transform: lowercase;
   margin-bottom: 20px;
