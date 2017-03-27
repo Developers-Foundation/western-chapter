@@ -32,47 +32,14 @@ function fileSubmit(self) {
     if (fileName == "") fileName = "Upload Picture";
     self.parentNode.getElementsByClassName('btn')[0].innerHTML = fileName[fileName.length - 1];
 
-    readURL(self);
     uploadFile(self);
     return false;
 }
 
-// Auto preview uploads
-function readURL(input) {
-    if (input.files && input.files[0] && input.files[0].size > 10485759) {
-        $(function () {
-            new PNotify({
-                title: 'Oh No!',
-                text: 'File size limit is 10mb. Sorry!',
-                type: 'error',
-                nonblock: {
-                    nonblock: true
-                },
-                styling: 'bootstrap3'
-            });
-        });
-        return;
-    }
-
-    if (input.files && input.files[0]) {
-        // Get destination of preview
-        var preview = input.dataset.preview;
-        var reader = new FileReader();
-
-        reader.onload = function (e) {
-            $(preview).attr('src', e.target.result);
-        };
-
-        reader.readAsDataURL(input.files[0]);
-    }
-}
-
 function uploadFile(self) {
-    var theForm = document.getElementById('website-form');
-
     var theFile = self.files[0];
 
-    Parse.User.logIn(parseUser, parsePwd).then(function () {
+    Parse.User.logIn('user', 'pass').then(function () {
         var promise = Parse.Promise.as();
 
         // First check file size (limit is 10mb)
@@ -81,8 +48,8 @@ function uploadFile(self) {
             return Parse.Promise.error("File size too large.");
         }
 
-        var ExecPhoto = Parse.Object.extend("ExecPhoto");
-        var execPhotoObj = new ExecPhoto();
+        var Resume = Parse.Object.extend("Resume");
+        var resume = new Resume();
 
         var parseFile = new Parse.File(theFile.name, theFile);
         promise = promise.then(function () {
@@ -92,9 +59,9 @@ function uploadFile(self) {
             tempUrl = (tempUrl.indexOf('https') == 0) ? tempUrl : "https" + tempUrl.substr(4);
 
             // Add parse file to obj
-            execPhotoObj.set('picture', parseFile);
-            execPhotoObj.set('pictureUrl', tempUrl);
-            return execPhotoObj.save();
+            resume.set('resume', parseFile);
+            resume.set('link', tempUrl);
+            return resume.save();
         }).then(function(rtnObj) {
             //console.log(rtnObj);
             self.dataset.parsedb = rtnObj.id;
@@ -105,17 +72,6 @@ function uploadFile(self) {
         return promise;
     }, function (err) {
         console.log(err);
-        $(function () {
-            new PNotify({
-                title: 'Oh No!',
-                text: err.message,
-                type: 'error',
-                nonblock: {
-                    nonblock: true
-                },
-                styling: 'bootstrap3'
-            });
-        });
     });
 }
 
@@ -124,7 +80,7 @@ function formSubmit(theForm) {
         email = document.getElementById("email"),
         program = document.getElementById("program"),
         portfolio = document.getElementById("portfolioUrl"),
-        resume = document.getElementById("fileToUpload").dataset.url,
+        resume = document.getElementById("fileToUpload").dataset.parsedb,
         about = document.getElementById("about"),
         why = document.getElementById("why");
 
