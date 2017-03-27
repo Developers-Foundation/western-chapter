@@ -24,11 +24,23 @@ function changeName() {
 }
 
 function formSubmit(theForm) {
-    var field;
+    var name = document.getElementById("name"),
+        email = document.getElementById("email"),
+        program = document.getElementById("program"),
+        portfolio = document.getElementById("portfolioUrl"),
+        resume = document.getElementById("fileToUpload").dataset.url,
+        about = document.getElementById("about"),
+        why = document.getElementById("why");
 
     var Table = Parse.Object.extend("Applications");
     var application = new Table();
-    application.set();
+    application.set("name", name);
+    application.set("email", email);
+    application.set("program", program);
+    application.set("portfolio", portfolio);
+    application.set("resume", resume);
+    application.set("about", about);
+    application.set("why", why);
 
     application.save(null, {
         success: function(table) {console.log("success");},
