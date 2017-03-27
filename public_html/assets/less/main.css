@@ -417,9 +417,6 @@ a:hover {
   width: 30px;
 }
 /*============================================ APPLICATIONPAGE.PHP ===================================================*/
-* {
-  border: solid 1px red !important;
-}
 .applicationArea {
   height: 100vh;
   padding: 60px;
@@ -448,23 +445,38 @@ a:hover {
   margin-bottom: 20px;
   margin-left: 5px;
   height: 6vh;
+  width: 100%;
 }
 .applicationArea input:focus {
   border: none;
   border-bottom: #807F83 !important;
 }
+.applicationArea input::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #807F83;
+}
+.applicationArea input::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #807F83;
+}
+.applicationArea input:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #807F83;
+}
+.applicationArea input:-moz-placeholder {
+  /* Firefox 18- */
+  color: #807F83;
+}
 .applicationArea select {
   border: none;
   background: transparent;
-  opacity: 0.45;
+  color: #807F83;
   text-transform: lowercase;
   margin-bottom: 20px;
-  width: 333px;
+  margin-left: -3px;
 }
-@media (max-width: 600px) {
-  .applicationArea select {
-    width: 233px;
-  }
+.applicationArea select[disabled] {
+  color: #807F83;
 }
 .applicationArea textarea {
   border: none;
@@ -480,11 +492,27 @@ a:hover {
     height: 150px !important;
   }
 }
+.applicationArea textarea::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #807F83;
+}
+.applicationArea textarea::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #807F83;
+}
+.applicationArea textarea:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #807F83;
+}
+.applicationArea textarea:-moz-placeholder {
+  /* Firefox 18- */
+  color: #807F83;
+}
 .applicationArea .logo {
   width: 100%;
   height: 100%;
 }
-@media (max-width: 991px) {
+@media (max-width: 993px) {
   .applicationArea .logo {
     max-height: 200px !important;
     max-width: 200px !important;
@@ -494,6 +522,7 @@ a:hover {
   background-color: orange;
   border: none !important;
   margin-bottom: 100px;
+  width: 150px;
 }
 .applicationArea .btn:hover {
   background-color: #ffb733;

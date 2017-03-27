@@ -78,7 +78,7 @@
                     <div class="col-md-12">
                         <!--<input type="text" id="position" placeholder="position">-->
                         <select name="position" id="position">
-                            <option value="position" disabled>position</option>
+                            <option value="position" disabled selected>position</option>
                             <option value="fDev">Frontend Developer</option>
                             <option value="bDev">Backend Developer</option>
                             <option value="design">Designer</option>

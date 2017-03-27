@@ -459,7 +459,7 @@ a{
 
 
 *{
-  border: solid 1px red !important;
+  //border: solid 1px red !important;
 }
 
 .applicationArea{
@@ -473,8 +473,6 @@ a{
     opacity: 0.4;
     margin-bottom: 20px;
   }
-
-
 
   a {
     color: @WESTERN_GRAY !important;
@@ -501,7 +499,18 @@ a{
       border: none;
       border-bottom: @WESTERN_GRAY !important;
     }
-
+    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      color: @WESTERN_GRAY;
+    }
+    &::-moz-placeholder { /* Firefox 19+ */
+      color: @WESTERN_GRAY;
+    }
+    &:-ms-input-placeholder { /* IE 10+ */
+      color: @WESTERN_GRAY;
+    }
+    &:-moz-placeholder { /* Firefox 18- */
+      color: @WESTERN_GRAY;
+    }
   }
 
   select {
@@ -510,12 +519,10 @@ a{
     opacity: 0.45;
     text-transform: lowercase;
     margin-bottom: 20px;
-    width: 333px;
 
-    @media(max-width: 600px){
-      width: 233px;
+    &[disabled] {
+      color: @WESTERN_GRAY;
     }
-
   }
 
   textarea{
@@ -529,6 +536,19 @@ a{
     @media(max-width: 600px) {
       width: 200px !important;
       height: 150px !important;
+    }
+
+    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      color: @WESTERN_GRAY;
+    }
+    &::-moz-placeholder { /* Firefox 19+ */
+      color: @WESTERN_GRAY;
+    }
+    &:-ms-input-placeholder { /* IE 10+ */
+      color: @WESTERN_GRAY;
+    }
+    &:-moz-placeholder { /* Firefox 18- */
+      color: @WESTERN_GRAY;
     }
   }
 
@@ -550,6 +570,7 @@ a{
     }
 
     margin-bottom: 100px;
+    width: 150px;
   }
 }
 
