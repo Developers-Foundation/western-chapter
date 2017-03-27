@@ -47,8 +47,6 @@
 <body class="applicationArea">
 <!--=========================================== MAIN FILES ==========================================-->
 
-
-
 <div class="row text-lowercase text-center">
     <div class="row">
         <div class="col-md-4">
