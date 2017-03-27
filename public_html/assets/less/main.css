@@ -445,6 +445,7 @@ a:hover {
   margin-bottom: 20px;
   margin-left: 5px;
   height: 6vh;
+  width: 100%;
 }
 .applicationArea input:focus {
   border: none;
