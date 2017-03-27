@@ -473,6 +473,7 @@ a:hover {
   color: #807F83;
   text-transform: lowercase;
   margin-bottom: 20px;
+  margin-left: -3px;
 }
 .applicationArea select[disabled] {
   color: #807F83;
