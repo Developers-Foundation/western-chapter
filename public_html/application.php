@@ -82,18 +82,23 @@
                 </div>
 
                 <div class="row fileToUpload text-left">
-                    <div class="col-xs-6">
-                        <img src="assets/img/uploadResumeBld.png" class="resume" id="resume">
-                    </div>
-                    <div class="col-xs-6">
-                        <div id="fileName"></div>
+                    <img src="assets/img/uploadResumeBld.png" class="resume" id="resume">
+
+                    <div class="col-xs-12">
+                        <div id="fileName">test file name</div>
                     </div>
                     <input class="hidden" type="file" name="fileToUpload" id="fileToUpload">
                 </div>
 
                 <div class="row">
                     <div class="col-md-12">
-                        <input type="text" id="about" placeholder="tell us about yourself">
+                        <textarea id="about" placeholder="what do you aim to achieve by working with developers' foundation?"></textarea>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <textarea id="about" placeholder="tell us about yourself."></textarea>
                     </div>
                 </div>
 
