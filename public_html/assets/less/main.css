@@ -152,7 +152,7 @@ a:hover {
   padding: 5%;
   padding-top: 10% !important;
   padding-bottom: 15% !important;
-  background-image: url("../img/OURSTORY.png");
+  background-image: url("../img/background/OURSTORY.png");
   background-size: cover;
   background-attachment: fixed;
 }
@@ -371,7 +371,7 @@ a:hover {
   color: #988FCE;
 }
 .applicationContainer {
-  background-image: url("../img/triangles.png");
+  background-image: url("../img/background/triangles.png");
   background-attachment: fixed;
   background-size: cover;
   padding-top: 5%;
@@ -421,21 +421,17 @@ a:hover {
   height: 100vh;
   padding: 60px;
   font-size: 3em;
-  background: url('../img/OURSTORY.png');
+  background: url('../img/background/OURSTORY.png');
   background-attachment: fixed;
   background-size: cover;
 }
 .applicationArea .resume {
+  height: 40px;
   opacity: 0.4;
-  width: 150px;
-  margin-bottom: 15px;
-  margin-left: 15px;
+  margin-bottom: 20px;
 }
-.applicationArea .resume:hover {
-  cursor: pointer;
-}
-.applicationArea #fileName {
-  font-size: 12px !important;
+.applicationArea a {
+  color: #807F83 !important;
 }
 @media (max-width: 600px) {
   .applicationArea {
@@ -468,6 +464,12 @@ a:hover {
   height: 80px !important;
   font-size: 17px !important;
   margin-bottom: 10px;
+}
+@media (max-width: 600px) {
+  .applicationArea textarea {
+    width: 200px !important;
+    height: 150px !important;
+  }
 }
 .applicationArea .logo {
   width: 100%;
