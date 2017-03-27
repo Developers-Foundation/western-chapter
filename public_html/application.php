@@ -94,13 +94,11 @@
                     </div>
                 </div>
 
-                <div class="row fileToUpload text-left">
+                <div class="row fileToUpload">
                     <a href="#" id="resumeA">
                         <div class="row">
-                            <div class="col-xs-2 text-left">
+                            <div class="resumeRow">
                                 <img src="assets/img/favicon/upload.png" class="resume" id="resume">
-                            </div>
-                            <div class="col-xs-10 text-left">
                                 <div class="fileName" id="fileName">resume</div>
                             </div>
                         </div>
