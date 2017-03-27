@@ -15,13 +15,11 @@ $(document).ready(function() {
 
     $('#resume').on('click', function () {
         console.log("clicked");
-        $('#fileToUpload').click(changeName);
+        $('#fileToUpload').click();
     });
 });
 
-function changeName() {
-    $('var fu1 = document.getElementById("FileUpload1");
-}
+
 
 function formSubmit(theForm) {
     var name = document.getElementById("name"),

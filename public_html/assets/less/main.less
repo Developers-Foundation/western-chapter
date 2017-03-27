@@ -185,7 +185,7 @@ a{
   padding-top: 10% !important;
   padding-bottom: 15% !important;
   //background-color: lighten(@WESTERN_GRAY, 40%);
-  background-image: url("../img/OURSTORY.png");
+  background-image: url("../img/background/OURSTORY.png");
   background-size: cover;
   background-attachment: fixed;
 
@@ -402,7 +402,7 @@ a{
 }
 
 .applicationContainer{
-  background-image: url("../img/triangles.png");
+  background-image: url("../img/background/triangles.png");
   background-attachment: fixed;
   background-size: cover;
   padding-top: 5%;
@@ -464,26 +464,21 @@ a{
   font-size: 3em;
 
   .resume{
+    height: 40px;
     opacity: 0.4;
-    width: 150px;
-    &:hover {
-      cursor: pointer;
-    }
-    margin-bottom: 15px;
-    margin-left: 15px;
-
+    margin-bottom: 20px;
   }
 
-  #fileName {
-    font-size: 12px !important;
+  a {
+    color: @WESTERN_GRAY !important;
   }
 
   @media(max-width: 600px) {
     font-size: 2em !important;
-
     padding-top: 20px !important;
   }
-  background: url('../img/OURSTORY.png');
+
+  background: url('../img/background/OURSTORY.png');
   background-attachment: fixed;
   background-size: cover;
 
@@ -516,6 +511,11 @@ a{
     height: 80px !important;
     font-size: 17px !important;
     margin-bottom: 10px;
+
+    @media(max-width: 600px) {
+      width: 200px !important;
+      height: 150px !important;
+    }
   }
 
   .logo {

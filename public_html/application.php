@@ -81,12 +81,18 @@
                     </div>
                 </div>
 
-                <div class="row fileToUpload text-left">
-                    <img src="assets/img/uploadResumeBld.png" class="resume" id="resume">
+                <div class="row fileToUpload">
+                    <a href="#">
+                        <div class="row">
+                            <div class="col-xs-4 text-right">
+                                <img src="assets/img/icon/upload.png" class="resume" id="resume">
+                            </div>
+                            <div class="col-xs-8 text-left">
+                                <div class="fileName">resume</div>
+                            </div>
+                        </div>
+                    </a>
 
-                    <div class="col-xs-12">
-                        <div id="fileName">test file name</div>
-                    </div>
                     <input class="hidden" type="file" name="fileToUpload" id="fileToUpload">
                 </div>
 
@@ -131,7 +137,8 @@
 <!-- Additional JS Files-->
 <!--<script src="assets/js/nob.js" type="text/javascript"></script>-->
 <script src="assets/js/main.min.js" type="text/javascript"></script>
-<script src="assets/js/application.min.js" type="text/javascript"></script>
+<script src="assets/js/application.js" type="text/javascript"></script>
+<!--<script src="assets/js/application.min.js" type="text/javascript"></script>-->
 
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
