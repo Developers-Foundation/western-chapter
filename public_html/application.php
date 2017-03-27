@@ -96,7 +96,7 @@
 
                 <div class="row">
                     <div class="col-md-12">
-                        <textarea id="about" placeholder="what do you aim to achieve by working with developers' foundation?"></textarea>
+                        <textarea id="why" placeholder="what do you aim to achieve by working with developers' foundation?"></textarea>
                     </div>
                 </div>
 
@@ -138,8 +138,8 @@
 <!-- Additional JS Files-->
 <!--<script src="assets/js/nob.js" type="text/javascript"></script>-->
 <script src="assets/js/main.min.js" type="text/javascript"></script>
-<script src="assets/js/application.js" type="text/javascript"></script>
-<!--<script src="assets/js/application.min.js" type="text/javascript"></script>-->
+<!--<script src="assets/js/application.js" type="text/javascript"></script>-->
+<script src="assets/js/application.min.js" type="text/javascript"></script>
 
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
