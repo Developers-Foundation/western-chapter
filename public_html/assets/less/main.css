@@ -521,6 +521,7 @@ a:hover {
   background-color: orange;
   border: none !important;
   margin-bottom: 100px;
+  width: 150px;
 }
 .applicationArea .btn:hover {
   background-color: #ffb733;
