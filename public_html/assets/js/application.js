@@ -13,23 +13,23 @@ $(document).ready(function() {
         return false;
     });
 
-    $('#resume').on('click', function (e) {
+    // Add event listener for click on the A tag to trigger file upload box
+    $('#resumeA').click(function(e) {
         e.preventDefault();
         $('#fileToUpload').click();
         return false;
     });
-});
 
-function triggerResume(e, self) {
-    e.preventDefault();
-    self.parentNode.getElementsByClassName('input-exec-img')[0].click();
-    return false;
-}
+    // Once file is done adding to page
+    $('#fileToUpload').change(function(e) {
+        fileSubmit(this);
+    });
+});
 
 function fileSubmit(self) {
     var file = self.value;
     var fileName = file.split("\\");
-    if (fileName == "") fileName = "Upload Picture";
+    if (fileName == "") fileName = "resume";
     self.parentNode.getElementsByClassName('btn')[0].innerHTML = fileName[fileName.length - 1];
 
     uploadFile(self);
