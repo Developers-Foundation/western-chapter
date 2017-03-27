@@ -80,7 +80,7 @@
                 </div>
 
                 <div class="row fileToUpload">
-                    <a href="#">
+                    <a href="#" id="resumeA">
                         <div class="row">
                             <div class="col-xs-4 text-right">
                                 <img src="assets/img/icon/upload.png" class="resume" id="resume">
