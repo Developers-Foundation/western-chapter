@@ -30,6 +30,9 @@ p {
   margin-left: 0;
   margin-right: 0;
 }
+a:hover {
+  text-decoration: none;
+}
 /*============================================ TRIANGLELANDERANDNAV.PHP =====================================*/
 #triangleNav {
   min-height: 43px;
@@ -149,7 +152,7 @@ p {
   padding: 5%;
   padding-top: 10% !important;
   padding-bottom: 15% !important;
-  background-image: url("../img/OURSTORY.png");
+  background-image: url("../img/background/OURSTORY.png");
   background-size: cover;
   background-attachment: fixed;
 }
@@ -368,7 +371,7 @@ p {
   color: #988FCE;
 }
 .applicationContainer {
-  background-image: url("../img/triangles.png");
+  background-image: url("../img/background/triangles.png");
   background-attachment: fixed;
   background-size: cover;
   padding-top: 5%;
@@ -413,4 +416,76 @@ p {
 .contactIcon {
   width: 30px;
 }
-/*============================================  =====================================*/
+/*============================================ APPLICATIONPAGE.PHP ===================================================*/
+.applicationArea {
+  height: 100vh;
+  padding: 60px;
+  font-size: 3em;
+  background: url('../img/background/OURSTORY.png');
+  background-attachment: fixed;
+  background-size: cover;
+}
+.applicationArea .resume {
+  height: 40px;
+  opacity: 0.4;
+  margin-bottom: 20px;
+}
+.applicationArea a {
+  color: #807F83 !important;
+}
+@media (max-width: 600px) {
+  .applicationArea {
+    font-size: 2em !important;
+    padding-top: 20px !important;
+  }
+}
+.applicationArea input {
+  border: none;
+  background: transparent;
+  margin-bottom: 20px;
+  height: 6vh;
+}
+.applicationArea input:focus {
+  border: none;
+  border-bottom: #807F83 !important;
+}
+.applicationArea input .fileToUpload {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+.applicationArea textarea {
+  border: none;
+  background: transparent;
+  width: 400px !important;
+  height: 80px !important;
+  font-size: 17px !important;
+  margin-bottom: 10px;
+}
+@media (max-width: 600px) {
+  .applicationArea textarea {
+    width: 200px !important;
+    height: 150px !important;
+  }
+}
+.applicationArea .logo {
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 993px) {
+  .applicationArea .logo {
+    max-height: 200px !important;
+    max-width: 200px !important;
+  }
+}
+.applicationArea .btn {
+  background-color: orange;
+  border: none !important;
+  margin-bottom: 100px;
+}
+.applicationArea .btn:hover {
+  background-color: #ffb733;
+}

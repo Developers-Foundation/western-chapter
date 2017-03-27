@@ -326,15 +326,6 @@ $(function imageSelectors () {
     );
 
 
-    // TODO: add destinations for application
-    $('#std').on('click', function () {
-        window.location.href = "#";
-    });
-
-    $('#npo').on('click', function () {
-        window.location.href = "#";
-    });
-
 });
 
 
