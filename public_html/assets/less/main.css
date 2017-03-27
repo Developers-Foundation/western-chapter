@@ -491,6 +491,22 @@ a:hover {
     height: 150px !important;
   }
 }
+.applicationArea textarea::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #807F83;
+}
+.applicationArea textarea::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #807F83;
+}
+.applicationArea textarea:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #807F83;
+}
+.applicationArea textarea:-moz-placeholder {
+  /* Firefox 18- */
+  color: #807F83;
+}
 .applicationArea .logo {
   width: 100%;
   height: 100%;
