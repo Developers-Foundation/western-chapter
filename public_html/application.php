@@ -44,53 +44,66 @@
 
 </head>
 
-<body>
+<body class="applicationArea">
 <!--=========================================== MAIN FILES ==========================================-->
 
 
-<div class="row text-lowercase text-center applicationArea">
+
+<div class="row text-lowercase text-center">
     <div class="row">
-        <form id="createCourse" action="" method="post">
-            <div class="row">
-                <div class="col-md-12">
-                    <input type="text" id="name" placeholder="Name">
-                </div>
-            </div>
+        <div class="col-md-4">
+            <img src="assets/img/logo/glyphicon.png" class="logo">
+        </div>
 
-            <div class="row">
-                <div class="col-md-12">
-                    <input type="text" id="email" placeholder="Email">
+        <div class="col-md-4">
+            <form class="" id="theForm" action="" method="post">
+                <div class="row">
+                    <div class="col-md-12">
+                        <input type="text" id="name" placeholder="name">
+                    </div>
                 </div>
-            </div>
 
-            <div class="row">
-                <div class="col-md-12">
-                    <input type="text" id="program" placeholder="Program">
+                <div class="row">
+                    <div class="col-md-12">
+                        <input type="text" id="email" placeholder="email">
+                    </div>
                 </div>
-            </div>
 
-            <div class="row">
-                <div class="col-md-12">
-                    <input type="text" id="portfolioUrl" placeholder="URL to your portfolio">
+                <div class="row">
+                    <div class="col-md-12">
+                        <input type="text" id="program" placeholder="program">
+                    </div>
                 </div>
-            </div>
 
-            <div class="row">
-                resume
-            </div>
-
-            <div class="row">
-                <div class="col-md-12">
-                    <input type="text" id="about" placeholder="Tell us about yourself">
+                <div class="row">
+                    <div class="col-md-12">
+                        <input type="text" id="portfolioUrl" placeholder="link to portfolio">
+                    </div>
                 </div>
-            </div>
 
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <button class="btn btn-raised btn-primary btn-lg">Submit</button>
+                <div class="row fileToUpload text-left">
+                    <div class="col-xs-6">
+                        <img src="assets/img/uploadResumeBld.png" class="resume" id="resume">
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="fileName"></div>
+                    </div>
+                    <input class="hidden" type="file" name="fileToUpload" id="fileToUpload">
                 </div>
-            </div>
-        </form>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <input type="text" id="about" placeholder="tell us about yourself">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <button class="btn btn-raised btn-primary btn-lg">submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
 </div>
 
@@ -113,6 +126,7 @@
 <!-- Additional JS Files-->
 <!--<script src="assets/js/nob.js" type="text/javascript"></script>-->
 <script src="assets/js/main.js" type="text/javascript"></script>
+<script src="assets/js/application.js" type="text/javascript"></script>
 
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->

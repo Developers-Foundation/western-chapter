@@ -459,16 +459,67 @@ a{
 
 .applicationArea{
 
-  padding: 100px;
+  height: 100vh;
+  padding: 80px;
+  font-size: 3em;
+
+  .resume{
+    opacity: 0.4;
+    width: 150px;
+    &:hover {
+      cursor: pointer;
+    }
+    margin-bottom: 15px;
+    margin-left: 15px;
+
+  }
+
+  @media(max-width: 600px) {
+    font-size: 2em !important;
+
+    padding-top: 20px !important;
+  }
+  background: url('../img/OURSTORY.png');
+  background-attachment: fixed;
+  background-size: cover;
 
   input {
     border: none;
+    background: transparent;
     border-bottom: @WESTERN_GRAY !important;
-    margin-bottom: 6vh;
+    margin-bottom: 20px;
+
+    height: 6vh;
 
     &:focus{
       border: none;
       border-bottom: @WESTERN_GRAY !important;
     }
+
+    .fileToUpload {
+      width: 0.1px;
+      height: 0.1px;
+      opacity: 0;
+      overflow: hidden;
+      position: absolute;
+      z-index: -1;
+    }
+  }
+
+  .logo {
+    width: 100%;
+    height: 100%;
+  }
+
+  .btn {
+    background-color: orange;
+    border: none !important;
+
+    &:hover {
+      background-color: lighten(orange, 10%);
+    }
+
+    margin-bottom: 100px;
   }
 }
+

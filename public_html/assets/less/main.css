@@ -418,14 +418,56 @@ a:hover {
 }
 /*============================================ APPLICATIONPAGE.PHP ===================================================*/
 .applicationArea {
-  padding: 100px;
+  height: 100vh;
+  padding: 80px;
+  font-size: 3em;
+  background: url('../img/OURSTORY.png');
+  background-attachment: fixed;
+  background-size: cover;
+}
+.applicationArea .resume {
+  opacity: 0.4;
+  width: 150px;
+  margin-bottom: 15px;
+  margin-left: 15px;
+}
+.applicationArea .resume:hover {
+  cursor: pointer;
+}
+@media (max-width: 600px) {
+  .applicationArea {
+    font-size: 2em !important;
+    padding-top: 20px !important;
+  }
 }
 .applicationArea input {
   border: none;
+  background: transparent;
   border-bottom: #807F83 !important;
-  margin-bottom: 6vh;
+  margin-bottom: 20px;
+  height: 6vh;
 }
 .applicationArea input:focus {
   border: none;
   border-bottom: #807F83 !important;
+}
+.applicationArea input .fileToUpload {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+.applicationArea .logo {
+  width: 100%;
+  height: 100%;
+}
+.applicationArea .btn {
+  background-color: orange;
+  border: none !important;
+  margin-bottom: 100px;
+}
+.applicationArea .btn:hover {
+  background-color: #ffb733;
 }

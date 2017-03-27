@@ -54,7 +54,7 @@
         include_once "html_elements/missionStatement.php";
         include_once "html_elements/ourStory.php";
         include_once "html_elements/portfolio.php";
-        include_once "html_elements/application.php";
+        include_once "html_elements/applicationSection.php";
         include_once "html_elements/execTeam.php";
         include_once "html_elements/footer.php";
         include_once "html_elements/contactUsModal.php";
