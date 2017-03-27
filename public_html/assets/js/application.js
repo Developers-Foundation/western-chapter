@@ -12,7 +12,16 @@ $(document).ready(function() {
         formSubmit(this);
         return false;
     });
+
+    $('#resume').on('click', function () {
+        console.log("clicked");
+        $('#fileToUpload').click(changeName);
+    });
 });
+
+function changeName() {
+    $('var fu1 = document.getElementById("FileUpload1");
+}
 
 function formSubmit(theForm) {
     var field;
