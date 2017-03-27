@@ -96,7 +96,7 @@
 
                 <div class="row">
                     <div class="col-md-12">
-                        <textarea id="about" placeholder="what do you aim to achieve by working with developers' foundation?"></textarea>
+                        <textarea id="why" placeholder="what do you aim to achieve by working with developers' foundation?"></textarea>
                     </div>
                 </div>
 
