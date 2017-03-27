@@ -73,7 +73,8 @@
                     </div>
                 </div>
 
-                <div class="row text-left">
+<!--                <div class="row text-left">-->
+                <div class="row text-center">
                     <div class="col-md-12">
                         <!--<input type="text" id="position" placeholder="position">-->
                         <select name="position" id="position">
