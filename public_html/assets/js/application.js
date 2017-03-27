@@ -79,6 +79,7 @@ function formSubmit(theForm) {
     var name = document.getElementById("name").value,
         email = document.getElementById("email").value,
         program = document.getElementById("program").value,
+        position = document.getElementById("position").options[document.getElementById("position").selectedIndex].value,
         portfolio = document.getElementById("portfolioUrl").value,
         resume = document.getElementById("fileToUpload").dataset.parsedb,
         about = document.getElementById("about").value,
