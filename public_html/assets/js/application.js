@@ -30,7 +30,7 @@ function fileSubmit(self) {
     var file = self.value;
     var fileName = file.split("\\");
     if (fileName == "") fileName = "resume";
-    self.parentNode.getElementsByClassName('btn')[0].innerHTML = fileName[fileName.length - 1];
+    self.parentNode.getElementsByClassName("fileName")[0].innerHTML = fileName[fileName.length - 1];
 
     uploadFile(self);
     return false;
@@ -76,13 +76,13 @@ function uploadFile(self) {
 }
 
 function formSubmit(theForm) {
-    var name = document.getElementById("name"),
-        email = document.getElementById("email"),
-        program = document.getElementById("program"),
-        portfolio = document.getElementById("portfolioUrl"),
+    var name = document.getElementById("name").value,
+        email = document.getElementById("email").value,
+        program = document.getElementById("program").value,
+        portfolio = document.getElementById("portfolioUrl").value,
         resume = document.getElementById("fileToUpload").dataset.parsedb,
-        about = document.getElementById("about"),
-        why = document.getElementById("why");
+        about = document.getElementById("about").value,
+        why = document.getElementById("why").value;
 
     Parse.User.logIn('user', 'pass').then(function () {
         var Table = Parse.Object.extend("Applications");
@@ -95,17 +95,11 @@ function formSubmit(theForm) {
         application.set("about", about);
         application.set("why", why);
 
-        return application.save(null, {
-            success: function (table) {
-                console.log("success");
-            },
-            error: function (table, error) {
-                console.log(error);
-            }
-        });
-    }).then(function() {
+        return application.save();
+    }).then(function(obj) {
         console.log("success");
-    }, function() {
+    }, function(err) {
         console.log("error");
+        console.log(err);
     });
 }
