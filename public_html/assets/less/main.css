@@ -417,6 +417,9 @@ a:hover {
   width: 30px;
 }
 /*============================================ APPLICATIONPAGE.PHP ===================================================*/
+* {
+  border: solid 1px red !important;
+}
 .applicationArea {
   height: 100vh;
   padding: 60px;
@@ -443,19 +446,19 @@ a:hover {
   border: none;
   background: transparent;
   margin-bottom: 20px;
+  margin-left: 5px;
   height: 6vh;
 }
 .applicationArea input:focus {
   border: none;
   border-bottom: #807F83 !important;
 }
-.applicationArea input .fileToUpload {
-  width: 0.1px;
-  height: 0.1px;
-  opacity: 0;
-  overflow: hidden;
-  position: absolute;
-  z-index: -1;
+.applicationArea select {
+  border: none;
+  background: transparent;
+  opacity: 0.4;
+  text-transform: lowercase;
+  margin-bottom: 20px;
 }
 .applicationArea textarea {
   border: none;
