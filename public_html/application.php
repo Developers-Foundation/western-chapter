@@ -37,28 +37,84 @@
 
     <!-- Custom Fonts -->
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Palanquin:200,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Palanquin:400,600,700" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="assets/less/main.css">
 
 </head>
 
-<body>
-    <!--=========================================== MAIN FILES ==========================================-->
-    <?php
-        $page = "index-page";
-        $hasGmap = true;
-        include_once "html_elements/nextButton.php";
-        include_once "html_elements/triangleLanderAndNav.php";
-        include_once "html_elements/missionStatement.php";
-        include_once "html_elements/ourStory.php";
-        include_once "html_elements/portfolio.php";
-        include_once "html_elements/applicationSection.php";
-        include_once "html_elements/execTeam.php";
-        include_once "html_elements/footer.php";
-        include_once "html_elements/contactUsModal.php";
-    ?>
+<body class="applicationArea">
+<!--=========================================== MAIN FILES ==========================================-->
+
+<div class="row text-lowercase text-center">
+    <div class="row">
+        <div class="col-md-4">
+            <img src="assets/img/logo/glyphicon.png" class="logo">
+        </div>
+
+        <div class="col-md-4">
+            <form class="" id="theForm" action="" method="post">
+                <div class="row">
+                    <div class="col-md-12">
+                        <input type="text" id="name" placeholder="name">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <input type="text" id="email" placeholder="email">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <input type="text" id="program" placeholder="program">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <input type="text" id="portfolioUrl" placeholder="link to portfolio">
+                    </div>
+                </div>
+
+                <div class="row fileToUpload">
+                    <a href="#" id="resumeA">
+                        <div class="row">
+                            <div class="col-xs-4 text-right">
+                                <img src="assets/img/icon/upload.png" class="resume" id="resume">
+                            </div>
+                            <div class="col-xs-8 text-left">
+                                <div class="fileName" id="fileName">resume</div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <input class="hidden" type="file" name="fileToUpload" id="fileToUpload">
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <textarea id="why" placeholder="what do you aim to achieve by working with developers' foundation?"></textarea>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <textarea id="about" placeholder="tell us about yourself."></textarea>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <button class="btn btn-raised btn-primary btn-lg" id="formSubmitButton">submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 
 
 <!--=========================================== JS SCRIPTS ==========================================-->
@@ -72,13 +128,18 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 
 <!-- Theme JavaScript -->
-<script src="assets/js/freelancer.min.js"></script>
+<script src="assets/js/freelancer.js"></script>
 <!--<script src="assets/js/material.min.js"></script>-->
 <!--<script src="assets/js/material-kit.js" type="text/javascript"></script>-->
 
+<!-- Parse API -->
+<script src="assets/js/parse.min.js"></script>
+
 <!-- Additional JS Files-->
 <!--<script src="assets/js/nob.js" type="text/javascript"></script>-->
-<script src="assets/js/main.js" type="text/javascript"></script>
+<script src="assets/js/main.min.js" type="text/javascript"></script>
+<!--<script src="assets/js/application.js" type="text/javascript"></script>-->
+<script src="assets/js/application.min.js" type="text/javascript"></script>
 
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -88,10 +149,8 @@
 <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
 
-    <!-- Google Maps API File -->
-<!--<script src="//maps.google.com/maps/api/js?key=AIzaSyBjGkX6gbOjiM6Ewg3cTeqGyK25z6YFdqQ&callback=loadedGmap" async defer>-->
-<!--    loadedGmap();-->
-<!--</script>-->
 
 </body>
 </html>
+
+

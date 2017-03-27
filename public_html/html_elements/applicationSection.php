@@ -7,8 +7,8 @@
 
             <div class="row">
                 <h2 class="applyTtl applyClick">Let's get started.<br>I am <span id="blink">_</span><br></h2>
-                <div class="col-sm-6 text-uppercase text-center selectAppl"><span class="selectAppl" id="npo">non-profit</span></div>
-                <div class="col-sm-6 text-uppercase text-center selectAppl"><span class="selectAppl" id="std">student</span></div>
+                <div class="col-sm-6 text-uppercase text-center selectAppl"><span class="selectAppl" id="npo"><a href="#" class="selectAppl">non-profit</a></span></div>
+                <div class="col-sm-6 text-uppercase text-center selectAppl"><span class="selectAppl" id="std"><a class="selectAppl" href="applicationPage.php">student</a></span></div>
             </div>
 
             <div class="row">
