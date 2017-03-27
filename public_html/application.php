@@ -86,7 +86,7 @@
                                 <img src="assets/img/icon/upload.png" class="resume" id="resume">
                             </div>
                             <div class="col-xs-8 text-left">
-                                <div class="fileName">resume</div>
+                                <div class="fileName" id="fileName">resume</div>
                             </div>
                         </div>
                     </a>
