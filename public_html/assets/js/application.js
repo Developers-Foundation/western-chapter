@@ -17,7 +17,7 @@ $(document).ready(function() {
 function formSubmit(theForm) {
     var field;
 
-    var Table = Parse.Object.extend("Application");
+    var Table = Parse.Object.extend("Applications");
     var application = new Table();
     application.set();
 
