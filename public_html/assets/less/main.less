@@ -460,7 +460,7 @@ a{
 .applicationArea{
 
   height: 100vh;
-  padding: 80px;
+  padding: 60px;
   font-size: 3em;
 
   .resume{
@@ -472,6 +472,10 @@ a{
     margin-bottom: 15px;
     margin-left: 15px;
 
+  }
+
+  #fileName {
+    font-size: 12px !important;
   }
 
   @media(max-width: 600px) {
@@ -486,7 +490,6 @@ a{
   input {
     border: none;
     background: transparent;
-    border-bottom: @WESTERN_GRAY !important;
     margin-bottom: 20px;
 
     height: 6vh;
@@ -504,6 +507,15 @@ a{
       position: absolute;
       z-index: -1;
     }
+  }
+
+  textarea{
+    border: none;
+    background: transparent;
+    width: 400px !important;
+    height: 80px !important;
+    font-size: 17px !important;
+    margin-bottom: 10px;
   }
 
   .logo {
