@@ -16,8 +16,8 @@ use Parse\ParseFile;
 use Parse\ParseUser;
 use Parse\ParseClient;
 
-ParseClient::initialize($ParseAppID, '', $ParseMasterKey);
-ParseClient::setServerURL($ParseServer);
+ParseClient::initialize("df-recruit-db", '', $_ENV["PARSE_MASTER_PASS"]);
+ParseClient::setServerURL("https://df-recruit-db.herokuap.com/parse");
 
 $parseUser = ParseUser::getCurrentUser();
 if (!$parseUser) {
