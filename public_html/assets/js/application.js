@@ -84,18 +84,28 @@ function formSubmit(theForm) {
         about = document.getElementById("about"),
         why = document.getElementById("why");
 
-    var Table = Parse.Object.extend("Applications");
-    var application = new Table();
-    application.set("name", name);
-    application.set("email", email);
-    application.set("program", program);
-    application.set("portfolio", portfolio);
-    application.set("resume", resume);
-    application.set("about", about);
-    application.set("why", why);
+    Parse.User.logIn('user', 'pass').then(function () {
+        var Table = Parse.Object.extend("Applications");
+        var application = new Table();
+        application.set("name", name);
+        application.set("email", email);
+        application.set("program", program);
+        application.set("portfolio", portfolio);
+        application.set("resume", resume);
+        application.set("about", about);
+        application.set("why", why);
 
-    application.save(null, {
-        success: function(table) {console.log("success");},
-        error: function(table, error) {console.log(error);}
+        return application.save(null, {
+            success: function (table) {
+                console.log("success");
+            },
+            error: function (table, error) {
+                console.log(error);
+            }
+        });
+    }).then(function() {
+        console.log("success");
+    }, function() {
+        console.log("error");
     });
 }
