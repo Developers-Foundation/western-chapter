@@ -539,6 +539,19 @@ a{
       width: 200px !important;
       height: 150px !important;
     }
+
+    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      color: @WESTERN_GRAY;
+    }
+    &::-moz-placeholder { /* Firefox 19+ */
+      color: @WESTERN_GRAY;
+    }
+    &:-ms-input-placeholder { /* IE 10+ */
+      color: @WESTERN_GRAY;
+    }
+    &:-moz-placeholder { /* Firefox 18- */
+      color: @WESTERN_GRAY;
+    }
   }
 
   .logo {
