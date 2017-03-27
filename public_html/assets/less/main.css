@@ -475,6 +475,12 @@ a:hover {
   width: 100%;
   height: 100%;
 }
+@media (max-width: 993px) {
+  .applicationArea .logo {
+    max-height: 200px !important;
+    max-width: 200px !important;
+  }
+}
 .applicationArea .btn {
   background-color: orange;
   border: none !important;
