@@ -110,7 +110,7 @@
 
                 <div class="row">
                     <div class="col-md-12 text-center">
-                        <button class="btn btn-raised btn-primary btn-lg">submit</button>
+                        <button class="btn btn-raised btn-primary btn-lg" id="formSubmitButton">submit</button>
                     </div>
                 </div>
             </form>
@@ -133,6 +133,9 @@
 <script src="assets/js/freelancer.js"></script>
 <!--<script src="assets/js/material.min.js"></script>-->
 <!--<script src="assets/js/material-kit.js" type="text/javascript"></script>-->
+
+<!-- Parse API -->
+<script src="assets/js/parse.min.js"></script>
 
 <!-- Additional JS Files-->
 <!--<script src="assets/js/nob.js" type="text/javascript"></script>-->
