@@ -417,9 +417,6 @@ a:hover {
   width: 30px;
 }
 /*============================================ APPLICATIONPAGE.PHP ===================================================*/
-* {
-  border: solid 1px red !important;
-}
 .applicationArea {
   height: 100vh;
   padding: 60px;
