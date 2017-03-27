@@ -474,6 +474,9 @@ a:hover {
   text-transform: lowercase;
   margin-bottom: 20px;
 }
+.applicationArea select[disabled] {
+  color: #807F83;
+}
 .applicationArea textarea {
   border: none;
   background: transparent;
