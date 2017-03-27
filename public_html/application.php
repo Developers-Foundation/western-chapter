@@ -75,6 +75,19 @@
 
                 <div class="row">
                     <div class="col-md-12">
+                        <!--<input type="text" id="position" placeholder="position">-->
+                        <select name="position" id="position">
+                            <option value="fDev">Frontend Developer</option>
+                            <option value="bDev">Backend Developer</option>
+                            <option value="design">Designer</option>
+                            <option value="tpm">Product Manager</option>
+                            <option value="fin">Finance</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
                         <input type="text" id="portfolioUrl" placeholder="link to portfolio">
                     </div>
                 </div>
