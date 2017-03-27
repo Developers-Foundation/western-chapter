@@ -73,7 +73,7 @@
                     </div>
                 </div>
 
-                <div class="row">
+                <div class="row text-left">
                     <div class="col-md-12">
                         <!--<input type="text" id="position" placeholder="position">-->
                         <select name="position" id="position">
@@ -93,13 +93,13 @@
                     </div>
                 </div>
 
-                <div class="row fileToUpload">
+                <div class="row fileToUpload text-left">
                     <a href="#" id="resumeA">
                         <div class="row">
-                            <div class="col-xs-4 text-right">
+                            <div class="col-xs-2 text-left">
                                 <img src="assets/img/favicon/upload.png" class="resume" id="resume">
                             </div>
-                            <div class="col-xs-8 text-left">
+                            <div class="col-xs-10 text-left">
                                 <div class="fileName" id="fileName">resume</div>
                             </div>
                         </div>

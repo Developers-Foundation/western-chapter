@@ -457,6 +457,11 @@ a{
 
 /*============================================ APPLICATIONPAGE.PHP ===================================================*/
 
+
+*{
+  //border: solid 1px red !important;
+}
+
 .applicationArea{
 
   height: 100vh;
@@ -486,6 +491,7 @@ a{
     border: none;
     background: transparent;
     margin-bottom: 20px;
+    margin-left: 5px;
 
     height: 6vh;
 
@@ -494,14 +500,15 @@ a{
       border-bottom: @WESTERN_GRAY !important;
     }
 
-    .fileToUpload {
-      width: 0.1px;
-      height: 0.1px;
-      opacity: 0;
-      overflow: hidden;
-      position: absolute;
-      z-index: -1;
-    }
+  }
+
+  select {
+    border: none;
+    background: transparent;
+    opacity: 0.4;
+    text-transform: lowercase;
+    margin-bottom: 20px;
+
   }
 
   textarea{
