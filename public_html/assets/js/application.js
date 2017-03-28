@@ -114,7 +114,7 @@ function formSubmit(theForm) {
     }).then(function(obj) {
         console.log("success");
         console.log(theForm);
-        document.getElementById("theForm").parentNode.innerHTML = "<h4>Thank You for Submitting your Application</h4><p>We will get back to you as soon as possible <span id='lol'>_</span></p>";
+        document.getElementById("theForm").parentNode.innerHTML = "<h4 id='thank'>Thank You for Submitting your Application</h4><p id='msg'>We will get back to you as soon as possible <span id='lol'>_</span></p>";
     }, function(err) {
         console.log("error");
         console.log(err);

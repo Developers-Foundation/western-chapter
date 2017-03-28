@@ -430,7 +430,7 @@ a:hover {
   opacity: 0.4;
   margin-bottom: 15px;
   float: left;
-  margin-left: 15%;
+  margin-left: 20%;
 }
 @media (max-width: 991px) {
   .applicationArea .resume {
@@ -545,4 +545,11 @@ a:hover {
 }
 .applicationArea .btn:hover {
   background-color: #ffb733;
+}
+.applicationArea #thank {
+  margin-top: 40% !important;
+}
+.applicationArea #msg {
+  font-size: 3vh !important;
+  text-align: left !important;
 }
