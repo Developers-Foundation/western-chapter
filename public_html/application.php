@@ -91,8 +91,9 @@
                             <option value="position" disabled selected>position</option>
                             <option value="fDev">Frontend Developer</option>
                             <option value="bDev">Backend Developer</option>
-                            <option value="design">Designer</option>
+                            <option value="design">Product Designer</option>
                             <option value="tpm">Product Manager</option>
+                            <option value="marketing"> Marketing </option>
                             <option value="fin">Finance</option>
                             <option value="other">Other</option>
                         </select>
