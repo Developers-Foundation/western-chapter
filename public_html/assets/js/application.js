@@ -114,9 +114,110 @@ function formSubmit(theForm) {
     }).then(function(obj) {
         console.log("success");
         console.log(theForm);
-        document.getElementById("theForm").parentNode.innerHTML = "<div style='text-align: left; margin-top: 100px'><h4 id='thank'>Thank You for Submitting your Application</h4><p id='msg'>We will get back to you as soon as possible <span id='lol'>_</span></p><p>If you have any queries, please direct them to <a href='mailto:harrison@developers.foundation'>harrison@developers.foundation</a></p></div>";
+        document.getElementById("theForm").parentNode.innerHTML = "<div style='text-align: left; margin-top: 100px'>" +
+            "<h4 id='thank'>Thank You for Submitting your Application</h4>" +
+            "<p id='msg'>We will get back to you as soon as possible <span id='lol'>_</span></p>" +
+            "<p class='text'></p>" +
+            "</div>";
+
+        var phrases = ['If you have any queries,', 'please direct them to', 'harrison@developersfoundation.ca', 'or just email me to chat :)'];
+
+        var el = document.querySelector('.text');
+        var fx = new TextScramble(el);
+
+        var counter = 0;
+        var next = function next() {
+            fx.setText(phrases[counter]).then(function () {
+                setTimeout(next, 1200);
+            });
+            counter = (counter + 1) % phrases.length;
+        };
+
+        next();
     }, function(err) {
         console.log("error");
         console.log(err);
     });
 }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+// ——————————————————————————————————————————————————
+// TextScramble
+// ——————————————————————————————————————————————————
+
+var TextScramble = function () {
+    function TextScramble(el) {
+        _classCallCheck(this, TextScramble);
+
+        this.el = el;
+        this.chars = '!<>-_\\/[]{}—=+*^?#________';
+        this.update = this.update.bind(this);
+    }
+
+    TextScramble.prototype.setText = function setText(newText) {
+        var _this = this;
+
+        var oldText = this.el.innerText;
+        var length = Math.max(oldText.length, newText.length);
+        var promise = new Promise(function (resolve) {
+            return _this.resolve = resolve;
+        });
+        this.queue = [];
+        for (var i = 0; i < length; i++) {
+            var from = oldText[i] || '';
+            var to = newText[i] || '';
+            var start = Math.floor(Math.random() * 40);
+            var end = start + Math.floor(Math.random() * 40);
+            this.queue.push({
+                from: from,
+                to: to,
+                start: start,
+                end: end
+            });
+        }
+        cancelAnimationFrame(this.frameRequest);
+        this.frame = 0;
+        this.update();
+        return promise;
+    };
+
+    TextScramble.prototype.update = function update() {
+        var output = '';
+        var complete = 0;
+        for (var i = 0, n = this.queue.length; i < n; i++) {
+            var theQueue = this.queue[i];
+            var from = theQueue.from;
+            var to = theQueue.to;
+            var start = theQueue.start;
+            var end = theQueue.end;
+            var theChar = theQueue.theChar;
+
+            if (this.frame >= end) {
+                complete++;
+                output += to;
+            } else if (this.frame >= start) {
+                if (!theChar || Math.random() < 0.28) {
+                    theChar = this.randomChar();
+                    this.queue[i].theChar = theChar;
+                }
+                output += '<span class="dud">' + theChar + '</span>';
+            } else {
+                output += from;
+            }
+        }
+        this.el.innerHTML = output;
+        if (complete === this.queue.length) {
+            this.resolve();
+        } else {
+            this.frameRequest = requestAnimationFrame(this.update);
+            this.frame++;
+        }
+    };
+
+    TextScramble.prototype.randomChar = function randomChar() {
+        return this.chars[Math.floor(Math.random() * this.chars.length)];
+    };
+
+    return TextScramble;
+}();
