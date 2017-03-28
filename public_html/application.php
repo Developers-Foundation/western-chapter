@@ -18,6 +18,7 @@
     <meta property="og:url" content="https://western.developers.foundation/application" />
     <meta property="og:image" content="https://western.developers.foundation/assets/img/background/banner.png" />
     <meta property="og:description" content="Join Developers' Foundation Western Chapter Now" />
+    <meta property="fb:app_id" content="1107893785918456" />
 
     <!-- Favicons
     ================================================== -->
