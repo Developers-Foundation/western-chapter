@@ -94,6 +94,7 @@
                             <option value="design">Designer</option>
                             <option value="tpm">Product Manager</option>
                             <option value="fin">Finance</option>
+                            <option value="other">Other</option>
                         </select>
                     </div>
                 </div>
