@@ -10,6 +10,15 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Developers' Foundation</title>
+    <!-- Open Graph
+    ================================================== -->
+    <meta property="og:title" content="DF Western Chapter Application" />
+    <meta property="og:site_name" content="Developers' Foundation" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://western.developers.foundation/application" />
+    <meta property="og:image" content="https://western.developers.foundation/assets/img/background/banner.png" />
+    <meta property="og:description" content="Join Developers' Foundation Western Chapter Now" />
+
     <!-- Favicons
     ================================================== -->
     <link rel="shortcut icon" href="assets/img/favicon/favicon.ico">
