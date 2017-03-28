@@ -9,6 +9,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
+
+    <meta property="og:title" content="Developers' Foundation Western Chapter" />
+    <meta property="og:site_name" content="Developers' Foundation" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://western.developers.foundation" />
+    <meta property="og:image" content="https://western.developers.foundation/assets/img/background/banner.png" />
+    <meta property="og:description" content="Building something meaningful." />
+    <meta property="fb:app_id" content="1107893785918456" />
     <title>Developers' Foundation</title>
     <!-- Favicons
     ================================================== -->
