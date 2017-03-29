@@ -115,7 +115,7 @@ function formSubmit(theForm) {
         console.log("success");
         console.log(theForm);
         document.getElementById("theForm").parentNode.innerHTML = "<div style='text-align: left; margin-top: 100px'>" +
-            "<h4 id='thank'>Thank You for Submitting your Application</h4>" +
+            "<h4 id='thank'>Thank You for Submitting your Application</h4><br>" +
             "<p id='msg'>We will get back to you as soon as possible <span id='lol'>_</span></p>" +
             "<p class='text'></p>" +
             "</div>";
